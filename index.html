@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ramishenouda/aRami/master/assets/pixelArtMaker.PNG">
+    <meta name="robots" content="Rami Shenouda - Programmer">
+    <link rel="shortcut icon" type="image/x-generic" href="./assets/favicon.png" />
+    <link rel="image_src" href="./assets/pixelArtMaker.PNG">
+    
+    <link rel="shortcut icon" type="image/x-generic" href="./assets/favicon.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rami</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <span class="navbar-brand noselect">Rami</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-rights">
+                    <li class="navbar-item mr-5">
+                        <a href="#about-me">
+                            About me
+                        </a>
+                    </li>
+                    <li class="navbar-item mr-5">
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="navbar-item mr-5">
+                        <a href="#technologies">
+                            Technologies
+                        </a>
+                    </li>
+                    <li class="navbar-item mr-5">
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="navbar-item mr-5">
+                        <a href="./assets/RamiShenouda Resume.pdf" target="_blank">
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="main-header pt-5">
+        <div class="main-header-content">
+            <h1>Rami Shenouda</h1>
+            <h2 class="pt-2">
+                I BELIEVE WE CAN CHANGE THE WORLD, ONE CODE AT A TIME
+            </h2>
+            <p class="pt-4">
+                <span class="header-photo-container-blue"></span>
+                <span class="header-photo-container-red"></span>
+                <img class="header-photo" src="./assets/me.png" alt="rami shenouda" />
+            </p>
+        </div>
+    </header>
+    <main class="bg-g-gray">
+        <section class="about-me bg-w-gray section pt-5 text-center" id="about-me">
+            <h2 class="noselect">ABOUT ME</h2>
+            <hr style="width:240px; margin: auto">
+            <h4 class="pt-4">
+                Hello. I'm a programmer who is constantly seeking new learning opportunities.
+            </h4>
+            <p class="about-me-info text-left">
+                I started programming as a self-taught game developer in the secondary school, when I discovered my favorite game engine, Unity. After three years I decided to move to web development. I'm currently a student in Ain Shams University, studying mathematics and computer science. Aside from my courses at university, I also like doing extra studying at home to help improve myself more. I used to make websites using PHP & Wordpress, but now I'm using ASP.NET & ANGULAR/REACT.
+            </p>
+        </section>
+        <section class="projects bg-g-gray section mt-5" id="projects">
+            <h3 class="noselect">MY LATEST PROJECTS</h3>
+            <hr style="width: 320px; margin: auto">
+            <div class="row mx-auto pt-4">
+                <div class="col-sm mb-4">
+                    <div class="card" onmouseout="toggleOptions('options-pixelart')" onmouseover="toggleOptions('options-pixelart')">
+                        <img class="card-img-top" height="177px" src="./assets/pixelArtMaker.PNG" alt="Card image cap">
+                        <div class="card-body p-1">
+                            <p class="card-text">An application for creative minds who want to draw pixel arts.</p>
+                        </div>
+                        <div id="options-pixelart" class="options">
+                            <a target="_blank" onmouseup="goToLink('https://ramishenouda.github.io/pixelartmaker/', 'options-pixelart')" href="https://ramishenouda.github.io/pixelartmaker/">
+                                <img src="assets/eye.png" class="mr-1 option" width="50px" />
+                            </a>
+                            <a target="_blank" href="https://github.com/ramishenouda/pixelartmaker">
+                                <img src="assets/code.png" class="option" width="50px" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm mb-4">
+                    <div class="card" onmouseout="toggleOptions('options-mysoul')" onmouseover="toggleOptions('options-mysoul')">
+                        <img class="card-img-top" height="177px" src="./assets/mysoul.gif" alt="Card image cap">
+                        <div class="card-body p-1">
+                            <p class="card-text">A dating platform where you can chat with like-minded people.</p>
+                        </div>
+                        <div id="options-mysoul" class="options">
+                            <a target="_blank" href="https://mysoul.herokuapp.com/">
+                                <img src="assets/eye.png" class="mr-1 option" width="50px" />
+                            </a>
+                            <a target="_blank" href="https://github.com/ramishenouda/MySoul">
+                                <img src="assets/code.png" class="option" width="50px" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm mb-4">
+                    <div class="card" onmouseout="toggleOptions('options-cardsbench')" onmouseover="toggleOptions('options-cardsbench')">
+                        <img class="card-img-top" height="177px" src="./assets/cardsbench.PNG" alt="Card image cap">
+                        <div class="card-body p-1">
+                            <p class="card-text">A web application to share notes and track issues based on Trello.</p>
+                        </div>
+                        <div id="options-cardsbench" class="options">
+                            <a target="_blank" href="https://cardsbench.herokuapp.com/">
+                                <img src="assets/eye.png" class="mr-1 option" width="50px" />
+                            </a>
+                            <a target="_blank" href="https://github.com/ramishenouda/cardsbench/">
+                                <img src="assets/code.png" class="option" width="50px" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-sm mb-4">
+                    <div class="card" onmouseout="toggleOptions('options-words')" onmouseover="toggleOptions('options-words')">
+                        <img class="card-img-top" height="177px" src="https://raw.githubusercontent.com/ramishenouda/wordsinvading/master/GitHubAssests/GIF.gif" alt="Card image cap">
+                        <div class="card-body p-1">
+                            <p class="card-text">A browser game where you shoot invading words by typing specific phrases.
+                            </p>
+                        </div>
+                        <div id="options-words" class="options">
+                            <a target="_blank" href="http://attackonwords.atwebpages.com/">
+                                <img src="assets/eye.png" class="mr-1 option" width="50px" />
+                            </a>
+                            <a target="_blank" href="https://github.com/ramishenouda/AttackOnWords">
+                                <img src="assets/code.png" class="option" width="50px" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm mb-4">
+                    <div class="card" onmouseout="toggleOptions('options-ecommerce')" onmouseover="toggleOptions('options-ecommerce')">
+                        <img class="card-img-top" height="177px" src="./assets/e-commerce.PNG" alt="Card image cap">
+                        <div class="card-body p-1">
+                            <p class="card-text">An e-commerce website with authorization, authentication, and notifications system.</p>
+                        </div>
+                        <div id="options-ecommerce" class="options">
+                            <a target="_blank" href="https://github.com/ramishenouda/Online-Shopping-Store">
+                                <img src="assets/code.png" class="option" width="50px" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm mb-4">
+                    <div class="card" onmouseout="toggleOptions('options-netmenu')" onmouseover="toggleOptions('options-netmenu')">
+                        <img class="card-img-top" height="177px" src="https://raw.githubusercontent.com/ramishenouda/NETMenu/master/assets/example1.PNG" alt="Card image cap">
+                        <div class="card-body p-1">
+                            <p class="card-text">A DOTNet tool to create a menu for console projects with various options.</p>
+                        </div>
+                        <div id="options-netmenu" class="options">
+                            <a target="_blank" href="https://github.com/ramishenouda/NETMenu">
+                                <img src="assets/code.png" class="option" width="50px" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="technologies bg-w-gray py-5 section" id="technologies">
+            <h3 class="noselect">TECHNOLOGIES</h3>
+            <hr style="width:240px; margin: auto;">
+            <div class="pt-4">
+                <p>
+                    I'm always seeking new opportunities to learn, especially the opportunities that can push your projects towards the outer galaxy.
+                </p>
+                <div class="row mx-auto mb-1">
+                    <div class="col skill noselect m-1">
+                        JavaScript <img src="./assets/javascript-logo.png" class="ml-2" width="30px" />
+                    </div>
+                    <div class="col skill noselect m-1">
+                        Jquery <img src="./assets/jquery-logo.webp" class="ml-2" width="30px" />
+                    </div>
+                </div>
+                <div class="row mx-auto mb-1">
+                    <div class="col skill noselect m-1 mt-0">
+                        HTML5 <img src="./assets/html5-logo.png" class="ml-2" width="30px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        CSS3 <img src="./assets/css3-logo.png" class="ml-2" width="30px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        Bootstrap <img src="./assets/bootstrap-logo.png" class="ml-2" width="30px" />
+                    </div>
+                </div>
+                <div class="row mx-auto mb-1">
+                    <div class="col skill noselect m-1 mt-0">
+                        React <img src="./assets/react-logo.webp" class="ml-2" width="30px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        Recoil <img src="./assets/recoil.png" class="ml-2" width="30px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        Redux <img src="./assets/redux-logo.png" class="ml-2" width="30px" />
+                    </div>
+                </div>
+                <div class="row mx-auto mb-1">
+                    <div class="col skill noselect m-1 mt-0">
+                        <img src="./assets/c-sharp-logo.png" width="35px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        <img src="./assets/aspcore-logo.png" width="100px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        Entity Framework <img src="./assets/entity framrwork-logo.png" class="ml-2" width="30px" />
+                    </div>
+                </div>
+                <div class="row mx-auto mb-1">
+                    <div class="col skill noselect m-1 mt-0">
+                        Angular <img src="./assets/angular-logo.webp" class="ml-2" width="30px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        TypeScript <img src="./assets/typescript-logo.webp" class="ml-2" width="30px" />
+                    </div>
+                </div>
+                <div class="row mx-auto mb-1">
+                    <div class="col skill noselect m-1 mt-0">
+                        Git <img src="./assets/git-logo.png" class="ml-2" width="30px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        Docker <img src="./assets/docker-logoo.png" class="ml-2" width="30px" />
+                    </div>
+                    <div class="col skill noselect m-1 mt-0">
+                        Problem Solver <img src="./assets/problem-solver.png" class="ml-2" width="30px" />
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-sm skill noselect m-1 mt-0">
+                        Transform PSD / Wireframes into web applications  <img src="./assets/wireframes.png" class="ml-2" width="30px" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-me bg-g-gray section pt-5 text-center" id="about-me">
+            <h2 class="noselect">Client Testimonials</h2>
+            <hr style="width:240px; margin: auto;">
+            <h4 class="pt-4">
+                Feedback from clients on great experiences
+            </h4>
+            <p class="about-me-info text-left pt-2">
+                Rami helped me with everything, including explaining the differences between 
+                my options and he helped me publish my website. 
+                He also helped me choose a good server provider. 
+                He is really experienced and knows what he is doing. 
+                He is respectful and qualified.
+            </p>
+            <a href="https://www.deryadinc.com/">~Derya Dinc</a>
+        </section>
+        <section class="contact bg-w-gray pt-5 section mb-2" id="contact">
+            <h3 class="noselect">CONTACT</h3>
+            <hr style="width:240px; margin:auto">
+            <div class="contact-info">
+                <div class="row mx-auto mt-5">
+                    <a class="col-sm-4 mb-4 contact-link" href="mailto:ramishenouda@outlook.com">
+                        <img src="assets/email.webp" width="100px" />
+                    </a>
+                    <a class="col-sm-4 mb-4 contact-link" target="_blank" href="https://github.com/ramishenouda">
+                        <img src="assets/github.png" width="100px" />
+                    </a>
+                    <a class="col-sm-4 mb-4 contact-link" target="_blank" href="https://www.linkedin.com/in/ramishenouda/">
+                        <img src="assets/linkedin.png" width="100px" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>
