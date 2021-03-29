@@ -230,3 +230,35 @@ header {
 .contact-link:hover {
     background: rgba(221, 221, 221, 0.815);
 }
+
+.feedback-body {
+    position: relative;
+    padding: 25px;
+}
+
+.dot {
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    height: 0.6rem;
+    width: 0.6rem;
+    margin: 0 0.5rem;
+    outline: none !important;
+    background-color: #1a1a1a;
+    transform: scale(0.75);
+    transition: all 0.4s;
+}
+
+.active-dot {
+    background-color: #e4e4e4;
+    font-size: 60px;
+    transform: scale(1);
+}
+
+#client-name {
+    color: #2d608f !important;
+}
+
+#client-name:hover {
+    color: #1279da !important;
+}
