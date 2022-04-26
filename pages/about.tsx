@@ -10,7 +10,7 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>about</main>
+      <main className="text-black">aboutaboutaboutaboutaboutaboutaboutaboutaboutaboutabout</main>
     </div>
   );
 };
