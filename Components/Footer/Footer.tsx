@@ -1,9 +1,5 @@
 import type { NextPage } from 'next';
 
 export const Footer: NextPage = () => {
-  return (
-    <div>
-      <div>Footer...</div>
-    </div>
-  );
+  return <div className=""></div>;
 };
