@@ -1,6 +1,6 @@
 name: Portfolio Actions
 
-run-name: Trying to install dependencies and build
+run-name: Install dependencies and build
 
 on: ['push']
 
