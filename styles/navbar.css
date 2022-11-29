@@ -1,0 +1,6 @@
+.navbar .nav-item::before {
+  content: '// ';
+}
+
+.navbar .nav-logo {
+}
