@@ -1,8 +1,8 @@
-export default function Intro() {
+export default function Contact() {
   return (
-    <div className="intro min-h-[100vh] text-white gap-3 flex flex-col items-center justify-center">
+    <div className="intro min-h-[100vh] text-white pt-28  flex flex-col items-center">
       <div className="intro-text text-center rounded-3xl">
-        <h1 className="text-[5vw] tracking-widest">Rami Shenouda</h1>
+        <h1 className="text-[5vw] tracking-widest">Contact</h1>
         <p className="text-2xl tracking-widest font-medium">
           A programmer who is constantly seeking new learning opportunities.
         </p>

@@ -6,7 +6,6 @@ export default function Navbar() {
           <span className="text-4xl ">aRami</span>.me
         </div>
         <div className="nav-item">home</div>
-        <div className="nav-item">about me</div>
         <div className="nav-item">expertise</div>
         <div className="nav-item">experience</div>
         <div className="nav-item">projects</div>
