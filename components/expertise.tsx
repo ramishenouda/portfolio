@@ -7,8 +7,8 @@ export default function Expertise() {
   return (
     <section id="expertise" className="min-h-[100vh] text-white gap-3 flex flex-col items-center justify-center">
       <div className="text-center rounded-3xl">
-        <h1 className="md:text-[5vw] uppercase tracking-widest mb-3">My Expertise</h1>
-        <hr className="hr-text" data-content={'<CoffeScript ☕  /> '} />
+        <h1 className="md:text-[5vw] uppercase tracking-widest mb-4">My Expertise</h1>
+        <hr className="hr-text mt-1" data-content={'<CoffeScript ☕  /> '} />
         <p className="text-xl tracking-widest font-medium mt-8">
           {"I'm"} always seeking new opportunities to learn, especially the opportunities that can push your projects
           towards the outer galaxy..
@@ -20,8 +20,8 @@ export default function Expertise() {
         </div>
       </div>
       <div className="text-center">
-        <h1 className="md:text-[2vw] uppercase tracking-widest mb-3">My favourite tech</h1>
-        <hr className="hr-text" data-content={'<CoffeScript ☕  /> '} />
+        <h1 className="md:text-[2vw] uppercase tracking-widest ">My favourite tech</h1>
+        <hr className="hr-text mt-1" data-content={'<CoffeScript ☕  /> '} />
       </div>
     </section>
   );
