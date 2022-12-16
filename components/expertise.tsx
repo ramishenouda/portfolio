@@ -48,7 +48,7 @@ export default function Expertise() {
         <div className="expertise-intro lg:flex flex-row justify-center items-center">
           <Image className="mx-auto" src={stars} alt="stars" />
           <p className="text-4xl ml-4 p-4 tracking-widest font-medium mt-8">
-            {"I'm"} always seeking new opportunities to learn, especially the opportunities that can push your projects
+            I'm always seeking new opportunities to learn, especially the opportunities that can push your projects
             towards the outer galaxy..
           </p>
         </div>
