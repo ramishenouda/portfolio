@@ -41,9 +41,11 @@ export default function Expertise() {
   };
 
   return (
-    <section id="expertise" className="min-h-[100vh] text-white gap-3 flex flex-col items-center justify-center">
+    <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-20 flex flex-col items-center justify-center">
       <div className="text-center rounded-3xl">
-        <h1 className="md:text-[5vw] uppercase tracking-widest mb-5 mt-5">My Expertise</h1>
+        <h1 className="md:text-[5vw] text-4xl uppercase tracking-widest my-5">
+          <span className="text-2xl">01.</span> My Expertise
+        </h1>
         <hr className="hr-text mt-2" data-content={'<CoffeScript ☕  /> '} />
         <div className="expertise-intro lg:flex flex-row justify-center items-center">
           <Image className="mx-auto" src={stars} alt="stars" />
