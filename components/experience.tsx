@@ -12,10 +12,10 @@ export default function Experience() {
   return (
     <div id="experience" className="min-h-[100vh] text-white pt-20  flex flex-col items-center">
       <div className="text-center rounded-3xl">
-        <h1 className="text-[5vw] tracking-widest my-5">
-          <span className="text-2xl">02.</span> Working Experience
+        <h1 className="text-[5vw] !uppercase tracking-widest my-5">
+          <span className="text-2xl">02.</span> Experience
         </h1>
-        <hr className="hr-text mt-2" data-content={'<Under Construction 🏭 /> '} />
+        <hr className="hr-text mt-2" data-content={'<CoffeScript ☕  /> '} />
         {experience(
           'Do IT Big!',
           'Full-stack developer',
