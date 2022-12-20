@@ -44,7 +44,7 @@ export default function Expertise() {
     <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-20 flex flex-col items-center justify-center">
       <div className="text-center rounded-3xl">
         <h1 className="md:text-[5vw] text-4xl uppercase tracking-widest my-5">
-          <span className="text-2xl">01.</span> My Expertise
+          <span className="text-2xl">01.</span> Expertise
         </h1>
         <hr className="hr-text mt-2" data-content={'<CoffeScript ☕  /> '} />
         <div className="expertise-intro lg:flex flex-row justify-center items-center">
