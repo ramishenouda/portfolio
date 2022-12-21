@@ -1,3 +1,5 @@
 1. think about what you should write for the backend development in the "expertise" component
 2. add icons8's link on ther footer
 <a target="_blank" href="https://icons8.com/icon/RoTbvjbNsLDd/site">Site</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+add jest and cypress to the techonlogies, e2e, ci/cd, pipelines, etc etc

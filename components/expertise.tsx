@@ -42,26 +42,38 @@ export default function Expertise() {
 
   return (
     <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-20 flex flex-col items-center justify-center">
-      <div className="text-center rounded-3xl">
-        <h1 className="md:text-[5vw] text-4xl uppercase tracking-widest my-5">
-          <span className="text-2xl">01.</span> Expertise
-        </h1>
-        <hr className="hr-text mt-2" data-content={'<CoffeScript ☕  /> '} />
-        <div className="expertise-intro lg:flex flex-row justify-center items-center">
-          <Image className="mx-auto" src={stars} alt="stars" />
-          <p className="text-4xl ml-4 p-4 tracking-widest font-medium mt-8">
-            I'm always seeking new opportunities to learn, especially the opportunities that can push your projects
-            towards the outer galaxy..
-          </p>
+      <div className="expertise-intro lg:flex flex-row justify-center items-center">
+        <div className="mx-auto">
+          <Image src={stars} alt="stars" />
         </div>
-        <div className="flex md:flex-row flex-col align-middle justify-center gap-2 flex-1 w-full mt-8">
-          {expert(softwareIcon, softwareDev.title, softwareDev.description, softwareDev.experienced)}
-          {expert(reactIcon, frontendDev.title, frontendDev.description, frontendDev.experienced)}
-          {expert(backendIcon, backendDev.title, backendDev.description, backendDev.experienced)}
+        <div className="mt-20">
+          <h1 className="text-9xl">
+            <span className="text-2xl">01.</span> EXPERTISE
+            <hr className="hr-text my-4" data-content={'<CoffeScript ☕  /> '} />
+          </h1>
+          <div className="flex flex-row items-center justify-center mt-4">
+            <div className="flex flex-col pointer-events-none items-center justify-center ">
+              <div className="text-sm mb-1 text-neutral-200">{'<h3>'}</div>
+              <hr className="vertical-bar border-r-neutral-400 h-80 border-r-2" />
+              <div className="text-sm mt-1 text-neutral-200">{'</h3>'}</div>
+              <div className="absolute vertical-bar-data"> {'<🍮>'} </div>
+            </div>
+            <div>
+              <p className="text-4xl ml-4 p-4 md:w-[480px] tracking-widest font-medium">
+                I'm always seeking new opportunities to learn, especially the opportunities that can push your projects
+                towards the outer galaxy..
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      <div className="flex md:flex-row flex-col align-middle justify-center gap-2 flex-1 w-full mt-8">
+        {expert(softwareIcon, softwareDev.title, softwareDev.description, softwareDev.experienced)}
+        {expert(reactIcon, frontendDev.title, frontendDev.description, frontendDev.experienced)}
+        {expert(backendIcon, backendDev.title, backendDev.description, backendDev.experienced)}
+      </div>
       <div className="text-center">
-        <h1 className="md:text-[2vw] uppercase tracking-widest ">My favourite tech</h1>
+        <h1 className="md:text-5xl uppercase tracking-widest ">Things I enjoy working</h1>
         <hr className="hr-text mt-2" data-content={'<CoffeScript ☕  /> '} />
         <div className="grid grid-cols-3 w-[90vw] lg:w-[75vw] gap-4 mt-5">
           <div>{tech(javascriptIcon, 'JavaScript')}</div>
@@ -107,7 +119,7 @@ const expert = (icon: StaticImageData, title: string, description: string, exper
       <div className="flex flex-row items-center justify-center mt-4">
         <div className="flex flex-col pointer-events-none items-center justify-center ">
           <div className="text-sm mb-1 text-neutral-200">{'<h3>'}</div>
-          <hr className="vertical-bar border-r-neutral-400 h-40 border-r-2" />
+          <hr className="vertical-bar border-r-neutral-400 h-44 border-r-2" />
           <div className="text-sm mt-1 text-neutral-200">{'</h3>'}</div>
           <div className="absolute vertical-bar-data"> {'<🖥>'} </div>
         </div>
