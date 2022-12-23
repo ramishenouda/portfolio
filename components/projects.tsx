@@ -6,11 +6,15 @@ export default function Projects() {
           <span className="text-2xl">03.</span>Projects
         </h1>
         <hr className="hr-text mt-2" data-content={'<My babies 👶 /> '} />
-
-        <p className="text-2xl tracking-widest font-medium">
-          A programmer who is constantly seeking new learning opportunities.
-        </p>
       </div>
     </div>
   );
 }
+
+const project = () => {
+  return (
+    <div>
+      <p>cool project</p>
+    </div>
+  );
+};

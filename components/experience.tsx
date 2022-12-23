@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <div id="experience" className="min-h-[100vh] text-white pt-16 flex flex-col items-center">
       <div className="text-center rounded-3xl">
-        <h1 className="text-[5vw] !uppercase tracking-widest my-5">
+        <h1 className="text-8xl !uppercase tracking-widest my-5">
           <span className="text-2xl">02.</span> Experience
         </h1>
         <hr className="hr-text mt-6" data-content={'<CoffeScript ☕  /> '} />
