@@ -73,7 +73,7 @@ export default function Expertise() {
         {expert(backendIcon, backendDev.title, backendDev.description, backendDev.experienced)}
       </div>
       <div className="text-center">
-        <h1 className="md:text-5xl uppercase tracking-widest ">Things I enjoy working</h1>
+        <h1 className="md:text-5xl uppercase tracking-widest text-2xl">Things I enjoy working</h1>
         <hr className="hr-text mt-2" data-content={'<CoffeScript ☕  /> '} />
         <div className="grid grid-cols-3 w-[90vw] lg:w-[75vw] gap-4 mt-5">
           <div>{tech(javascriptIcon, 'JavaScript')}</div>
