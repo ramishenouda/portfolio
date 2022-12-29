@@ -1,0 +1,22 @@
+.project-description {
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+}
+
+.project-options {
+  position: absolute;
+  transform: (-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  left: 0;
+  top: 40%;
+  bottom: 40%;
+  gap: 80px;
+  transition: all 0.5s ease;
+  display: flex;
+  opacity: 0;
+}
+
+.project-image:hover .project-options {
+  opacity: 1;
+}
