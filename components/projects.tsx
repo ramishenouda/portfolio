@@ -1,7 +1,14 @@
 import Image, { StaticImageData } from 'next/image';
+
 import pixelArtMaker from '../public/images/pixelArtMaker.png';
-import githubIcon from '../public/github.png';
+import cardsbench from '../public/images/cardsbench.png';
+import Ecommerce from '../public/images/e-commerce.png';
+import mysoul from '../public/images/mysoul.gif';
+import netmenu from '../public/images/netmenu.png';
+import attackonwords from '../public/images/attackonwords.gif';
+
 import eyeIcon from '../public/eye.png';
+import githubIcon from '../public/github.png';
 
 export default function Projects() {
   return (
@@ -15,23 +22,19 @@ export default function Projects() {
 
       <div className="projects grid w-full text-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 mt-12">
         {project('Pixel Art Maker', 'An application for creative minds who want to draw pixel arts.', pixelArtMaker)}
-        {project('My Soul', 'A dating platform where you can chat with like-minded people.', pixelArtMaker)}
-        {project('Cards Bench', 'A web application to share notes and track issues based on Trello..', pixelArtMaker)}
+        {project('My Soul', 'A dating platform where you can chat with like-minded people.', mysoul)}
+        {project('Cards Bench', 'A web application to share notes and track issues based on Trello..', cardsbench)}
         {project(
           'Attack On Words',
           'A browser game where you shoot invading words by typing specific phrases..',
-          pixelArtMaker,
+          attackonwords,
         )}
         {project(
           'Ezona',
           'An e-commerce website with authorization, authentication, and notifications system..',
-          pixelArtMaker,
+          Ecommerce,
         )}
-        {project(
-          'NETMenu',
-          'A DOTNet tool to create a menu for console projects with various options..',
-          pixelArtMaker,
-        )}
+        {project('NETMenu', 'A DOTNet tool to create a menu for console projects with various options..', netmenu)}
       </div>
     </div>
   );
@@ -39,7 +42,7 @@ export default function Projects() {
 
 const project = (title: string, description: string, image: StaticImageData) => {
   return (
-    <div className="p-4 flex w-full flex-col justify-center items-center bg-white rounded shadow-lg shadow-black h-[380px]">
+    <div className="p-6 flex w-full flex-col justify-center items-center bg-white rounded shadow-lg shadow-black h-[380px]">
       <div className="relative project-image">
         <div className="project-options bg-neutral-800/70 h-fit p-2 rounded-full">
           <Image className="bg-black rounded-full shadow-black shadow-lg" src={githubIcon} alt="github icon" />
@@ -50,9 +53,9 @@ const project = (title: string, description: string, image: StaticImageData) => 
             alt="view project"
           />
         </div>
-        <Image className="" src={image} alt="pixel art maker" />
+        <Image className="w-[480px] h-[240px]" src={image} alt="pixel art maker" />
       </div>
-      <div>
+      <div className="my-4">
         <p className="text-black text-3xl font-bold text-left">{title}</p>
         <p className="text-black text-xl text-left">{description}</p>
       </div>
