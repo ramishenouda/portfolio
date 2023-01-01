@@ -1,0 +1,23 @@
+.project-description {
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+}
+
+.project-options {
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  width: max-content;
+  gap: 20px;
+}
+
+.project-image:hover .project-options {
+  opacity: 1;
+}
+
+.icon {
+  transition: all 1s ease;
+}

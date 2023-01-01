@@ -61,8 +61,8 @@ module.exports = {
           1000: '#553216',
           2000: '#331E0D',
         },
-        success: {
-          DEFAULT: '#1CD49C',
+        background: {
+          DEFAULT: '#121212',
           50: '#B3F5E1',
           100: '#A1F3DA',
           200: '#7DEECB',
