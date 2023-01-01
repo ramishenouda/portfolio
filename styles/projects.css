@@ -3,20 +3,21 @@
 }
 
 .project-options {
-  position: absolute;
-  transform: (-50%, -50%);
-  justify-content: center;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
   align-items: center;
-  right: 0;
-  left: 0;
-  top: 40%;
-  bottom: 40%;
-  gap: 80px;
   transition: all 0.5s ease;
-  display: flex;
+  left: 50%;
+  top: 50%;
   opacity: 0;
+  width: max-content;
+  gap: 20px;
 }
 
 .project-image:hover .project-options {
   opacity: 1;
+}
+
+.icon {
+  transition: all 1s ease;
 }
