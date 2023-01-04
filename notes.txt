@@ -3,3 +3,12 @@
 <a target="_blank" href="https://icons8.com/icon/RoTbvjbNsLDd/site">Site</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 add jest and cypress to the techonlogies, e2e, ci/cd, pipelines, etc etc
+things I enjoy working => Experienced in
+
+EXPERIENCE => WORK EXPERIENCE
+
+remove day from working experience
+
+ALEX EGYPT => Egypt
+
+in resume Nest.JS => Nest.js

@@ -31,7 +31,7 @@ export default function Testimonials() {
         <h1 className="text-[5vw] !uppercase tracking-widest my-5">
           <span className="text-2xl">04.</span>Testimonials
         </h1>
-        <hr className="mt-2 hr-text" data-content={'<My babies 👶 /> '} />
+        <hr className="mt-3 hr-text" data-content={'<My babies 👶 /> '} />
       </div>
 
       <p className="mt-16 text-4xl">Feedback from clients on great experiences</p>
@@ -53,15 +53,13 @@ export default function Testimonials() {
             >
               <p
                 className={`${
-                  currentTestimonial === 0 && 'text-black'
-                } transition duration-1000 cursor-pointer text-9xl `}
+                  currentTestimonial !== 0 && 'text-background'
+                } transition duration-1000 cursor-pointer text-2xl `}
               >
-                <span
-                  className={`${currentTestimonial !== 0 ? 'text-background' : 'text-white '} transition duration-1000`}
-                >
-                  {'<'}
+                {'<'}
+                <span className={`${currentTestimonial !== 0 ? 'opacity-50' : 'opacity-100'} transition duration-1000`}>
+                  🙂
                 </span>
-                .
                 <span
                   className={`${currentTestimonial !== 0 ? 'text-background' : 'text-white '} transition duration-1000`}
                 >
@@ -78,14 +76,16 @@ export default function Testimonials() {
               <p
                 className={`${
                   currentTestimonial === 1 && 'text-black'
-                } transition duration-1000 cursor-pointer text-9xl `}
+                } transition duration-1000 cursor-pointer text-2xl `}
               >
                 <span
                   className={`${currentTestimonial !== 1 ? 'text-background' : 'text-white '} transition duration-1000`}
                 >
                   {'<'}
                 </span>
-                .
+                <span className={`${currentTestimonial !== 1 ? 'opacity-50' : 'opacity-100'} transition duration-1000`}>
+                  🙂
+                </span>
                 <span
                   className={`${currentTestimonial !== 1 ? 'text-background' : 'text-white '} transition duration-1000`}
                 >
@@ -102,14 +102,16 @@ export default function Testimonials() {
               <p
                 className={`${
                   currentTestimonial === 2 && 'text-black'
-                } transition duration-1000 cursor-pointer text-9xl `}
+                } transition duration-1000 cursor-pointer text-2xl `}
               >
                 <span
                   className={`${currentTestimonial !== 2 ? 'text-background' : 'text-white '} transition duration-1000`}
                 >
                   {'<'}
                 </span>
-                .
+                <span className={`${currentTestimonial !== 2 ? 'opacity-50' : 'opacity-100'} transition duration-1000`}>
+                  🙂
+                </span>
                 <span
                   className={`${currentTestimonial !== 2 ? 'text-background' : 'text-white '} transition duration-1000`}
                 >
