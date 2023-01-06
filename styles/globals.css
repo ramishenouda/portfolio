@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: black !important;
+  background: white !important;
+}
+
+::selection {
+  color: black !important;
+  background: white !important;
+}
+
 *,
 html,
 body {
