@@ -71,6 +71,8 @@ h5 {
   text-align: center;
   height: 1.5em;
   opacity: 0.5;
+  background: rgb(26, 25, 29);
+  background: linear-gradient(180deg, rgba(26, 25, 29, 1) 0%, rgba(19, 26, 36, 1) 100%);
 }
 
 .hr-text::before {
@@ -91,10 +93,15 @@ h5 {
   padding: 0 0.5em;
   line-height: 1.5em;
   color: #efeddd;
+  background: rgb(26, 25, 29);
   background: linear-gradient(180deg, rgba(26, 25, 29, 1) 0%, rgba(19, 26, 36, 1) 100%);
   z-index: 100;
 }
 
+.vertical-bar {
+  width: 1px;
+  background: #6a7283;
+}
 .vertical-bar-data {
   background: linear-gradient(180deg, rgba(26, 25, 29, 1) 0%, rgba(19, 26, 36, 1) 100%);
 }
@@ -122,4 +129,9 @@ h5 {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.experiences-title {
+  background: rgb(26, 25, 29);
+  background: linear-gradient(180deg, rgba(26, 25, 29, 1) 0%, rgba(19, 26, 36, 1) 100%);
 }

@@ -1,0 +1,7 @@
+#intro {
+  background-image: url('../public//me.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw !important;
+  background-position: center;
+}
