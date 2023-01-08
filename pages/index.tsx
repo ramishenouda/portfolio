@@ -16,14 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="px-[5vw]">
+      <main>
         <Navbar />
         <Intro />
-        <Expertise />
-        <Experience />
-        <Projects />
-        <Testimonials />
-        <Contact />
+        <div className="px-[5vw]">
+          <Expertise />
+          <Experience />
+          <Projects />
+          <Testimonials />
+          <Contact />
+        </div>
       </main>
     </div>
   );

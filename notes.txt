@@ -12,3 +12,5 @@ remove day from working experience
 ALEX EGYPT => Egypt
 
 in resume Nest.JS => Nest.js
+
+down navbar for the intro
