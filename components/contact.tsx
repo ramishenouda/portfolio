@@ -11,10 +11,10 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="intro my-auto flex flex-col justify-center  min-h-[100vh] text-white">
+    <div id="contact" className="intro my-auto flex flex-col justify-center min-h-[100vh] text-white">
       <div className="intro-text rounded-3xl">
         <h1 className="md:text-8xl text-4xl tracking-widest uppercase">
-          <span className="text-2xl">05.</span>Contact
+          <span className="text-lg md:text-2xl">05.</span>Contact
         </h1>
       </div>
       <div className="flex w-full flex-col justify-center items-center md:flex-row gap-12 px-12 mt-12">

@@ -26,18 +26,17 @@ export default function Testimonials() {
   let [currentTestimonial, setCurrentTestimonial] = React.useState(0);
 
   return (
-    <div id="testimonials" className="intro min-h-[100vh] text-white    flex flex-col items-center justify-center">
+    <div id="testimonials" className="min-h-[100vh] flex flex-col items-center justify-center">
       <div className="text-center rounded-3xl">
-        <h1 className="text-[5vw] !uppercase tracking-widest my-5">
-          <span className="text-2xl">04.</span>Testimonials
+        <h1 className="text-4xl md:text-8xl !uppercase tracking-widest">
+          <span className="text-lg md:text-2xl">04.</span>Testimonials
         </h1>
         <hr className="mt-3 hr-text" data-content={'<My babies 👶 /> '} />
       </div>
-
       <p className="mt-16 text-4xl">Feedback from clients on great experiences</p>
       <div className="">
         <div className="flex flex-col gap-8">
-          <div className=" max-w-[95vw] items-center overflow-x-hidden">
+          <div className="w-[95vw] items-center overflow-x-hidden">
             <div id="testimonials-container" className="flex flex-row transition duration-1000">
               {testimonial(testimoinals[0].description, testimoinals[0].linkTitle, testimoinals[0].link)}
               {testimonial(testimoinals[1].description, testimoinals[1].linkTitle, testimoinals[1].link)}

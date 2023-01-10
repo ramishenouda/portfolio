@@ -13,10 +13,10 @@ import Link from 'next/link';
 
 export default function Projects() {
   return (
-    <div id="projects" className="min-h-[100vh] text-white pt-20  flex flex-col items-center">
+    <div id="projects" className="min-h-[100vh] text-white flex flex-col items-center">
       <div className="text-center rounded-3xl">
-        <h1 className="text-[5vw] !uppercase tracking-widest my-5">
-          <span className="text-2xl">03.</span>Projects
+        <h1 className="text-4xl md:text-8xl !uppercase tracking-widest">
+          <span className="text-lg md:text-2xl">03.</span>Projects
         </h1>
         <hr className="mt-2 hr-text" data-content={'<My babies 👶 /> '} />
       </div>

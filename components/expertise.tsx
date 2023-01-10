@@ -42,14 +42,14 @@ export default function Expertise() {
   };
 
   return (
-    <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-20 flex flex-col items-center justify-center">
+    <section id="expertise" className="min-h-[100vh] text-white gap-3 flex flex-col items-center justify-center">
       <div className="expertise-intro lg:flex flex-row justify-center items-center">
         <div className="mx-auto">
           <Image src={stars} alt="stars" />
         </div>
-        <div className="mt-20">
+        <div>
           <div className="flex flex-row gap-2 items-end">
-            <p className="text-2xl mb-4">01.</p>
+            <p className="text-lg md:text-2xl mb-4">01.</p>
             <h1 className="text-4xl md:text-8xl">EXPERTISE</h1>
           </div>
           <hr className="hr-text my-4" data-content={'<CoffeScript ☕  /> '} />
@@ -126,10 +126,12 @@ const expert = (icon: StaticImageData, title: string, description: string, exper
       <div className="flex bg-white h-[240px] text-black flex-grow justify-center w-full flex-col items-center">
         <Image height="240" src={icon} alt="frontend development" />
       </div>
-      <h3 className="w-full mt-4 text-center text-black"> {title} </h3>
-      <div className="flex flex-row items-center mt-4 px-8 py-4">
-        <div>
-          <p className="text-2xl  h-full flex justify-center text-black items-center text-center">{description}</p>
+      <div className="transition duration-500 hover:scale-110">
+        <h3 className="w-full mt-4 text-center text-black"> {title} </h3>
+        <div className="flex flex-row items-center mt-1 px-8 pb-6">
+          <div>
+            <p className="text-2xl  h-full flex justify-center text-black items-center text-center">{description}</p>
+          </div>
         </div>
       </div>
     </div>
