@@ -1,29 +1,15 @@
+import React from 'react';
 import { BsTelephoneFill, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md';
 import { GrMail } from 'react-icons/gr';
-import React from 'react';
+import Link from 'next/link';
 
 export default function Intro() {
-  const intro = React.useRef(null);
-
-  const handleScroll = (event: any) => {
-    console.log(event);
-    console.log(intro);
-  };
-
   return (
-    <div
-      onScroll={($element) => handleScroll($element)}
-      onClick={($element) => handleScroll($element)}
-      ref={intro}
-      id="intro"
-      className="flex flex-col intro min-h-[100vh] relative px-8 justify-center items-center"
-    >
-      <section className="md:flex gap-2 uppercase w-full justify-between h-[25vh] pt-5 flex-row">
+    <div id="intro" className="flex flex-col intro min-h-[100vh] relative px-8 justify-center items-center">
+      <section className="flex gap-2 uppercase w-full justify-between h-[25vh] pt-5 flex-row">
         <div>
-          <div className="nav-item text-2xl">
-            <a href="#intro">home</a>
-          </div>
           <div className="nav-item text-2xl">
             <a href="#expertise">expertise</a>
           </div>
@@ -43,7 +29,7 @@ export default function Intro() {
             <a href="#resume">resume</a>
           </div>
         </div>
-        <div className="flex gap-4 uppercase flex-row">
+        <div className="flex gap-8 md:gap-4 uppercase flex-col md:flex-row">
           <BsLinkedin color="white" size={32} />
           <BsGithub color="white" size={32} />
         </div>
@@ -54,7 +40,7 @@ export default function Intro() {
           A programmer who is constantly seeking new learning opportunities.
         </p>
       </section>
-      <section className="w-max gap-4 hidden justify-center pb-8 items-end h-[25vh] md:flex flex-row">
+      <section className="w-max gap-4 justify-center hidden pb-8 items-end h-[25vh] md:flex flex-row">
         <p className="flex flex-row gap-2 justify-center items-center">
           <MdLocationOn color="white" size={32} />
           <p className="text-2xl text-neutral-200 font-medium"> Cairo, Egypt</p>
@@ -70,6 +56,9 @@ export default function Intro() {
           <p className="text-2xl text-neutral-200 font-medium">ramishenouda@outlook.com</p>
         </p>
       </section>
+      <a href="#expertise" className="pb-2 arrow-down">
+        <FaAngleDoubleDown className="h-10 " />
+      </a>
     </div>
   );
 }
