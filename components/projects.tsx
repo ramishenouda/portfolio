@@ -8,7 +8,7 @@ import netmenu from '../public/images/netmenu.png';
 import attackonwords from '../public/images/attackonwords.gif';
 
 import eyeIcon from '../public/eye.png';
-import githubIcon from '../public/github.png';
+import { SiGithub } from 'react-icons/si';
 import Link from 'next/link';
 
 export default function Projects() {
@@ -77,11 +77,7 @@ const project = (
       <div className="relative project-image">
         <div className="absolute flex flex-row items-center justify-center p-2 rounded-full project-options bg-neutral-800/70 h-fit">
           <Link href={githubLink} target="_blank">
-            <Image
-              className="rounded-full shadow-lg icon hover:bg-black bg-black/50 shadow-black"
-              src={githubIcon}
-              alt="github icon"
-            />
+            <SiGithub className="rounded-full w-14 shadow-lg icon hover:bg-black bg-black/50 shadow-black" />
           </Link>
           {projectLink && (
             <Link href={projectLink} target="_blank">

@@ -1,10 +1,24 @@
 import { BsTelephoneFill, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdLocationOn } from 'react-icons/md';
 import { GrMail } from 'react-icons/gr';
+import React from 'react';
 
 export default function Intro() {
+  const intro = React.useRef(null);
+
+  const handleScroll = (event: any) => {
+    console.log(event);
+    console.log(intro);
+  };
+
   return (
-    <div id="intro" className="flex flex-col intro min-h-[100vh] relative px-8 justify-center items-center">
+    <div
+      onScroll={($element) => handleScroll($element)}
+      onClick={($element) => handleScroll($element)}
+      ref={intro}
+      id="intro"
+      className="flex flex-col intro min-h-[100vh] relative px-8 justify-center items-center"
+    >
       <section className="md:flex gap-2 uppercase w-full justify-between h-[25vh] pt-5 flex-row">
         <div>
           <div className="nav-item text-2xl">
