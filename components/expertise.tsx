@@ -50,7 +50,7 @@ export default function Expertise() {
         <div className="mt-20">
           <div className="flex flex-row gap-2 items-end">
             <p className="text-2xl mb-4">01.</p>
-            <h1 className="text-9xl">EXPERTISE</h1>
+            <h1 className="text-4xl md:text-8xl">EXPERTISE</h1>
           </div>
           <hr className="hr-text my-4" data-content={'<CoffeScript ☕  /> '} />
           <div className="flex flex-row items-center justify-center mt-4">
@@ -69,7 +69,7 @@ export default function Expertise() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row align-middle justify-center gap-4 flex-1 max-w-[1400px] w-full mt-8">
+      <div className="flex flex-col md:flex-row align-middle justify-center gap-4 flex-1 max-w-[1400px] w-full mt-8">
         {expert(softwareDevLogo, softwareDev.title, softwareDev.description)}
         {expert(frontendDevelopmentLogo, frontendDev.title, frontendDev.description)}
         {expert(backendDevLogo, backendDev.title, backendDev.description)}
@@ -78,7 +78,7 @@ export default function Expertise() {
         <h1 className="md:text-5xl mt-12 experiences-title px-4 uppercase tracking-widest text-2xl top-[-65px] left-[40px] absolute">
           Experienced in
         </h1>
-        <div className="text-center py-16 px-16">
+        <div className="text-center md:py-16 px-4 md:px-16">
           <div className="grid grid-cols-4 w-[90vw] lg:w-[75vw] gap-4 mt-5">
             <div>{tech(javascriptIcon, 'JavaScript')}</div>
             <div>{tech(typescriptIcon, 'TypeScript')}</div>
@@ -139,7 +139,7 @@ const expert = (icon: StaticImageData, title: string, description: string, exper
 const tech = (Icon: StaticImageData | IconType | null, title: string) => {
   return (
     <div className="flex min-h-full flex-row border-2 w-full p-2 justify-center items-center">
-      <p className="text-2xl font-bold uppercase">{title}</p>
+      <p className="text-lg md:text-2xl font-bold uppercase">{title}</p>
       {Icon && isStaticImageData(Icon) && <Image className="ml-4" src={Icon} alt="tech icon" />}
       {Icon && !isStaticImageData(Icon) && <Icon className="ml-4" size="35px" />}
     </div>

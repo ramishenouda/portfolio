@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <div id="experience" className="min-h-[100vh] text-white pt-16 flex flex-col items-center">
       <div className="text-center rounded-3xl">
-        <h1 className="text-8xl !uppercase tracking-widest my-5">
+        <h1 className="text-4xl md:text-8xl !uppercase tracking-widest my-5">
           <span className="text-2xl">02.</span> Experience
         </h1>
         <hr className="hr-text mt-6" data-content={'<CoffeScript ☕  /> '} />
@@ -71,7 +71,7 @@ const experience = (
         <span>{date}</span>
         <span className="ml-4">{location}</span>
       </p>
-      <div className="flex flex-col justify-start items-start  gap-4 ml-10 mt-8">
+      <div className="flex flex-col justify-start items-start gap-4 ml-2 md:ml-10 mt-8">
         {bulletPoints.map((point, index) => {
           return (
             <p className="font-medium" key={point + index}>
