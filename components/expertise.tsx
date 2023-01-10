@@ -16,6 +16,9 @@ import dockerIcon from '../public/docker.png';
 import problemsolverIcon from '../public/problemsolver.png';
 import designIcon from '../public/design.png';
 import stars from '../public/stars.png';
+import frontendDevelopmentLogo from '../public/images/frontend-development.png';
+import softwareDevLogo from '../public/backgrounds/software-development.svg';
+import backendDevLogo from '../public/backgrounds/backend-development.svg';
 
 import { IconType } from 'react-icons';
 import { SiCypress, SiNestjs } from 'react-icons/si';
@@ -29,13 +32,13 @@ export default function Expertise() {
 
   const frontendDev = {
     title: 'Frontend Development',
-    description: `Proficient in developing modern frontend applications using Angular, React, and Next.js. Skilled in HTML, CSS, and Typescript for building responsive user interfaces. Experienced in using Bootstrap and Tailwind for creating stylish layouts and components. Committed to delivering high-quality and user-friendly web experiences.`,
+    description: `Proficient in developing modern frontend applications using Angular, React, and Next.js. Skilled in HTML, CSS, and Tailwind for building responsive user interfaces. Committed to delivering high-quality and user-friendly web experiences.`,
   };
 
   const backendDev = {
     title: 'Backend Development',
     description:
-      '"Experienced in building and maintaining efficient backend systems using a variety of technologies such as NestJS, MySQL, Docker, TypeORM, ASP.NET, Entity Framework, TypeScript, and C#. Proficient in designing and implementing RESTful APIs, microservices, and integrating with frontend applications. Skilled in using ORM tools for effective database interaction.',
+      'Experienced in building and maintaining efficient backend systems using a variety of technologies such as NestJS, MySQL, Docker, TypeORM, ASP.NET, Entity Framework, TypeScript, and C#. Proficient in designing and implementing RESTful APIs and integrating with frontend applications.',
   };
 
   return (
@@ -66,10 +69,10 @@ export default function Expertise() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col align-middle justify-center gap-4 flex-1 w-full mt-8">
-        {expert(softwareIcon, softwareDev.title, softwareDev.description)}
-        {expert(reactIcon, frontendDev.title, frontendDev.description)}
-        {expert(backendIcon, backendDev.title, backendDev.description)}
+      <div className="flex flex-row align-middle justify-center gap-4 flex-1 max-w-[1400px] w-full mt-8">
+        {expert(softwareDevLogo, softwareDev.title, softwareDev.description)}
+        {expert(frontendDevelopmentLogo, frontendDev.title, frontendDev.description)}
+        {expert(backendDevLogo, backendDev.title, backendDev.description)}
       </div>
       <div className="border-2 p-2 border-neutral w-full flex align-middle justify-center relative mt-20">
         <h1 className="md:text-5xl mt-12 experiences-title px-4 uppercase tracking-widest text-2xl top-[-65px] left-[40px] absolute">
@@ -80,7 +83,7 @@ export default function Expertise() {
             <div>{tech(javascriptIcon, 'JavaScript')}</div>
             <div>{tech(typescriptIcon, 'TypeScript')}</div>
             <div>{tech(SiNestjs, 'Nest.js')}</div>
-            <div>{tech(SiCypress, 'Cypress')}</div>
+            <div>{tech(null, 'TypeORM')}</div>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 w-[90vw] lg:w-[75vw] gap-4 mt-5">
             <div>{tech(htmlIcon, 'HTML')}</div>
@@ -88,10 +91,11 @@ export default function Expertise() {
             <div>{tech(bootstrapIcon, 'Bootstrap')}</div>
             <div>{tech(tailwindIcon, 'Tailwind CSS')}</div>
           </div>
-          <div className="grid grid-cols-3 w-[90vw] lg:w-[75vw] gap-4 mt-5">
+          <div className="grid grid-cols-4 w-[90vw] lg:w-[75vw] gap-4 mt-5">
             <div>{tech(angularIcon, 'Angular')}</div>
             <div>{tech(reactIcon, 'React')}</div>
             <div>{tech(nextjsIcon, '')}</div>
+            <div>{tech(SiCypress, 'Cypress')}</div>
           </div>
           <div className="grid grid-cols-3 w-[90vw] lg:w-[75vw] gap-4 mt-5">
             <div>{tech(csharpIcon, '')}</div>
@@ -101,7 +105,7 @@ export default function Expertise() {
           <div className="grid grid-cols-3 w-[90vw] lg:w-[75vw] gap-4 mt-5">
             <div>{tech(gitIcon, 'Git')}</div>
             <div>{tech(dockerIcon, 'Docker')}</div>
-            <div>{tech(problemsolverIcon, 'Problem Solver')}</div>
+            <div>{tech(problemsolverIcon, 'Docker Compose')}</div>
           </div>
           <div className="grid grid-cols-2 h-20 w-[90vw] lg:w-[75vw] gap-4 mt-5">
             <div>{tech(null, 'GitHub Actions')}</div>
@@ -118,21 +122,14 @@ export default function Expertise() {
 
 const expert = (icon: StaticImageData, title: string, description: string, experienced?: string) => {
   return (
-    <div className="border-white border-2 flex-1 px-8 py-4">
-      <div className="flex flex-grow flex-row items-center">
-        <Image src={icon} alt="expert icon" />
-        <h1 className="ml-2 text-3xl w-full"> {title} </h1>
+    <div className="border-b-pop-details-icon-background transition duration-500 hover:scale-105 bg-white border-2 flex-1 shadow-lg shadow-slate-500">
+      <div className="flex bg-white h-[240px] text-black flex-grow justify-center w-full flex-col items-center">
+        <Image height="240" src={icon} alt="frontend development" />
       </div>
-      <div className="flex flex-row items-center mt-4">
-        <div className="md:flex flex-col hidden pointer-events-none relative items-center justify-center">
-          <div className="text-sm mb-1 text-neutral-200">{'<h3>'}</div>
-          <hr className="vertical-bar border-r-neutral-400 md:h-40 lg:h-32   border-r-2" />
-          <div className="text-sm mt-1 text-neutral-200">{'</h3>'}</div>
-          <div className="absolute vertical-bar-data"> {'</>'} </div>
-        </div>
+      <h3 className="w-full mt-4 text-center text-black"> {title} </h3>
+      <div className="flex flex-row items-center mt-4 px-8 py-4">
         <div>
-          <p className="text-2xl">{description}</p>
-          <p className="text-xl mt-2">{experienced && experienced}</p>
+          <p className="text-2xl  h-full flex justify-center text-black items-center text-center">{description}</p>
         </div>
       </div>
     </div>

@@ -17,8 +17,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <Navbar />
         <Intro />
+        {/* <Navbar /> */}
         <div className="px-[5vw]">
           <Expertise />
           <Experience />

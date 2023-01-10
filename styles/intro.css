@@ -1,7 +1,11 @@
 #intro {
-  background-image: url('../public//me.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw !important;
-  background-position: center;
+  background: rgb(26, 25, 29);
+  background: linear-gradient(45deg, rgba(26, 25, 29, 1) 82%, rgba(84, 85, 87, 0.1) 82%);
+}
+
+.intro-address {
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: 50%;
+  left: 50%;
 }
