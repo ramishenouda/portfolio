@@ -1,0 +1,15 @@
+#intro {
+  background: rgb(26, 25, 29);
+  background: linear-gradient(56deg, rgba(26, 25, 29, 1) 86%, rgba(84, 85, 87, 1) 100%);
+  background-image: url('../public/backgrounds/intro-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro-address {
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+}
