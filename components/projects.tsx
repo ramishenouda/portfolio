@@ -8,15 +8,15 @@ import netmenu from '../public/images/netmenu.png';
 import attackonwords from '../public/images/attackonwords.gif';
 
 import eyeIcon from '../public/eye.png';
-import githubIcon from '../public/github.png';
+import { SiGithub } from 'react-icons/si';
 import Link from 'next/link';
 
 export default function Projects() {
   return (
-    <div id="projects" className="min-h-[100vh] text-white pt-20  flex flex-col items-center">
+    <div id="projects" className="min-h-[100vh] text-white flex flex-col items-center">
       <div className="text-center rounded-3xl">
-        <h1 className="text-[5vw] !uppercase tracking-widest my-5">
-          <span className="text-2xl">03.</span>Projects
+        <h1 className="text-4xl md:text-8xl !uppercase tracking-widest">
+          <span className="text-lg md:text-2xl">03.</span>Projects
         </h1>
         <hr className="mt-2 hr-text" data-content={'<My babies 👶 /> '} />
       </div>
@@ -77,11 +77,7 @@ const project = (
       <div className="relative project-image">
         <div className="absolute flex flex-row items-center justify-center p-2 rounded-full project-options bg-neutral-800/70 h-fit">
           <Link href={githubLink} target="_blank">
-            <Image
-              className="rounded-full shadow-lg icon hover:bg-black bg-black/50 shadow-black"
-              src={githubIcon}
-              alt="github icon"
-            />
+            <SiGithub className="rounded-full w-14 shadow-lg icon hover:bg-black bg-black/50 shadow-black" />
           </Link>
           {projectLink && (
             <Link href={projectLink} target="_blank">
