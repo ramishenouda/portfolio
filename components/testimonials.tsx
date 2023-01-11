@@ -50,7 +50,7 @@ export default function Testimonials() {
                 setCurrentTestimonial(0);
               }}
             >
-              <p
+              <div
                 className={`${
                   currentTestimonial !== 0 && 'text-background'
                 } transition duration-1000 cursor-pointer text-2xl `}
@@ -64,7 +64,7 @@ export default function Testimonials() {
                 >
                   {'/>'}
                 </span>
-              </p>
+              </div>
             </div>
             <div
               onClick={() => {
@@ -72,7 +72,7 @@ export default function Testimonials() {
                 setCurrentTestimonial(1);
               }}
             >
-              <p
+              <div
                 className={`${
                   currentTestimonial === 1 && 'text-black'
                 } transition duration-1000 cursor-pointer text-2xl `}
@@ -90,7 +90,7 @@ export default function Testimonials() {
                 >
                   {'/>'}
                 </span>
-              </p>
+              </div>
             </div>
             <div
               onClick={() => {
@@ -98,7 +98,7 @@ export default function Testimonials() {
                 setCurrentTestimonial(2);
               }}
             >
-              <p
+              <div
                 className={`${
                   currentTestimonial === 2 && 'text-black'
                 } transition duration-1000 cursor-pointer text-2xl `}
@@ -116,7 +116,7 @@ export default function Testimonials() {
                 >
                   {'/>'}
                 </span>
-              </p>
+              </div>
             </div>
           </div>
         </div>
