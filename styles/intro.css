@@ -5,8 +5,7 @@
 
 #intro .arrow-down {
   cursor: pointer !important;
-  animation: slide-in 2000ms;
-  animation-iteration-count: infinite;
+  animation: slide-in 2000ms infinite;
 }
 
 @keyframes slide-in {

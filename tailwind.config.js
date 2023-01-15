@@ -101,8 +101,8 @@ module.exports = {
           900: '#090701',
         },
         info: {
-          DEFAULT: '#1684F1',
-          50: '#C3DFFB',
+          DEFAULT: '#17295c',
+          50: '#2f51aa',
           100: '#B0D5FA',
           200: '#89C1F8',
           300: '#63ADF6',

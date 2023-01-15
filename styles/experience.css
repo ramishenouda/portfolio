@@ -1,0 +1,13 @@
+.company-experience {
+  animation: slide-in 500ms;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

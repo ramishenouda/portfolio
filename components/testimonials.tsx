@@ -129,11 +129,11 @@ const testimonial = (description: string, linkTitle: string, link: string) => {
   return (
     <div className="min-w-[95vw] mt-12">
       <p className="text-2xl tracking-widest text-center max-w-8xl">{description}</p>
-      <p className="mt-12 text-center">
+      <div className="mt-12 text-center">
         <Link className="text-xl text-teal-400" href={link}>
           {linkTitle}
         </Link>
-      </p>
+      </div>
     </div>
   );
 };

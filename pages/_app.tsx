@@ -3,6 +3,7 @@ import '../styles/intro.css';
 import '../styles/navbar.css';
 import '../styles/projects.css';
 import '../styles/expertise.css';
+import '../styles/experience.css';
 
 import type { AppProps } from 'next/app';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
