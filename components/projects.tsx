@@ -13,15 +13,15 @@ import Link from 'next/link';
 
 export default function Projects() {
   return (
-    <div id="projects" className="min-h-[100vh] text-white flex flex-col items-center">
-      <div className="text-center rounded-3xl">
-        <h1 className="text-4xl md:text-8xl !uppercase tracking-widest">
-          <span className="text-lg md:text-2xl">03.</span>Projects
-        </h1>
-        <hr className="mt-2 hr-text" data-content={'<My babies 👶 /> '} />
+    <div id="projects" className="min-h-[100vh] text-white flex flex-col">
+      <div>
+        <div className="flex flex-row items-end justify-center w-full">
+          <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">03.</div>
+          <h1 className="text-6xl md:text-8xl text-slate-300">PROJECTS</h1>
+        </div>
+        <hr className="mt-2 hr-text max-w-[600px] mx-auto" data-content={'<My babies 👶 /> '} />
       </div>
-
-      <div className="grid w-full grid-cols-1 mt-12 text-center projects md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+      <div className="grid w-full grid-cols-1 mt-4 text-center projects md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
         {project(
           'Pixel Art Maker',
           'An application for creative minds who want to draw pixel arts.',
