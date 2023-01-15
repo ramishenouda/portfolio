@@ -42,14 +42,14 @@ export default function Contact() {
           <div>
             <h1>Contact details</h1>
             <div className="child:text-2xl mt-8 flex flex-col gap-4">
-              <p>
+              <div>
                 <a className="flex flex-row gap-2" href="mailto:ramishenouda@outlook.com">
                   <AiOutlineMail size="35px" /> ramishenouda@outlook.com
                 </a>
-              </p>
-              <p className="flex flex-row gap-2">
+              </div>
+              <div className="flex flex-row gap-2">
                 <AiOutlinePhone size="35px" /> +201551874208
-              </p>
+              </div>
             </div>
           </div>
           <div className="mt-24 mb-4 md:mb-0">

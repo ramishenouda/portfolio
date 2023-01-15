@@ -16,3 +16,5 @@ in resume Nest.JS => Nest.js
 down navbar for the intro
 
 on small screens hide the intro navbar and show the global navbar
+
+add about me section
