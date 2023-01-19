@@ -23,7 +23,7 @@ export default function Intro() {
             <a href="#testimonials">testimonials</a>
           </div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
-            <a href="#contact">handshake</a>
+            <a href="#contact">contact</a>
           </div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#resume">resume</a>
