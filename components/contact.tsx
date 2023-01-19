@@ -14,7 +14,7 @@ export default function Contact() {
     <div id="contact" className="flex flex-col mb-4 justify-center min-h-[100vh]">
       <div className="rounded-3xl">
         <div className="md:text-8xl font-bold text-4xl tracking-widest uppercase">
-          <span className="text-lg md:text-2xl">05.</span>HANDSHAKE?
+          <span className="text-lg md:text-2xl">05.</span>HANDSHAKE
         </div>
       </div>
       <div className="flex w-full flex-col justify-center items-center lg:flex-row gap-12 md:px-12 mt-12">

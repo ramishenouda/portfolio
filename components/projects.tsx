@@ -25,7 +25,7 @@ export default function Projects() {
           'Pixel Art Maker',
           'An application for creative minds who want to draw pixel arts.',
           pixelArtMaker,
-          'bg-blue-600/30',
+          'bg-blue-600',
           'hover:bg-blue-600',
           'https://github.com/ramishenouda/pixelartmaker',
           'https://ramishenouda.github.io/pixelartmaker/',
@@ -34,40 +34,40 @@ export default function Projects() {
           'My Soul',
           'A dating platform where you can chat with like-minded people.',
           mysoul,
-          'bg-white/20',
+          'bg-white',
           'hover:bg-white',
           'https://github.com/ramishenouda/MySoul',
         )}
         {project(
           'Cards Bench',
-          'A web application to share notes and track issues based on Trello..',
+          'A web application to share notes and track issues based on Trello.',
           cardsbench,
-          'bg-cyan-300/20',
+          'bg-cyan-300',
           'hover:bg-cyan-300',
           'https://github.com/ramishenouda/cardsbench',
         )}
         {project(
           'Attack On Words',
-          'A browser game where you shoot invading words by typing specific phrases..',
+          'A browser game where you shoot invading words by typing specific phrases.',
           attackonwords,
-          'bg-purple-800/30',
+          'bg-purple-800',
           'hover:bg-purple-800',
           'https://github.com/ramishenouda/AttackOnWords',
           '#',
         )}
         {project(
           'Ezona',
-          'An e-commerce website with authorization, authentication, and notifications system..',
+          'An e-commerce website with authorization, authentication, and notifications system.',
           Ecommerce,
-          'bg-orange-300/30',
+          'bg-orange-300',
           'hover:bg-orange-300',
           'https://github.com/ramishenouda/Online-Shopping-Store',
         )}
         {project(
           'NETMenu',
-          'A DOTNet tool to create a menu for console projects with various options..',
+          'A DOTNet tool to create a menu for console projects with various options.',
           netmenu,
-          'bg-red-200/60',
+          'bg-red-200',
           'hover:bg-red-200',
           'https://github.com/ramishenouda/NETMenu',
         )}
@@ -105,23 +105,31 @@ const project = (
         </div>
         <Image className="w-[480px] h-[240px]" src={image} alt="pixel art maker" />
       </div>
-      <div
-        className={`absolute ${colorClass} ${hoverBgClass} project-mask w-full h-full flex justify-center items-center`}
-      >
+      <div className={`absolute ${hoverBgClass} project-mask w-full h-full flex justify-center items-center`}>
         <div className="child:text-4xl project-description text-left text-black">
           <p className="mt-4">{description}</p>
           <div className="mt-4">
-            <Link className="text-lg mr-4 text-white bg-black rounded-lg p-2" target="_blank" href={githubLink}>
+            <Link
+              className="text-lg mr-4 text-white bg-gray-800 hover:bg-black transition-all duration-500 rounded-lg p-2"
+              target="_blank"
+              href={githubLink}
+            >
               Github
             </Link>
             {projectLink && (
-              <Link className="text-lg text-white bg-black rounded-lg p-2" target="_blank" href={projectLink}>
+              <Link
+                className="text-lg text-white bg-gray-800 hover:bg-black transition-all duration-500 rounded-lg p-2"
+                target="_blank"
+                href={projectLink}
+              >
                 View Project
               </Link>
             )}
           </div>
         </div>
-        <p className={`text-4xl ${colorClass} ${hoverBgClass} project-title absolute text-center uppercase text-black`}>
+        <p
+          className={`text-4xl opacity-60 ${colorClass} p-1 rounded-md project-title absolute text-center uppercase text-black`}
+        >
           {title}
         </p>
       </div>

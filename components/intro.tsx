@@ -23,7 +23,7 @@ export default function Intro() {
             <a href="#testimonials">testimonials</a>
           </div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
-            <a href="#contact">contact</a>
+            <a href="#contact">handshake</a>
           </div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#resume">resume</a>
@@ -75,9 +75,9 @@ export default function Intro() {
           </Link>
         </div>
       </section>
-      <Link href="#expertise" className="pb-2 arrow-down">
+      <a href="#expertise" className="pb-2 arrow-down">
         <FaAngleDoubleDown className="h-10 " />
-      </Link>
+      </a>
     </div>
   );
 }
