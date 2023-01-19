@@ -30,8 +30,20 @@ export default function Intro() {
           </div>
         </div>
         <div className="flex gap-8 md:gap-4 uppercase flex-col md:flex-row">
-          <BsLinkedin color="white" size={32} />
-          <BsGithub color="white" size={32} />
+          <Link target="_blank" href="https://www.linkedin.com/in/ramishenouda/">
+            <BsLinkedin
+              className="transition-all p-1 duration-500 rounded-sm hover:bg-white hover:fill-blue-500 hover:p-[1px]"
+              color="white"
+              size={40}
+            />
+          </Link>
+          <Link target="_blank" href="https://github.com/ramishenouda">
+            <BsGithub
+              className="transition-all rounded-full p-1 duration-500 hover:fill-black hover:bg-white hover:p-[1px]"
+              color="white"
+              size={40}
+            />
+          </Link>
         </div>
       </section>
       <section className="flex-1 flex justify-center items-center flex-col h-[50vh] text-center">
@@ -41,20 +53,23 @@ export default function Intro() {
         </p>
       </section>
       <section className="w-max gap-4 justify-center hidden pb-8 items-end h-[25vh] md:flex flex-row">
-        <p className="flex flex-row gap-2 justify-center items-center">
+        <div className="flex flex-row gap-2 justify-center items-center">
           <MdLocationOn color="white" size={32} />
-          <p className="text-2xl text-neutral-200 font-medium"> Cairo, Egypt</p>
-        </p>
+          <div className="text-2xl text-neutral-200 font-medium"> Cairo, Egypt</div>
+        </div>
         <p className="w-[1px] border-r-2 border-white h-8"></p>
-        <p className="flex flex-row gap-2 justify-center items-center">
+        <div className="flex flex-row gap-2 justify-center items-center">
           <BsTelephoneFill color="white" size={32} />
-          <p className="text-2xl text-neutral-200 font-medium">+ 20 155 187 4208</p>
-        </p>
+          <div className="text-2xl text-neutral-200 font-medium">+ 20 155 187 4208</div>
+        </div>
         <p className="w-[1px] border-r-2 border-white h-8"></p>
-        <p className="flex flex-row gap-2 justify-center items-center">
+        <Link
+          className="text-2xl flex flex-row gap-2 justify-center items-center text-neutral-200 font-medium"
+          href="mailto:ramishenouda@outlook.com"
+        >
           <GrMail color="white" size={32} />
-          <p className="text-2xl text-neutral-200 font-medium">ramishenouda@outlook.com</p>
-        </p>
+          ramishenouda@outlook.com
+        </Link>
       </section>
       <a href="#expertise" className="pb-2 arrow-down">
         <FaAngleDoubleDown className="h-10 " />

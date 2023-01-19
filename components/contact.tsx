@@ -43,9 +43,9 @@ export default function Contact() {
             <h1>Contact details</h1>
             <div className="child:text-2xl mt-8 flex flex-col gap-4">
               <div>
-                <a className="flex flex-row gap-2" href="mailto:ramishenouda@outlook.com">
+                <Link className="flex flex-row gap-2" href="mailto:ramishenouda@outlook.com">
                   <AiOutlineMail size="35px" /> ramishenouda@outlook.com
-                </a>
+                </Link>
               </div>
               <div className="flex flex-row gap-2">
                 <AiOutlinePhone size="35px" /> +201551874208
