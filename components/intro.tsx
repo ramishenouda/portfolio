@@ -10,22 +10,22 @@ export default function Intro() {
     <div id="intro" className="flex flex-col intro min-h-[100vh] relative px-8 justify-center items-center">
       <section className="flex gap-2 uppercase w-full justify-between h-[25vh] pt-5 flex-row">
         <div>
-          <div className="nav-item text-2xl">
+          <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#expertise">expertise</a>
           </div>
-          <div className="nav-item text-2xl">
+          <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#experience">experience</a>
           </div>
-          <div className="nav-item text-2xl">
+          <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#projects">projects</a>
           </div>
-          <div className="nav-item text-2xl">
+          <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#testimonials">testimonials</a>
           </div>
-          <div className="nav-item text-2xl">
+          <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#contact">contact</a>
           </div>
-          <div className="nav-item text-2xl">
+          <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#resume">resume</a>
           </div>
         </div>
