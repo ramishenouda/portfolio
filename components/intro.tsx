@@ -48,7 +48,7 @@ export default function Intro() {
       </section>
       <section className="flex-1 flex justify-center items-center flex-col h-[50vh] text-center">
         <p className="md:text-8xl text-4xl font-medium uppercase tracking-widest md:mb-0 mb-2">Rami Shenouda</p>
-        <p className="text-sm md:text-2xl uppercase tracking-widest font-medium">
+        <p className="text-lg md:text-2xl uppercase tracking-widest font-medium">
           A programmer who is constantly seeking new learning opportunities.
         </p>
       </section>
@@ -71,9 +71,9 @@ export default function Intro() {
           ramishenouda@outlook.com
         </Link>
       </section>
-      <a href="#expertise" className="pb-2 arrow-down">
+      <Link href="#expertise" className="pb-2 arrow-down">
         <FaAngleDoubleDown className="h-10 " />
-      </a>
+      </Link>
     </div>
   );
 }
