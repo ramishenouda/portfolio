@@ -5,10 +5,10 @@
 
 #intro .arrow-down {
   cursor: pointer !important;
-  animation: slide-in 2000ms infinite;
+  animation: arrow-animation 2000ms infinite;
 }
 
-@keyframes slide-in {
+@keyframes arrow-animation {
   0% {
     opacity: 1;
     scale: 1;
