@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const testimoinals = [
   {
@@ -25,6 +25,14 @@ const testimoinals = [
 export default function Testimonials() {
   let [currentTestimonial, setCurrentTestimonial] = React.useState(0);
 
+  useEffect(() => {
+    console.log('effect');
+    getTestimonial(currentTestimonial);
+    setTimeout(() => {
+      setCurrentTestimonial((currentTestimonial + 1) % 3);
+    }, 5000);
+  }, [currentTestimonial]);
+
   return (
     <div id="testimonials" className="min-h-[80vh] justify-center flex flex-col">
       <div className="rounded-3xl">
@@ -36,7 +44,7 @@ export default function Testimonials() {
         Feedback from clients on great experiences
       </p>
       <div className="flex flex-col items-center justify-center gap-8">
-        <div className="w-[90vw] md:w-[85vw] overflow-x-hidden mt-4 md:mt-12">
+        <div className="w-[90vw] md:w-[90vw] overflow-x-hidden mt-4 md:mt-12">
           <div id="testimonials-container" className="flex flex-row transition duration-1000">
             {testimonial(testimoinals[0].description, testimoinals[0].linkTitle, testimoinals[0].link)}
             {testimonial(testimoinals[1].description, testimoinals[1].linkTitle, testimoinals[1].link)}
@@ -126,8 +134,8 @@ export default function Testimonials() {
 
 const testimonial = (description: string, linkTitle: string, link: string) => {
   return (
-    <div className="min-w-[90vw] md:min-w-[85vw] text-center">
-      <p className="md:text-2xl text-xl w-full">{description}</p>
+    <div className="min-w-[90vw] md:min-w-[90vw] text-center">
+      <p className="md:text-3xl text-xl w-full">{description}</p>
       <div className="mt-12 text-center">
         <Link className="text-xl text-teal-400" href={link}>
           {linkTitle}
@@ -139,11 +147,12 @@ const testimonial = (description: string, linkTitle: string, link: string) => {
 
 const getTestimonial = (id: number) => {
   const testimonialsContainer = document.getElementById('testimonials-container');
-  const position = id * -95;
+  const position = id * -90;
 
   if (!testimonialsContainer) {
     return;
   }
 
+  console.log(`translateX(${position}vw)`);
   testimonialsContainer.style.transform = `translateX(${position}vw)`;
 };
