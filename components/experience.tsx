@@ -36,7 +36,7 @@ export default function Experience() {
           <h1 className="text-6xl md:text-8xl text-slate-300">Experience</h1>
         </div>
       </div>
-      <div className="md:ml-10 mt-5 flex min-h-[65vh]  p-1 justify-center items-center flex-col lg:flex-row md:gap-20">
+      <div className="md:ml-10 mt-5 flex  p-1 justify-center items-center flex-col lg:flex-row md:gap-20">
         <div className="flex-1 max-w-[1000px]">
           {experience(
             'Do IT Big!',
@@ -115,7 +115,7 @@ const experience = (
           </div>
           {companyLink && (
             <div className="hover:text-purple-400">
-              <Link className="text-blue-400" target="_blank" href={`https://` + companyLink}>
+              <Link className="text-blue-400 hover:text-blue-200" target="_blank" href={`https://` + companyLink}>
                 <span className="text-xl mr-2">↗</span> {companyLink}
               </Link>
             </div>
