@@ -47,29 +47,33 @@ export default function Intro() {
         </div>
       </section>
       <section className="flex-1 flex justify-center items-center flex-col h-[50vh] text-center">
-        <p className="md:text-8xl text-4xl font-medium uppercase tracking-widest md:mb-0 mb-2">Rami Shenouda</p>
+        <p className="md:text-8xl md:text-center text-6xl font-bold uppercase tracking-widest md:mb-0 mb-2">
+          Rami Shenouda
+        </p>
         <p className="text-lg md:text-2xl uppercase tracking-widest font-medium">
           A programmer who is constantly seeking new learning opportunities.
         </p>
       </section>
-      <section className="w-max gap-4 justify-center hidden pb-8 items-end h-[25vh] md:flex flex-row">
-        <div className="flex flex-row gap-2 justify-center items-center">
+      <section className="w-max gap-4 justify-center hidden pb-8 items-end h-[25vh] sm:flex flex-row">
+        <div className="md:text-xl lg:child:text-2xl  flex flex-row gap-2 justify-center items-center">
           <MdLocationOn color="white" size={32} />
-          <div className="text-2xl text-neutral-200 font-medium"> Cairo, Egypt</div>
+          <div className="text-neutral-200 font-medium"> Cairo, Egypt</div>
         </div>
         <p className="w-[1px] border-r-2 border-white h-8"></p>
-        <div className="flex flex-row gap-2 justify-center items-center">
+        <div className="md:text-xl lg:child:text-2xl  flex flex-row gap-2 justify-center items-center">
           <BsTelephoneFill color="white" size={32} />
-          <div className="text-2xl text-neutral-200 font-medium">+ 20 155 187 4208</div>
+          <div className="text-neutral-200 font-medium">+ 20 155 187 4208</div>
         </div>
         <p className="w-[1px] border-r-2 border-white h-8"></p>
-        <Link
-          className="text-2xl flex flex-row gap-2 justify-center items-center text-neutral-200 font-medium"
-          href="mailto:ramishenouda@outlook.com"
-        >
-          <GrMail color="white" size={32} />
-          ramishenouda@outlook.com
-        </Link>
+        <div className="md:text-xl lg:child:text-2xl">
+          <Link
+            className="flex flex-row gap-2 justify-center items-center text-neutral-200 font-medium"
+            href="mailto:ramishenouda@outlook.com"
+          >
+            <GrMail color="white" size={32} />
+            ramishenouda@outlook.com
+          </Link>
+        </div>
       </section>
       <Link href="#expertise" className="pb-2 arrow-down">
         <FaAngleDoubleDown className="h-10 " />
