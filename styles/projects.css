@@ -1,7 +1,3 @@
-.project-description {
-  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
-}
-
 .project-options {
   transform: translate(-50%, -50%);
   justify-content: space-between;
@@ -20,4 +16,37 @@
 
 .icon {
   transition: all 1s ease;
+}
+
+.project-mask {
+  transition: all 0.3s;
+}
+
+.project-title {
+  transition: all 0.5s;
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-description {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-mask:hover .project-title {
+  top: 4px;
+  left: 10px;
+  transform: unset;
+}
+
+.project-mask:hover .project-description {
+  opacity: 1;
 }

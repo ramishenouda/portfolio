@@ -27,11 +27,9 @@ export default function Testimonials() {
 
   return (
     <div id="testimonials" className="min-h-[100vh] flex flex-col items-center justify-center">
-      <div className="text-center rounded-3xl">
-        <h1 className="text-4xl md:text-8xl !uppercase tracking-widest">
-          <span className="text-lg md:text-2xl">04.</span>Testimonials
-        </h1>
-        <hr className="mt-3 hr-text" data-content={'<My babies 👶 /> '} />
+      <div className="flex flex-row items-end w-full text-left">
+        <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">04.</div>
+        <div className="text-4xl md:text-8xl !uppercase">Testimonials</div>
       </div>
       <p className="mt-16 text-4xl">Feedback from clients on great experiences</p>
       <div className="">
