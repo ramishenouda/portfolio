@@ -14,7 +14,7 @@ const desktopNavbar = () => {
   return (
     <div
       className="bg-background/90 py-4 z-50 gap-5 flex flex-row h-[50px] 
-      text-white items-center justify-center duration-1000 transition-all"
+      text-white items-center pr-0 md:justify-end md:pr-4 lg:pr-0 lg:justify-center duration-1000 transition-all"
     >
       <div className="nav-logo z-50 fixed left-8 text-left">
         <a href="#intro" className="text-4xl">
