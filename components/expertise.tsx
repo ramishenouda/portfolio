@@ -127,11 +127,11 @@ const expert = (icon: StaticImageData, title: string, description: string) => {
       <div className="flex h-[240px] flex-grow justify-center w-full flex-col items-center">
         <Image height="240" src={icon} alt="frontend development" />
       </div>
-      <div className="transition duration-500 hover:scale-110">
-        <h3 className="w-full mt-4 text-center"> {title} </h3>
+      <div className="transition duration-500 hover:scale-105">
+        <h3 className="w-full text-4xl md:text-2xl mb-2 lg:text-4xl mt-4 text-center"> {title} </h3>
         <div className="flex flex-row items-center mt-1 px-8 pb-6">
           <div>
-            <p className="text-2xl  h-full flex justify-center  items-center text-center">{description}</p>
+            <p className="text-2xl md:text-xl lg:text-2xl h-full text-center">{description}</p>
           </div>
         </div>
       </div>
