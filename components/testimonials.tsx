@@ -26,7 +26,6 @@ export default function Testimonials() {
   let [currentTestimonial, setCurrentTestimonial] = React.useState(0);
 
   useEffect(() => {
-    console.log('effect');
     getTestimonial(currentTestimonial);
     setTimeout(() => {
       setCurrentTestimonial((currentTestimonial + 1) % 3);
@@ -153,6 +152,5 @@ const getTestimonial = (id: number) => {
     return;
   }
 
-  console.log(`translateX(${position}vw)`);
   testimonialsContainer.style.transform = `translateX(${position}vw)`;
 };

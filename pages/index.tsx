@@ -20,8 +20,8 @@ export default function Home() {
       </Head>
 
       <main>
+        <Navbar />
         <Intro />
-        {/* <Navbar /> */}
         <div className="flex mt-16 flex-col w-full gap-16 px-[5vw]">
           <Expertise />
           <Experience />

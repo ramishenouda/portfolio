@@ -1,32 +1,156 @@
+import { useState } from 'react';
+import { AiOutlineMenu } from 'react-icons/ai';
+
 export default function Navbar() {
   return (
+    <div id="navbar" className="top-[-50px] fixed z-40 w-full transition-all duration-1000">
+      <div className="md:block hidden">{desktopNavbar()}</div>
+      <div className="md:hidden">{mobileNavbar()}</div>
+    </div>
+  );
+}
+
+const desktopNavbar = () => {
+  return (
+    <div
+      className="bg-background/90 py-4 z-50 gap-5 flex flex-row h-[50px] 
+      text-white items-center justify-center duration-1000 transition-all"
+    >
+      <div className="nav-logo z-50 fixed left-8 text-left">
+        <a href="#intro" className="text-4xl">
+          aRamy
+        </a>
+        .me
+      </div>
+      <div className="nav-item">
+        <a href="#intro">home</a>
+      </div>
+      <div className="nav-item">
+        <a href="#expertise">expertise</a>
+      </div>
+      <div className="nav-item">
+        <a href="#experience">experience</a>
+      </div>
+      <div className="nav-item">
+        <a href="#projects">projects</a>
+      </div>
+      <div className="nav-item">
+        <a href="#testimonials">testimonials</a>
+      </div>
+      <div className="nav-item">
+        <a href="#contact">contact</a>
+      </div>
+      <div className="nav-item">
+        <a href="#resume">resume</a>
+      </div>
+    </div>
+  );
+};
+
+const mobileNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToSection = (id: string) => {
+    setIsOpen(false);
+    setTimeout(() => {
+      navigateToElement(id);
+    }, 500);
+  };
+
+  return (
     <div>
-      <div className="navbar top-0 py-4 z-40 fixed gap-5 flex flex-row w-full bg-background h-[50px] text-white items-center justify-center">
-        <div className="nav-logo z-50 fixed left-8 text-left">
-          <span className="text-4xl ">aRami</span>.me
+      <div
+        onClick={() => setIsOpen(true)}
+        className={`bg-black/80 left-0 fixed text-4xl w-full py-2 pl-4 transition-all duration-1000 ${
+          isOpen && 'left-full'
+        }`}
+      >
+        <AiOutlineMenu color="white" size={32} />
+      </div>
+      <div
+        className={`p-4 gap-8 fixed right-0 top-0 flex z-51 flex-col h-screen bg-black text-white transition-all w-full duration-1000 ${
+          !isOpen && '!right-full'
+        }`}
+      >
+        <div className="flex flex-row justify-between">
+          <div
+            onClick={() => {
+              scrollToSection('intro');
+            }}
+            className="nav-logo"
+          >
+            <span className="text-4xl">aRamy</span>
+            .me
+          </div>
+          <div onClick={() => setIsOpen(false)} className="text-4xl">
+            ✖
+          </div>
         </div>
-        <div className="nav-item">
-          <a href="#intro">home</a>
+        <div
+          onClick={() => {
+            scrollToSection('intro');
+          }}
+          className="nav-item text-xl"
+        >
+          home
         </div>
-        <div className="nav-item">
-          <a href="#expertise">expertise</a>
+        <div
+          onClick={() => {
+            scrollToSection('expertise');
+          }}
+          className="nav-item text-xl"
+        >
+          expertise
         </div>
-        <div className="nav-item">
-          <a href="#experience">experience</a>
+        <div
+          onClick={() => {
+            scrollToSection('experience');
+          }}
+          className="nav-item text-xl"
+        >
+          experience
         </div>
-        <div className="nav-item">
-          <a href="#projects">projects</a>
+        <div
+          onClick={() => {
+            scrollToSection('projects');
+          }}
+          className="nav-item text-xl"
+        >
+          projects
         </div>
-        <div className="nav-item">
-          <a href="#testimonials">testimonials</a>
+        <div
+          onClick={() => {
+            scrollToSection('testimonials');
+          }}
+          className="nav-item text-xl"
+        >
+          testimonials
         </div>
-        <div className="nav-item">
-          <a href="#contact">contact</a>
+        <div
+          onClick={() => {
+            scrollToSection('contact');
+          }}
+          className="nav-item text-xl"
+        >
+          contact
         </div>
-        <div className="nav-item">
-          <a href="#resume">resume</a>
+        <div
+          onClick={() => {
+            scrollToSection('resume');
+          }}
+          className="nav-item text-xl"
+        >
+          resume
         </div>
       </div>
     </div>
   );
-}
+};
+
+const navigateToElement = (id: string) => {
+  const element = document.getElementById(id);
+  if (!element) {
+    return;
+  }
+  element.scrollIntoView({ behavior: 'smooth' });
+};
