@@ -4,13 +4,13 @@ import { AiOutlineMenu } from 'react-icons/ai';
 export default function Navbar() {
   return (
     <div id="navbar" className="top-[-50px] fixed z-40 w-full transition-all duration-1000">
-      <div className="md:block hidden">{desktopNavbar()}</div>
-      <div className="md:hidden">{mobileNavbar()}</div>
+      <div className="md:block hidden">{DesktopNavbar()}</div>
+      <div className="md:hidden">{MobileNavbar()}</div>
     </div>
   );
 }
 
-const desktopNavbar = () => {
+const DesktopNavbar = () => {
   return (
     <div
       className="bg-background/90 py-4 z-50 gap-5 flex flex-row h-[50px] 
@@ -47,7 +47,7 @@ const desktopNavbar = () => {
   );
 };
 
-const mobileNavbar = () => {
+const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
