@@ -36,7 +36,7 @@ export default function Testimonials() {
   return (
     <div id="testimonials" className="min-h-[80vh] justify-center flex flex-col">
       <div className="rounded-3xl">
-        <h1 className="md:text-8xl text-4xl tracking-widest uppercase">
+        <h1 className="lg:text-8xl md:text-7xl text-4xl tracking-widest uppercase">
           <span className="text-lg md:text-2xl">04.</span>TESTIMONIALS
         </h1>
       </div>
