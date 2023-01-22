@@ -12,8 +12,8 @@ export default function AboutMe() {
         game engine, Unity. After honing my skills for three years, I decided to expand my expertise by transitioning to
         web development. I am now a full-stack developer for a Netherlands-based company, working remotely. I hold a
         computer science degree from Ain Shams University, and constantly strive to improve my skills. My experience
-        includes creating websites using a variety of technologies, such as PHP and WordPress, as well as utilizing more
-        modern technologies like ASP.NET and Nest.Js, and front-end frameworks like Angular, React, and Next.js.
+        includes creating websites using a variety of technologies, such as ASP.NET, Nest.Js, and front-end frameworks
+        like Angular, React, and Next.js.
       </p>
     </div>
   );
