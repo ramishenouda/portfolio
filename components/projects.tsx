@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 export default function Projects() {
   return (
-    <div id="projects" className="min-h-[100vh] text-white flex flex-col">
+    <div id="projects" className="min-h-[70vh] pt-10 text-white flex flex-col">
       <div>
         <div className="flex flex-row items-end w-full">
           <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">03.</div>
@@ -86,7 +86,7 @@ const project = (
   projectLink?: string,
 ) => {
   return (
-    <div className="p-6 flex w-full flex-col justify-center items-center bg-white rounded shadow-lg relative shadow-black">
+    <div className="p-2 flex w-full flex-col justify-center items-center bg-white rounded shadow-lg relative shadow-black">
       <div className="relative project-image">
         <div className="absolute flex flex-row items-center justify-center p-2 rounded-full project-options bg-neutral-800/70 h-fit">
           <Link href={githubLink} target="_blank">

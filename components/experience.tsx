@@ -29,7 +29,7 @@ export default function Experience() {
   ];
 
   return (
-    <div id="experience" className="text-white justify-center flex flex-col">
+    <div id="experience" className="text-white pt-10 justify-center flex flex-col">
       <div className="mb-4">
         <div className="flex flex-row items-end w-full">
           <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">02.</div>

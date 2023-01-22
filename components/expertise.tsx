@@ -45,7 +45,7 @@ export default function Expertise() {
   };
 
   return (
-    <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-4 flex flex-col items-center justify-center">
+    <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-10 flex flex-col items-center justify-center">
       <div className="expertise-intro w-full lg:flex flex-col justify-center">
         <div className="flex flex-col w-max">
           <div className="flex flex-row items-end">

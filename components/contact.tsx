@@ -1,28 +1,41 @@
 import { useRef, useState } from 'react';
-
 import { Input, Spacer, Textarea, Button, Loading } from '@nextui-org/react';
 import Link from 'next/link';
-
-import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
-import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
+import { BsGithub, BsLinkedin, BsTelephoneFill } from 'react-icons/bs';
+import { GrMail } from 'react-icons/gr';
+
 export default function Contact() {
-  const form = useRef<HTMLFormElement>(null);
+  const formElement = useRef<HTMLFormElement>(null);
+  const [form, setForm] = useState({
+    reply_to: '',
+    from_name: '',
+    message: '',
+  });
   const [sendingMail, setSendingMail] = useState(false);
+
+  const handleChange = (event: any) => {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  };
 
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    if (!form?.current || sendingMail) {
+    const isVaidForm = form.reply_to.length && form.from_name.length && form.message.length;
+
+    if (!formElement?.current || sendingMail || !isVaidForm) {
       return;
     }
 
     setSendingMail(true);
     emailjs
-      .sendForm('service_ffp8ufb', 'template_rkx9qid', form.current, 'oZ-BS6Cpd-pHJm45g')
+      .sendForm('service_ffp8ufb', 'template_rkx9qid', formElement.current, 'oZ-BS6Cpd-pHJm45g')
       .then(() => {
         Swal.fire('Thank you! :D', 'I have received your email.', 'success');
       })
@@ -35,19 +48,39 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="flex flex-col mb-4 justify-center min-h-[100vh]">
+    <div id="contact" className="flex flex-col mb-4 justify-center min-h-[65vh]">
       <div className="rounded-3xl">
         <div className="md:text-8xl font-bold text-4xl tracking-widest uppercase">
           <span className="text-lg md:text-2xl">05.</span>CONTACT
         </div>
       </div>
       <div className="flex w-full flex-col justify-center items-center lg:flex-row gap-12 md:px-12 mt-12">
-        <form onSubmit={sendEmail} ref={form} className="flex flex-col w-full flex-1 rounded shadow-sm">
-          <Input minLength={2} name="from_name" size="xl" clearable bordered labelPlaceholder="Name" />
+        <form onSubmit={sendEmail} ref={formElement} className="flex flex-col w-full flex-1 rounded shadow-sm">
+          <Input
+            required={true}
+            onChange={handleChange}
+            minLength={2}
+            name="from_name"
+            size="xl"
+            bordered
+            labelPlaceholder="Name"
+          />
           <Spacer y={2} />
-          <Input name="reply_to" shadow className="w-full" labelPlaceholder="Email" bordered type={'email'} size="xl" />
+          <Input
+            required={true}
+            onChange={handleChange}
+            name="reply_to"
+            shadow
+            className="w-full"
+            labelPlaceholder="Email"
+            bordered
+            type={'email'}
+            size="xl"
+          />
           <Spacer y={2} />
           <Textarea
+            required={true}
+            onChange={handleChange}
             minLength={10}
             name="message"
             size="xl"
@@ -76,22 +109,30 @@ export default function Contact() {
             <div className="child:text-2xl mt-8 flex flex-col gap-4">
               <div>
                 <Link className="child:text-center flex flex-row gap-2" href="mailto:ramishenouda@outlook.com">
-                  <AiOutlineMail size="35px" /> ramishenouda@outlook.com
+                  <GrMail color="white" size={35} /> ramishenouda@outlook.com
                 </Link>
               </div>
               <div className="child:text-center lg:justify-start justify-center items-center flex flex-row gap-2">
-                <AiOutlinePhone size="35px" /> +201551874208
+                <BsTelephoneFill color="white" size={35} /> +201551874208
               </div>
             </div>
           </div>
           <div className="lg:mt-24 lg:mb-0 my-8 md:mb-0">
             <p className="text-5xl md:text-7xl">Social media</p>
             <div className="flex flex-row gap-8 child:text-2xl mt-8 justify-center items-center">
-              <Link target="_blank" href="https://github.com/ramishenouda/">
-                <FiGithub size="35px" />
+              <Link target="_blank" href="https://github.com/ramishenouda">
+                <BsGithub
+                  className="transition-all rounded-full p-1 duration-500 hover:fill-black hover:bg-white hover:p-[1px]"
+                  color="white"
+                  size={40}
+                />
               </Link>
               <Link target="_blank" href="https://www.linkedin.com/in/ramishenouda/">
-                <FiLinkedin size="35px" />
+                <BsLinkedin
+                  className="transition-all p-1 duration-500 rounded-sm hover:bg-white hover:fill-blue-500 hover:p-[1px]"
+                  color="white"
+                  size={40}
+                />
               </Link>
             </div>
           </div>
