@@ -11,7 +11,7 @@ export default function Intro() {
       <section className="flex gap-2 uppercase w-full justify-between h-[25vh] pt-5 flex-row">
         <div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
-            <a href="#about-me">about_me</a>
+            <a href="#about-me">aboutme</a>
           </div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#expertise">expertise</a>
