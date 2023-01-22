@@ -24,7 +24,7 @@ const DesktopNavbar = () => {
         .me
       </div>
       <div className="nav-item">
-        <a href="#intro">home</a>
+        <a href="#about-me">aboutMe</a>
       </div>
       <div className="nav-item">
         <a href="#expertise">expertise</a>
@@ -91,11 +91,11 @@ const MobileNavbar = () => {
         </div>
         <div
           onClick={() => {
-            scrollToSection('intro');
+            scrollToSection('about-me');
           }}
           className="nav-item text-xl"
         >
-          home
+          aboutMe
         </div>
         <div
           onClick={() => {
