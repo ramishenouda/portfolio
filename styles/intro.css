@@ -1,0 +1,31 @@
+#intro {
+  background: rgb(26, 25, 29);
+  background: linear-gradient(45deg, rgba(26, 25, 29, 1) 82%, rgba(84, 85, 87, 0.1) 82%);
+}
+
+#intro .arrow-down {
+  cursor: pointer !important;
+  animation: arrow-animation 2000ms infinite;
+}
+
+@keyframes arrow-animation {
+  0% {
+    opacity: 1;
+    scale: 1;
+  }
+  50% {
+    opacity: 0.5;
+    scale: 1.4;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.intro-address {
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+}

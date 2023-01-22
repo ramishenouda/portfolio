@@ -1,0 +1,53 @@
+.project-options {
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  width: max-content;
+  gap: 20px;
+}
+
+.project-image:hover .project-options {
+  opacity: 1;
+}
+
+.icon {
+  transition: all 1s ease;
+}
+
+.project-mask {
+  transition: all 0.3s;
+}
+
+.project-description {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-title {
+  transition: all 0.5s;
+  width: max-content;
+  top: 98%;
+  left: 99%;
+  transform: translate(-100%, -100%);
+}
+
+.project-mask:hover .project-title {
+  top: 2%;
+  left: 2%;
+  transform: unset;
+  opacity: 1;
+}
+
+.project-mask:hover .project-description {
+  opacity: 1;
+}
