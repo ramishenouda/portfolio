@@ -77,7 +77,7 @@ export default function Intro() {
           </Link>
         </div>
       </section>
-      <a href="#expertise" className="pb-3 arrow-down">
+      <a href="#about-me" className="pb-3 arrow-down">
         <FaAngleDoubleDown className="h-10 " />
       </a>
     </div>
