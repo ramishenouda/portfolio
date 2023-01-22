@@ -16,7 +16,7 @@ export default function Projects() {
     <div id="projects" className="min-h-[70vh] pt-10 text-white flex flex-col">
       <div>
         <div className="flex flex-row items-end w-full">
-          <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">03.</div>
+          <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">04.</div>
           <h1 className="text-6xl md:text-8xl text-slate-300">PROJECTS</h1>
         </div>
       </div>

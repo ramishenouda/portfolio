@@ -32,7 +32,7 @@ export default function Experience() {
     <div id="experience" className="text-white pt-10 justify-center flex flex-col">
       <div className="mb-4">
         <div className="flex flex-row items-end w-full">
-          <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">02.</div>
+          <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">03.</div>
           <h1 className="text-6xl md:text-8xl text-slate-300">Experience</h1>
         </div>
       </div>
