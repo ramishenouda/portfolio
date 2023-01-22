@@ -44,7 +44,7 @@ export default function Projects() {
           cardsbench,
           'bg-cyan-300',
           'hover:bg-cyan-300',
-          'https://github.com/ramishenouda/cardsbench',
+          'https://github.com/ramishenouda/cardsbench-old',
         )}
         {project(
           'Attack On Words',
@@ -53,7 +53,6 @@ export default function Projects() {
           'bg-purple-800',
           'hover:bg-purple-800',
           'https://github.com/ramishenouda/AttackOnWords',
-          '#',
         )}
         {project(
           'Ezona',
