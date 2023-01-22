@@ -26,7 +26,9 @@ export default function Intro() {
             <a href="#contact">contact</a>
           </div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
-            <a href="#resume">resume</a>
+            <Link target="_blank" href={'files/aRami_2023___present.pdf'}>
+              resume
+            </Link>
           </div>
         </div>
         <div className="flex gap-8 md:gap-4 uppercase flex-col md:flex-row">

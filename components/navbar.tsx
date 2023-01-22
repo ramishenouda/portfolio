@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
@@ -41,7 +42,9 @@ const DesktopNavbar = () => {
         <a href="#contact">contact</a>
       </div>
       <div className="nav-item">
-        <a href="#resume">resume</a>
+        <Link target="_blank" href={'files/aRami_2023___present.pdf'}>
+          resume
+        </Link>
       </div>
     </div>
   );
@@ -134,13 +137,10 @@ const MobileNavbar = () => {
         >
           contact
         </div>
-        <div
-          onClick={() => {
-            scrollToSection('resume');
-          }}
-          className="nav-item text-xl"
-        >
-          resume
+        <div className="nav-item text-xl">
+          <Link target="_blank" href={'files/aRami_2023___present.pdf'}>
+            resume
+          </Link>
         </div>
       </div>
     </div>
