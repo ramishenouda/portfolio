@@ -6,6 +6,7 @@ import Intro from '../components/intro';
 import Navbar from '../components/navbar';
 import Projects from '../components/projects';
 import Testimonials from '../components/testimonials';
+import AboutMe from '../components/about-me';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Navbar />
         <Intro />
         <div className="flex mt-16 flex-col w-full gap-16 px-[5vw]">
+          <AboutMe />
           <Expertise />
           <Experience />
           <Projects />

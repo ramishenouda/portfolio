@@ -36,7 +36,7 @@ export default function Testimonials() {
     <div id="testimonials" className="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] justify-center flex flex-col">
       <div className="rounded-3xl">
         <h1 className="lg:text-8xl md:text-7xl text-4xl tracking-widest uppercase">
-          <span className="text-lg md:text-2xl">04.</span>TESTIMONIALS
+          <span className="text-lg md:text-2xl">05.</span>TESTIMONIALS
         </h1>
       </div>
       <p className="md:mt-16 tracking-widest text-center mt-8 text-2xl font-medium md:text-4xl">

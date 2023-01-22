@@ -11,6 +11,9 @@ export default function Intro() {
       <section className="flex gap-2 uppercase w-full justify-between h-[25vh] pt-5 flex-row">
         <div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
+            <a href="#about-me">about_me</a>
+          </div>
+          <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
             <a href="#expertise">expertise</a>
           </div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
@@ -26,7 +29,9 @@ export default function Intro() {
             <a href="#contact">contact</a>
           </div>
           <div className="nav-item child:text-2xl transition-all duration-500 hover:scale-110">
-            <a href="#resume">resume</a>
+            <Link target="_blank" href={'files/aRami_2023___present.pdf'}>
+              resume
+            </Link>
           </div>
         </div>
         <div className="flex gap-8 md:gap-4 uppercase flex-col md:flex-row">
@@ -75,7 +80,7 @@ export default function Intro() {
           </Link>
         </div>
       </section>
-      <a href="#expertise" className="pb-3 arrow-down">
+      <a href="#about-me" className="pb-3 arrow-down">
         <FaAngleDoubleDown className="h-10 " />
       </a>
     </div>

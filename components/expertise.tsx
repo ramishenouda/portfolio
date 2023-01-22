@@ -49,7 +49,7 @@ export default function Expertise() {
       <div className="expertise-intro w-full lg:flex flex-col justify-center">
         <div className="flex flex-col w-max">
           <div className="flex flex-row items-end">
-            <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">01.</div>
+            <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">02.</div>
             <h1 className="text-6 xl md:text-8xl text-slate-300">EXPERTISE</h1>
           </div>
         </div>
