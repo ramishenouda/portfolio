@@ -1,8 +1,27 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
+import gsap from 'gsap';
+
 export default function Navbar() {
+  const enterScreen = 'restart';
+  const forwardPastTheEndPoint = 'resume';
+  const backToTheEndPoint = 'none';
+  const whenScrollBackToStart = 'reset';
+
+  useEffect(() => {
+    gsap.to('#navbar', {
+      scrollTrigger: {
+        trigger: '#about-me',
+        toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
+        start: '100px 40%',
+      },
+      top: 0,
+      duration: 0.5,
+    });
+  }, []);
+
   return (
     <div id="navbar" className="top-[-50px] fixed z-40 w-full transition-all duration-1000">
       <div className="md:block hidden">{DesktopNavbar()}</div>
