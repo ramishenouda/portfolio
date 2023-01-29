@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
-import frontendDevelopmentLogo from '../public/images/frontend-development.png';
-import softwareDevLogo from '../public/backgrounds/software-development.svg';
-import backendDevLogo from '../public/backgrounds/backend-development.svg';
+import frontendDevelopmentLogo from '/public/images/frontend-development.png';
+import softwareDevLogo from '/public/backgrounds/software-development.svg';
+import backendDevLogo from '/public/backgrounds/backend-development.svg';
 
 import { IconType } from 'react-icons';
 import {

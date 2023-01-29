@@ -1,13 +1,13 @@
 import Image, { StaticImageData } from 'next/image';
 
-import pixelArtMaker from '../public/images/pixelArtMaker.png';
-import cardsbench from '../public/images/cardsbench.png';
-import Ecommerce from '../public/images/e-commerce.png';
-import mysoul from '../public/images/mysoul.gif';
-import netmenu from '../public/images/netmenu.png';
-import attackonwords from '../public/images/attackonwords.gif';
+import pixelArtMaker from '/public/images/pixelArtMaker.png';
+import cardsbench from '/public/images/cardsbench.png';
+import Ecommerce from '/public/images/e-commerce.png';
+import mysoul from '/public/images/mysoul.gif';
+import netmenu from '/public/images/netmenu.png';
+import attackonwords from '/public/images/attackonwords.gif';
 
-import eyeIcon from '../public/eye.png';
+import eyeIcon from '/public/eye.png';
 import { SiGithub } from 'react-icons/si';
 import Link from 'next/link';
 
