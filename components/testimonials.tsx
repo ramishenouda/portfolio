@@ -23,7 +23,7 @@ const testimoinals = [
 ];
 
 export default function Testimonials() {
-  let [currentTestimonial, setCurrentTestimonial] = React.useState(0);
+  const [currentTestimonial, setCurrentTestimonial] = React.useState(0);
 
   useEffect(() => {
     getTestimonial(currentTestimonial);
@@ -33,12 +33,8 @@ export default function Testimonials() {
   }, [currentTestimonial]);
 
   return (
-    <div id="testimonials" className="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] justify-center flex flex-col">
-      <div className="rounded-3xl">
-        <h1 className="lg:text-8xl md:text-7xl text-4xl tracking-widest uppercase">
-          <span className="text-lg md:text-2xl">05.</span>TESTIMONIALS
-        </h1>
-      </div>
+    <section id="testimonials" className="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] justify-center flex flex-col">
+      <h1 className="section-title">TESTIMONIALS</h1>
       <p className="md:mt-16 tracking-widest text-center mt-8 text-2xl font-medium md:text-4xl">
         Feedback from clients on great experiences
       </p>
@@ -127,7 +123,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

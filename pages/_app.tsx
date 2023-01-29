@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
 import '../styles/globals.css';
+import '../styles/styles.css';
 import '../styles/intro.css';
 import '../styles/navbar.css';
 import '../styles/projects.css';

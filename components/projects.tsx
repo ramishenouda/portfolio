@@ -13,12 +13,9 @@ import Link from 'next/link';
 
 export default function Projects() {
   return (
-    <div id="projects" className="min-h-[70vh] pt-10 text-white flex flex-col">
+    <section id="projects" className="min-h-[70vh] pt-10 text-white flex flex-col">
       <div>
-        <div className="flex flex-row items-end w-full">
-          <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">04.</div>
-          <h1 className="text-6xl md:text-8xl text-slate-300">PROJECTS</h1>
-        </div>
+        <h1 className="section-title">PROJECTS</h1>
       </div>
       <div className="grid w-full grid-cols-1 mt-4 text-center projects md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
         {project(
@@ -71,7 +68,7 @@ export default function Projects() {
           'https://github.com/ramishenouda/NETMenu',
         )}
       </div>
-    </div>
+    </section>
   );
 }
 

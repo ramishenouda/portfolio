@@ -31,10 +31,7 @@ export default function Experience() {
   return (
     <div id="experience" className="text-white pt-10 justify-center flex flex-col">
       <div className="mb-4">
-        <div className="flex flex-row items-end w-full">
-          <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">03.</div>
-          <h1 className="text-6xl md:text-8xl text-slate-300">Experience</h1>
-        </div>
+        <h1 className="section-title">Experience</h1>
       </div>
       <div className="md:ml-10 mt-5 flex  p-1 justify-center items-center flex-col lg:flex-row md:gap-20">
         <div className="flex-1 max-w-[1000px]">

@@ -45,20 +45,13 @@ export default function Expertise() {
   };
 
   return (
-    <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-10 flex flex-col items-center justify-center">
-      <div className="expertise-intro w-full lg:flex flex-col justify-center">
-        <div className="flex flex-col w-max">
-          <div className="flex flex-row items-end">
-            <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">02.</div>
-            <h1 className="text-6 xl md:text-8xl text-slate-300">EXPERTISE</h1>
-          </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <p className="mt-4  tracking-widest  text-xl md:text-2xl font-medium">
-            I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
-            take on new challenges and use my expertise to contribute to successful projects.
-          </p>
-        </div>
+    <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-10 flex flex-col justify-center">
+      <h1 className="section-title">EXPERTISE</h1>
+      <div className="flex items-center justify-center">
+        <p className="mt-4  tracking-widest  text-xl md:text-2xl font-medium">
+          I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
+          take on new challenges and use my expertise to contribute to successful projects.
+        </p>
       </div>
       <div className="flex flex-col md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8">
         {expert(softwareDevLogo, softwareDev.title, softwareDev.description)}
