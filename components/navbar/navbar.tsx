@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { navbarAnimations } from './navbar-animation';
+import { navbarAnimations } from './navbar-animations';
 
 export default function Navbar() {
   useEffect(() => {
