@@ -9,12 +9,14 @@ export default function AboutMe() {
   return (
     <section
       id="about-me"
-      className="min-h-[20vh] transition-all duration-1000 opacity-0 translate-x-[-200px] pt-10 text-white flex flex-col"
+      className="min-h-[20vh] basic-animation-values translate-x-[-200px] pt-10 text-white flex flex-col"
     >
-      <h1 className="section-title">ABOUT ME</h1>
+      <h1 id="about-me-title" className="section-title">
+        ABOUT ME
+      </h1>
       <p
         id="about-me-paragraph"
-        className="text-xl md:text-2xl translate-x-[-300px] duration-1000 line-he mt-4 tracking-wide leading-[140%] lg:w-[80vw]"
+        className="text-xl md:text-2xl basic-animation-values translate-x-[-210px] duration-[1.1s]  line-he mt-4 tracking-wide leading-[140%] lg:w-[80vw]"
       >
         I discovered my passion for programming as a self-taught game developer in secondary school, using my favorite
         game engine, Unity. After honing my skills for three years, I decided to expand my expertise by transitioning to

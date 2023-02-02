@@ -25,6 +25,8 @@ import {
 import { FaDatabase } from 'react-icons/fa';
 import { DiDotnet } from 'react-icons/di';
 import { MdDesignServices } from 'react-icons/md';
+import { useEffect } from 'react';
+import { expertiseAnimations } from './expertise-animation';
 
 export default function Expertise() {
   const softwareDev = {
@@ -44,15 +46,22 @@ export default function Expertise() {
       'Experienced in building and maintaining efficient backend systems using a variety of technologies such as NestJS, MySQL, Docker, TypeORM, ASP.NET, Entity Framework, TypeScript, and C#. Proficient in designing and implementing RESTful APIs and integrating with frontend applications.',
   };
 
+  useEffect(() => {
+    expertiseAnimations();
+  }, []);
+
   return (
-    <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-10 flex flex-col justify-center">
-      <h1 className="section-title">EXPERTISE</h1>
-      <div className="flex items-center justify-center">
-        <p className="mt-4  tracking-widest  text-xl md:text-2xl font-medium">
-          I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
-          take on new challenges and use my expertise to contribute to successful projects.
-        </p>
-      </div>
+    <section id="expertise" className="min-h-[100vh]  text-white gap-3 pt-10 flex flex-col justify-center">
+      <h1 id="expertise-title" className="section-title basic-animation-values translate-x-[-200px]">
+        EXPERTISE
+      </h1>
+      <p
+        id="expertise-paragraph"
+        className="mt-4 tracking-widest basic-animation-values translate-x-[-210px] duration-[1.1s] text-xl md:text-2xl font-medium"
+      >
+        I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
+        take on new challenges and use my expertise to contribute to successful projects.
+      </p>
       <div className="flex flex-col md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8">
         {expert(softwareDevLogo, softwareDev.title, softwareDev.description)}
         {expert(frontendDevelopmentLogo, frontendDev.title, frontendDev.description)}

@@ -1,0 +1,10 @@
+.basic-animation-values {
+  transition: all;
+  transition-duration: 1s;
+  opacity: 0;
+}
+
+.start-basic-animation {
+  opacity: 1;
+  transform: translateX(0);
+}

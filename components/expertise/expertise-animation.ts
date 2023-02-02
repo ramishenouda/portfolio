@@ -1,34 +1,28 @@
 import gsap from 'gsap';
 
-export const aboutMeAnimations = () => {
+export const expertiseAnimations = () => {
   const enterScreen = 'restart';
   const forwardPastTheEndPoint = 'resume';
   const backToTheEndPoint = 'none';
   const whenScrollBackToStart = 'reset';
 
-  gsap.to('#about-me', {
+  gsap.to('#expertise-title', {
     scrollTrigger: {
-      trigger: '#about-me',
+      trigger: '#expertise-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-200px 40%',
       markers: true,
+      toggleClass: { className: 'start-basic-animation', targets: '#expertise-title' },
     },
-    ease: 'none.none',
-    translateX: 0,
-    duration: 0.8,
-    opacity: 1,
   });
 
-  gsap.to('#about-me-paragraph', {
+  gsap.to('#expertise-paragraph', {
     scrollTrigger: {
-      trigger: '#about-me',
+      trigger: '#expertise-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-200px 40%',
       markers: true,
+      toggleClass: { className: 'start-basic-animation', targets: '#expertise-paragraph' },
     },
-    ease: 'none.none',
-    translateX: 0,
-    duration: 0,
-    opacity: 1,
   });
 };
