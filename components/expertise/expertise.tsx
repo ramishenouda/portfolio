@@ -52,17 +52,20 @@ export default function Expertise() {
 
   return (
     <section id="expertise" className="min-h-[100vh]  text-white gap-3 pt-10 flex flex-col justify-center">
-      <h1 id="expertise-title" className="section-title basic-animation-values translate-x-[-200px]">
+      <h1 id="expertise-title" className="section-title !duration-1000 basic-animation-values translate-x-[-200px]">
         EXPERTISE
       </h1>
       <p
         id="expertise-paragraph"
-        className="mt-4 tracking-widest basic-animation-values translate-x-[-210px] duration-[1.1s] text-xl md:text-2xl font-medium"
+        className="mt-4 tracking-widest basic-animation-values translate-x-[-210px] !duration-[1.1s] text-xl md:text-2xl font-medium"
       >
         I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
         take on new challenges and use my expertise to contribute to successful projects.
       </p>
-      <div className="flex flex-col md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8">
+      <div
+        id="expert-cards"
+        className="flex flex-col basic-animation-values translate-x-[-250px] !duration-[1.5s] md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8"
+      >
         {expert(softwareDevLogo, softwareDev.title, softwareDev.description)}
         {expert(frontendDevelopmentLogo, frontendDev.title, frontendDev.description)}
         {expert(backendDevLogo, backendDev.title, backendDev.description)}

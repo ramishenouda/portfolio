@@ -13,16 +13,22 @@ export const aboutMeAnimations = () => {
       start: '-200px 40%',
       markers: true,
       toggleClass: { className: 'start-basic-animation', targets: '#about-me' },
+      onLeave: (self) => {
+        self.trigger?.classList.toggle('start-basic-animation');
+      },
     },
   });
 
-  gsap.to('#about-me-paragraph', {
+  gsap.to('#about-me', {
     scrollTrigger: {
-      trigger: '#about-me',
+      trigger: '#about-me-paragraph',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 40%',
+      start: '-280px 40%',
       markers: true,
       toggleClass: { className: 'start-basic-animation', targets: '#about-me-paragraph' },
+      onLeave: (self) => {
+        self.trigger?.classList.toggle('start-basic-animation');
+      },
     },
   });
 };

@@ -1,6 +1,5 @@
 .basic-animation-values {
   transition: all;
-  transition-duration: 1s;
   opacity: 0;
 }
 
