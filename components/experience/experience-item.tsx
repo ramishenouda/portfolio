@@ -9,6 +9,7 @@ type props = {
   bulletPoints: Array<string>;
   currentCompany: boolean;
   setCompany: () => void;
+  classes?: string;
   companyLink?: string;
 };
 
@@ -20,10 +21,11 @@ export const ExperienceItem = ({
   bulletPoints,
   currentCompany,
   setCompany,
+  classes,
   companyLink,
 }: props) => {
   return (
-    <div className={`w-full company-experience mb-4 `}>
+    <div className={`w-full company-experience mb-4 ${classes}`}>
       <div
         onClick={() => setCompany()}
         className={`bg-info transition-all duration-500 cursor-pointer  p-4 rounded-md font-semibold flex flex-col md:flex-row ${

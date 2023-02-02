@@ -11,7 +11,6 @@ export const expertiseAnimations = () => {
       trigger: '#expertise-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-200px 50%',
-      markers: true,
       toggleClass: { className: 'start-basic-animation', targets: '#expertise-title' },
       onLeave: () => {
         document.getElementById('expertise-title')?.classList.toggle('start-basic-animation');
@@ -24,7 +23,6 @@ export const expertiseAnimations = () => {
       trigger: '#expertise-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-200px 50%',
-      markers: true,
       toggleClass: { className: 'start-basic-animation', targets: '#expertise-paragraph' },
       onLeave: () => {
         document.getElementById('expertise-paragraph')?.classList.toggle('start-basic-animation');
@@ -37,7 +35,6 @@ export const expertiseAnimations = () => {
       trigger: '#expertise-paragraph',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-200px 50%',
-      markers: true,
       toggleClass: { className: 'start-basic-animation', targets: '#expert-cards' },
       onLeave: () => {
         document.getElementById('expert-cards')?.classList.toggle('start-basic-animation');
@@ -50,7 +47,6 @@ export const expertiseAnimations = () => {
       trigger: '#experienced-in-section',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-200px 50%',
-      markers: true,
       toggleClass: { className: 'start-basic-animation', targets: '#experienced-in-section' },
       onLeave: () => {
         document.getElementById('experienced-in-section')?.classList.toggle('start-basic-animation');
