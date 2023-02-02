@@ -10,24 +10,24 @@ export const aboutMeAnimations = () => {
     scrollTrigger: {
       trigger: '#about-me',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 40%',
+      start: '-200px 50%',
       markers: true,
       toggleClass: { className: 'start-basic-animation', targets: '#about-me' },
-      onLeave: (self) => {
-        self.trigger?.classList.toggle('start-basic-animation');
+      onLeave: () => {
+        document.getElementById('about-me')?.classList.toggle('start-basic-animation');
       },
     },
   });
 
-  gsap.to('#about-me', {
+  gsap.to('#about-me-paragraph', {
     scrollTrigger: {
-      trigger: '#about-me-paragraph',
+      trigger: '#about-me',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-280px 40%',
+      start: '-200px 50%',
       markers: true,
       toggleClass: { className: 'start-basic-animation', targets: '#about-me-paragraph' },
-      onLeave: (self) => {
-        self.trigger?.classList.toggle('start-basic-animation');
+      onLeave: () => {
+        document.getElementById('about-me-paragraph')?.classList.toggle('start-basic-animation');
       },
     },
   });
