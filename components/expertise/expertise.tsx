@@ -27,6 +27,7 @@ import { DiDotnet } from 'react-icons/di';
 import { MdDesignServices } from 'react-icons/md';
 import { useEffect } from 'react';
 import { expertiseAnimations } from './expertise-animation';
+import { ExpertCard } from './expert-card';
 
 export default function Expertise() {
   const softwareDev = {
@@ -66,15 +67,21 @@ export default function Expertise() {
         id="expert-cards"
         className="flex flex-col basic-animation-values translate-x-[-250px] !duration-[1.5s] md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8"
       >
-        {expert(softwareDevLogo, softwareDev.title, softwareDev.description)}
-        {expert(frontendDevelopmentLogo, frontendDev.title, frontendDev.description)}
-        {expert(backendDevLogo, backendDev.title, backendDev.description)}
+        <ExpertCard icon={softwareDevLogo} title={softwareDev.title} description={softwareDev.description} />
+        <ExpertCard icon={frontendDevelopmentLogo} title={frontendDev.title} description={frontendDev.description} />
+        <ExpertCard icon={backendDevLogo} title={backendDev.title} description={backendDev.description} />
       </div>
-      <div className="border-2 p-2 border-neutral w-full flex align-middle justify-center relative mt-20">
+      <div
+        id="experienced-in-section"
+        className="border-2 p-2 border-neutral w-full flex align-middle justify-center relative mt-20 !duration-1000 basic-animation-values translate-x-[-200px]"
+      >
         <h1 className="md:text-5xl mt-12 experiences-title px-4 uppercase tracking-widest text-2xl top-[-58px] left-[20px] md:top-[-65px] md:left-[40px] absolute">
           Experienced in
         </h1>
-        <div className="text-center w-full md:py-4 md:px-4">
+        <div
+          id="experienced-in-techs"
+          className="text-center w-full md:py-4 md:px-4 basic-animation-values translate-x-[-210px] !duration-[1.1s]"
+        >
           <div className="w-full mt-2 md:border-0 border-2 p-1">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="h-20">{tech(SiJavascript, 'JavaScript')}</div>
@@ -125,24 +132,6 @@ export default function Expertise() {
     </section>
   );
 }
-
-const expert = (icon: StaticImageData, title: string, description: string) => {
-  return (
-    <div className="border-b-pop-details-icon-background hover:bg-zinc-300 select-none text-black border-l-pop-details-icon-background  transition duration-500 hover:scale-105 bg-zinc-400 py-2 border-2 border-gray-700 flex-1 shadow-lg shadow-slate-500">
-      <div className="flex h-[240px] flex-grow justify-center w-full flex-col items-center">
-        <Image height="240" src={icon} alt="frontend development" />
-      </div>
-      <div className="transition duration-500 hover:scale-105">
-        <h3 className="w-full text-4xl md:text-2xl mb-2 lg:text-4xl mt-4 text-center"> {title} </h3>
-        <div className="flex flex-row items-center mt-1 px-8 pb-6">
-          <div>
-            <p className="text-2xl md:text-xl lg:text-2xl h-full text-center">{description}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const tech = (Icon: StaticImageData | IconType | null, title: string) => {
   return (

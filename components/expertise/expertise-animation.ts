@@ -32,7 +32,7 @@ export const expertiseAnimations = () => {
     },
   });
 
-  gsap.to('#expertise-cards', {
+  gsap.to('#expert-cards', {
     scrollTrigger: {
       trigger: '#expertise-paragraph',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
@@ -41,6 +41,31 @@ export const expertiseAnimations = () => {
       toggleClass: { className: 'start-basic-animation', targets: '#expert-cards' },
       onLeave: () => {
         document.getElementById('expert-cards')?.classList.toggle('start-basic-animation');
+      },
+    },
+  });
+
+  gsap.to('#experienced-in-section', {
+    scrollTrigger: {
+      trigger: '#experienced-in-section',
+      toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
+      start: '-200px 50%',
+      markers: true,
+      toggleClass: { className: 'start-basic-animation', targets: '#experienced-in-section' },
+      onLeave: () => {
+        document.getElementById('experienced-in-section')?.classList.toggle('start-basic-animation');
+      },
+    },
+  });
+
+  gsap.to('#experienced-in-techs', {
+    scrollTrigger: {
+      trigger: '#experienced-in-section',
+      toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
+      start: '-200px 50%',
+      toggleClass: { className: 'start-basic-animation', targets: '#experienced-in-techs' },
+      onLeave: () => {
+        document.getElementById('experienced-in-techs')?.classList.toggle('start-basic-animation');
       },
     },
   });
