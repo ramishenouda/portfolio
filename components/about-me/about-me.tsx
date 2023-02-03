@@ -16,7 +16,7 @@ export default function AboutMe() {
       </h1>
       <p
         id="about-me-paragraph"
-        className="text-xl md:text-2xl basic-animation-values translate-x-[-210px] !duration-[1.5s]  line-he mt-4 tracking-wide leading-[140%] lg:w-[80vw]"
+        className="text-xl md:text-2xl basic-animation-values translate-x-[-210px] !duration-[1.5s] line-he mt-4 tracking-wide leading-[140%] lg:w-[80vw]"
       >
         I discovered my passion for programming as a self-taught game developer in secondary school, using my favorite
         game engine, Unity. After honing my skills for three years, I decided to expand my expertise by transitioning to
