@@ -1,8 +1,13 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { navbarAnimations } from './navbar-animations';
 
 export default function Navbar() {
+  useEffect(() => {
+    navbarAnimations();
+  }, []);
+
   return (
     <div id="navbar" className="top-[-50px] fixed z-40 w-full transition-all duration-1000">
       <div className="md:block hidden">{DesktopNavbar()}</div>

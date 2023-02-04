@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import Contact from '../components/contact';
-import Experience from '../components/experience';
-import Expertise from '../components/expertise';
-import Intro from '../components/intro';
-import Navbar from '../components/navbar';
-import Projects from '../components/projects';
-import Testimonials from '../components/testimonials';
-import AboutMe from '../components/about-me';
+import Contact from '../components/contact/contact';
+import Experience from '../components/experience/experience';
+import Expertise from '../components/expertise/expertise';
+import Intro from '../components/intro/intro';
+import Navbar from '../components/navbar/navbar';
+import Projects from '../components/projects/projects';
+import Testimonials from '../components/testimonials/testimonials';
+import AboutMe from '../components/about-me/about-me';
 
 export default function Home() {
   return (
