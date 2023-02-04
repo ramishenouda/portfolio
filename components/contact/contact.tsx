@@ -48,12 +48,8 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="flex flex-col mb-4 justify-center min-h-[65vh]">
-      <div className="rounded-3xl">
-        <div className="md:text-8xl font-bold text-4xl tracking-widest uppercase">
-          <span className="text-lg md:text-2xl">06.</span>CONTACT
-        </div>
-      </div>
+    <section id="contact" className="flex flex-col mb-4 justify-center min-h-[65vh]">
+      <h1 className="section-title">CONTACT</h1>
       <div className="flex w-full flex-col justify-center items-center lg:flex-row gap-12 md:px-12 mt-12">
         <form onSubmit={sendEmail} ref={formElement} className="flex flex-col w-full flex-1 rounded shadow-sm">
           <Input
@@ -105,7 +101,7 @@ export default function Contact() {
         </form>
         <div className="flex flex-col justify-center items-center">
           <div className="text-center">
-            <p className="text-5xl md:text-7xl">Contact details</p>
+            <p className="text-4xl md:text-6xl">Contact details</p>
             <div className="child:text-2xl mt-8 flex flex-col gap-4">
               <div>
                 <Link className="child:text-center flex flex-row gap-2" href="mailto:ramishenouda@outlook.com">
@@ -118,7 +114,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="lg:mt-24 lg:mb-0 my-8 md:mb-0">
-            <p className="text-5xl md:text-7xl">Social media</p>
+            <p className="text-4xl md:text-6xl">Social media</p>
             <div className="flex flex-row gap-8 child:text-2xl mt-8 justify-center items-center">
               <Link target="_blank" href="https://github.com/ramishenouda">
                 <BsGithub
@@ -138,6 +134,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

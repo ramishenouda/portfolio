@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
-import frontendDevelopmentLogo from '../public/images/frontend-development.png';
-import softwareDevLogo from '../public/backgrounds/software-development.svg';
-import backendDevLogo from '../public/backgrounds/backend-development.svg';
+import frontendDevelopmentLogo from '/public/images/frontend-development.png';
+import softwareDevLogo from '/public/backgrounds/software-development.svg';
+import backendDevLogo from '/public/backgrounds/backend-development.svg';
 
 import { IconType } from 'react-icons';
 import {
@@ -25,6 +25,9 @@ import {
 import { FaDatabase } from 'react-icons/fa';
 import { DiDotnet } from 'react-icons/di';
 import { MdDesignServices } from 'react-icons/md';
+import { useEffect } from 'react';
+import { expertiseAnimations } from './expertise-animation';
+import { ExpertCard } from './expert-card';
 
 export default function Expertise() {
   const softwareDev = {
@@ -44,32 +47,41 @@ export default function Expertise() {
       'Experienced in building and maintaining efficient backend systems using a variety of technologies such as NestJS, MySQL, Docker, TypeORM, ASP.NET, Entity Framework, TypeScript, and C#. Proficient in designing and implementing RESTful APIs and integrating with frontend applications.',
   };
 
+  useEffect(() => {
+    expertiseAnimations();
+  }, []);
+
   return (
-    <section id="expertise" className="min-h-[100vh] text-white gap-3 pt-10 flex flex-col items-center justify-center">
-      <div className="expertise-intro w-full lg:flex flex-col justify-center">
-        <div className="flex flex-col w-max">
-          <div className="flex flex-row items-end">
-            <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">02.</div>
-            <h1 className="text-6 xl md:text-8xl text-slate-300">EXPERTISE</h1>
-          </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <p className="mt-4  tracking-widest  text-xl md:text-2xl font-medium">
-            I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
-            take on new challenges and use my expertise to contribute to successful projects.
-          </p>
-        </div>
+    <section id="expertise" className="min-h-[100vh]  text-white gap-3 pt-10 flex flex-col justify-center">
+      <h1 id="expertise-title" className="section-title !duration-1000 basic-animation-values translate-x-[-200px]">
+        EXPERTISE
+      </h1>
+      <p
+        id="expertise-paragraph"
+        className="mt-4 tracking-widest basic-animation-values translate-x-[-210px] !duration-[1.1s] text-xl md:text-2xl font-medium"
+      >
+        I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
+        take on new challenges and use my expertise to contribute to successful projects.
+      </p>
+      <div
+        id="expert-cards"
+        className="flex flex-col basic-animation-values translate-x-[-250px] !duration-[1.5s] md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8"
+      >
+        <ExpertCard icon={softwareDevLogo} title={softwareDev.title} description={softwareDev.description} />
+        <ExpertCard icon={frontendDevelopmentLogo} title={frontendDev.title} description={frontendDev.description} />
+        <ExpertCard icon={backendDevLogo} title={backendDev.title} description={backendDev.description} />
       </div>
-      <div className="flex flex-col md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8">
-        {expert(softwareDevLogo, softwareDev.title, softwareDev.description)}
-        {expert(frontendDevelopmentLogo, frontendDev.title, frontendDev.description)}
-        {expert(backendDevLogo, backendDev.title, backendDev.description)}
-      </div>
-      <div className="border-2 p-2 border-neutral w-full flex align-middle justify-center relative mt-20">
+      <div
+        id="experienced-in-section"
+        className="border-2 p-2 border-neutral w-full flex align-middle justify-center relative mt-20 !duration-1000 basic-animation-values translate-x-[-200px]"
+      >
         <h1 className="md:text-5xl mt-12 experiences-title px-4 uppercase tracking-widest text-2xl top-[-58px] left-[20px] md:top-[-65px] md:left-[40px] absolute">
           Experienced in
         </h1>
-        <div className="text-center w-full md:py-4 md:px-4">
+        <div
+          id="experienced-in-techs"
+          className="text-center w-full md:py-4 md:px-4 basic-animation-values translate-x-[-210px] !duration-[1.1s]"
+        >
           <div className="w-full mt-2 md:border-0 border-2 p-1">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="h-20">{tech(SiJavascript, 'JavaScript')}</div>
@@ -120,24 +132,6 @@ export default function Expertise() {
     </section>
   );
 }
-
-const expert = (icon: StaticImageData, title: string, description: string) => {
-  return (
-    <div className="border-b-pop-details-icon-background hover:bg-zinc-300 select-none text-black border-l-pop-details-icon-background  transition duration-500 hover:scale-105 bg-zinc-400 py-2 border-2 border-gray-700 flex-1 shadow-lg shadow-slate-500">
-      <div className="flex h-[240px] flex-grow justify-center w-full flex-col items-center">
-        <Image height="240" src={icon} alt="frontend development" />
-      </div>
-      <div className="transition duration-500 hover:scale-105">
-        <h3 className="w-full text-4xl md:text-2xl mb-2 lg:text-4xl mt-4 text-center"> {title} </h3>
-        <div className="flex flex-row items-center mt-1 px-8 pb-6">
-          <div>
-            <p className="text-2xl md:text-xl lg:text-2xl h-full text-center">{description}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const tech = (Icon: StaticImageData | IconType | null, title: string) => {
   return (

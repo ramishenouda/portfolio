@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect } from 'react';
+import { testimonialsAnimations } from './testimonials-animations';
 
 const testimoinals = [
   {
@@ -23,8 +24,11 @@ const testimoinals = [
 ];
 
 export default function Testimonials() {
-  let [currentTestimonial, setCurrentTestimonial] = React.useState(0);
+  const [currentTestimonial, setCurrentTestimonial] = React.useState(0);
 
+  useEffect(() => {
+    testimonialsAnimations();
+  }, []);
   useEffect(() => {
     getTestimonial(currentTestimonial);
     setTimeout(() => {
@@ -33,16 +37,23 @@ export default function Testimonials() {
   }, [currentTestimonial]);
 
   return (
-    <div id="testimonials" className="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] justify-center flex flex-col">
-      <div className="rounded-3xl">
-        <h1 className="lg:text-8xl md:text-7xl text-4xl tracking-widest uppercase">
-          <span className="text-lg md:text-2xl">05.</span>TESTIMONIALS
-        </h1>
-      </div>
-      <p className="md:mt-16 tracking-widest text-center mt-8 text-2xl font-medium md:text-4xl">
+    <section id="testimonials" className="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] justify-center flex flex-col">
+      <h1
+        id="testimonials-section-title"
+        className="section-title basic-animation-values !duration-1000 translate-x-[-200px]"
+      >
+        TESTIMONIALS
+      </h1>
+      <p
+        id="feedback-text"
+        className="md:mt-16 tracking-widest text-center mt-8 text-2xl font-medium md:text-4xl basic-animation-values translate-x-[-210px] !duration-[1.3s]"
+      >
         Feedback from clients on great experiences
       </p>
-      <div className="flex flex-col items-center justify-center gap-8">
+      <div
+        id="testimonials-gallery"
+        className="flex flex-col items-center justify-center gap-8 basic-animation-values translate-x-[-220px] !duration-[1.5s]"
+      >
         <div className="w-[90vw] md:w-[90vw] overflow-x-hidden mt-4 md:mt-12">
           <div id="testimonials-container" className="flex flex-row transition duration-1000">
             {testimonial(testimoinals[0].description, testimoinals[0].linkTitle, testimoinals[0].link)}
@@ -127,7 +138,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

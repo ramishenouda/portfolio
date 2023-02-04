@@ -1,26 +1,39 @@
 import Image, { StaticImageData } from 'next/image';
 
-import pixelArtMaker from '../public/images/pixelArtMaker.png';
-import cardsbench from '../public/images/cardsbench.png';
-import Ecommerce from '../public/images/e-commerce.png';
-import mysoul from '../public/images/mysoul.gif';
-import netmenu from '../public/images/netmenu.png';
-import attackonwords from '../public/images/attackonwords.gif';
-
-import eyeIcon from '../public/eye.png';
 import { SiGithub } from 'react-icons/si';
 import Link from 'next/link';
+import { useEffect } from 'react';
+
+import pixelArtMaker from '/public/images/pixelArtMaker.png';
+import cardsbench from '/public/images/cardsbench.png';
+import Ecommerce from '/public/images/e-commerce.png';
+import mysoul from '/public/images/mysoul.gif';
+import netmenu from '/public/images/netmenu.png';
+import attackonwords from '/public/images/attackonwords.gif';
+
+import eyeIcon from '/public/eye.png';
+
+import { projectAnimations } from './project-animation';
 
 export default function Projects() {
+  useEffect(() => {
+    projectAnimations();
+  }, []);
+
   return (
-    <div id="projects" className="min-h-[70vh] pt-10 text-white flex flex-col">
+    <section id="projects" className="min-h-[70vh] pt-10 text-white flex flex-col">
       <div>
-        <div className="flex flex-row items-end w-full">
-          <div className="text-lg md:text-2xl text-neutral-200 pb-1 md:pb-2">04.</div>
-          <h1 className="text-6xl md:text-8xl text-slate-300">PROJECTS</h1>
-        </div>
+        <h1
+          id="projects-section-title"
+          className="section-title basic-animation-values !duration-1000 translate-x-[-200px]"
+        >
+          PROJECTS
+        </h1>
       </div>
-      <div className="grid w-full grid-cols-1 mt-4 text-center projects md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+      <div
+        id="projects-section"
+        className="grid w-full grid-cols-1 mt-4 text-center projects md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 basic-animation-values translate-x-[-210px] !duration-[1.5s]"
+      >
         {project(
           'Pixel Art Maker',
           'An application for creative minds who want to draw pixel arts.',
@@ -71,7 +84,7 @@ export default function Projects() {
           'https://github.com/ramishenouda/NETMenu',
         )}
       </div>
-    </div>
+    </section>
   );
 }
 
