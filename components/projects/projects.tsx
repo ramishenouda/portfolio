@@ -1,17 +1,4 @@
-import Image, { StaticImageData } from 'next/image';
-
-import { SiGithub } from 'react-icons/si';
-import Link from 'next/link';
 import { useEffect } from 'react';
-
-import pixelArtMaker from '/public/images/pixelArtMaker.png';
-import cardsbench from '/public/images/cardsbench.png';
-import Ecommerce from '/public/images/e-commerce.png';
-import mysoul from '/public/images/mysoul.gif';
-import netmenu from '/public/images/netmenu.png';
-import attackonwords from '/public/images/attackonwords.gif';
-
-import eyeIcon from '/public/eye.png';
 
 import { projectAnimations } from './projects-animation';
 import { ProjectItem } from './project-item';
