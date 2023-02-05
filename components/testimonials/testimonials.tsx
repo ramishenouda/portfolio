@@ -37,7 +37,7 @@ export default function Testimonials() {
   }, [currentTestimonial]);
 
   return (
-    <section id="testimonials" className="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] justify-center flex flex-col">
+    <section id="testimonials" className="min-h-[50vh] justify-center flex flex-col">
       <h1
         id="testimonials-section-title"
         className="section-title basic-animation-values !duration-1000 translate-x-[-200px]"

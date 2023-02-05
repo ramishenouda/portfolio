@@ -25,11 +25,16 @@ import {
 import { FaDatabase } from 'react-icons/fa';
 import { DiDotnet } from 'react-icons/di';
 import { MdDesignServices } from 'react-icons/md';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { expertiseAnimations } from './expertise-animation';
 import { ExpertCard } from './expert-card';
 
 export default function Expertise() {
+  const expertiseParagraph = useRef(null);
+  const expertCards = useRef(null);
+  const experiencedInSection = useRef(null);
+  const experiencedInTechs = useRef(null);
+
   const softwareDev = {
     title: 'Software Development',
     description:
@@ -48,8 +53,15 @@ export default function Expertise() {
   };
 
   useEffect(() => {
-    expertiseAnimations();
-  }, []);
+    if (
+      expertiseParagraph.current &&
+      expertCards.current &&
+      experiencedInSection.current &&
+      experiencedInTechs.current
+    ) {
+      expertiseAnimations();
+    }
+  }, [expertiseParagraph, expertCards, experiencedInSection, experiencedInTechs]);
 
   return (
     <section id="expertise" className="min-h-[100vh]  text-white gap-3 pt-10 flex flex-col justify-center">
@@ -58,6 +70,7 @@ export default function Expertise() {
       </h1>
       <p
         id="expertise-paragraph"
+        ref={expertiseParagraph}
         className="mt-4 tracking-widest basic-animation-values translate-x-[210px] !duration-[1.3s] text-xl md:text-2xl font-medium"
       >
         I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
@@ -65,6 +78,7 @@ export default function Expertise() {
       </p>
       <div
         id="expert-cards"
+        ref={expertCards}
         className="flex flex-col basic-animation-values translate-x-[-250px] !duration-[1.5s] md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8"
       >
         <ExpertCard icon={softwareDevLogo} title={softwareDev.title} description={softwareDev.description} />
@@ -73,6 +87,7 @@ export default function Expertise() {
       </div>
       <div
         id="experienced-in-section"
+        ref={experiencedInSection}
         className="border-2 p-2 border-neutral w-full flex align-middle justify-center relative mt-20 !duration-1000 basic-animation-values translate-x-[-200px]"
       >
         <h1 className="md:text-5xl mt-12 experiences-title px-4 uppercase tracking-widest text-2xl top-[-58px] left-[20px] md:top-[-65px] md:left-[40px] absolute">
@@ -80,6 +95,7 @@ export default function Expertise() {
         </h1>
         <div
           id="experienced-in-techs"
+          ref={experiencedInTechs}
           className="text-center w-full md:py-4 md:px-4 basic-animation-values translate-x-[210px] !duration-[1.1s]"
         >
           <div className="w-full mt-2 md:border-0 border-2 p-1">
