@@ -1,3 +1,8 @@
 .section-title {
-  @apply text-4xl md:text-6xl text-slate-300;
+  @apply text-5xl md:text-6xl text-slate-300;
+}
+
+.section-number {
+  @apply text-2xl md:text-xl mr-4;
+  letter-spacing: 2px;
 }

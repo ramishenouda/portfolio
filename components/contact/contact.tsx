@@ -49,7 +49,9 @@ export default function Contact() {
 
   return (
     <section id="contact" className="flex flex-col mb-4 justify-center min-h-[65vh]">
-      <h1 className="section-title">CONTACT</h1>
+      <h1 className="section-title">
+        <span className="section-number">06.</span>CONTACT
+      </h1>
       <div className="flex w-full flex-col justify-center items-center lg:flex-row gap-12 md:px-12 mt-12">
         <form onSubmit={sendEmail} ref={formElement} className="flex flex-col w-full flex-1 rounded shadow-sm">
           <Input

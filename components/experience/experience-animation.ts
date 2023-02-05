@@ -10,7 +10,7 @@ export const experienceAnimations = () => {
     scrollTrigger: {
       trigger: '#experience-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
+      start: '-300px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#experience-title' },
       onLeave: () => {
         document.getElementById('experience-title')?.classList.toggle('start-basic-animation');
@@ -22,7 +22,7 @@ export const experienceAnimations = () => {
     scrollTrigger: {
       trigger: '#experience-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
+      start: '-300px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '.company-experience' },
       onLeave: () => {
         const companyExperiences = document.getElementsByClassName('company-experience');
