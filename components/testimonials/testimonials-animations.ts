@@ -6,7 +6,7 @@ export const testimonialsAnimations = () => {
   const backToTheEndPoint = 'none';
   const whenScrollBackToStart = 'reverse';
 
-  gsap.to('testimonials-section-title', {
+  gsap.to('#testimonials-section-title', {
     scrollTrigger: {
       trigger: '#testimonials-section-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
