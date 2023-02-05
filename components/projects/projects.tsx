@@ -33,7 +33,7 @@ export default function Projects() {
       </div>
       <div
         id="projects-section"
-        className="mt-4 text-center projects basic-animation-values translate-x-[-210px] !duration-[1.5s]"
+        className="mt-4 min-h-screen projects basic-animation-values translate-x-[-210px] !duration-[1.5s]"
       >
         <ProjectItem />
       </div>
