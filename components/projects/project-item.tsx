@@ -39,7 +39,7 @@ export const ProjectItem = ({
         </Link>
       </div>
       <div className={`flex ${reverseOrder ? 'flex-row-reverse' : 'flex-row'} relative`}>
-        <div className="hover:scale-[1.02]  transition-all duration-500 md:w-3/4 absolute md:sticky top-3/4">
+        <div className="hover:scale-[1.02] transition-all duration-500 md:w-3/4 absolute md:sticky top-3/4">
           <Image src={imagePath} height={500} width={500} className="h-full w-full" alt="foodeli" />
         </div>
         <div className="md:w-1/4 md:z-1 z-50 w-full">
