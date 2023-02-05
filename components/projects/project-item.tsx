@@ -77,8 +77,14 @@ export const ProjectItem = ({
 const TechIcons = (techIcons: Array<IconType>) => {
   return (
     <div className="gap-8 z-50 flex mt-4 flex-row justify-center items-center w-full">
-      {techIcons.map((Icon) => {
-        return <Icon className="hover:text-neutral-400 transition-colors duration-500" size={32} />;
+      {techIcons.map((Icon, index) => {
+        return (
+          <Icon
+            key={`${new Date()} + ${index}`}
+            className="hover:text-neutral-400 transition-colors duration-500"
+            size={32}
+          />
+        );
       })}
     </div>
   );
