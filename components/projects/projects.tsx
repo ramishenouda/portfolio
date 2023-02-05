@@ -26,18 +26,19 @@ export default function Projects() {
           title="Foodeli"
           descriptionHeader="Build your own restaurant order website and receive new orders online."
           descriptionInfo="Manage your orders in a few simple steps. With a single press on the button you can accept or cancel an
-                order. Get an overview of all orders and related information"
+                order. Get an overview of all orders and related information."
           projectLink="https://foodeli.nl/home"
+          imagePath="/backgrounds/foodeli.svg"
           key={'https://foodeli.nl/home'}
         />
         <ProjectItem
-          title="Foodeli"
-          descriptionHeader="Build your own restaurant order website and receive new orders online."
-          descriptionInfo="Manage your orders in a few simple steps. With a single press on the button you can accept or cancel an
-                order. Get an overview of all orders and related information"
-          projectLink="https://foodeli.nl/home"
-          key={'https://foodeli.nl/home'}
+          title="POPs"
+          descriptionHeader="PeopleOverPapers is a website that helps job seekers find job opportunities, by displaying a wide range of job listings,"
+          descriptionInfo="including company reviews and salaries. Employers can also post new job listings, for free or as sponsored posts, making it a one-stop solution for both job seekers and employers."
+          projectLink="https://demo.overpaper.com/"
+          key={'https://demo.overpaper.com/'}
           reverseOrder={true}
+          imagePath="/backgrounds/pops.svg"
         />
       </div>
     </section>
