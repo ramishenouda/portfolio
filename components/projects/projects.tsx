@@ -26,14 +26,11 @@ export default function Projects() {
           id="projects-section-title"
           className="section-title basic-animation-values !duration-1000 translate-x-[-200px]"
         >
-          PROJECTS
+          <span className="section-number">04.</span>PROJECTS
         </h1>
       </div>
-      <div
-        id="projects-section"
-        className="mt-4 min-h-screen projects basic-animation-values translate-x-[-210px] !duration-[1.5s]"
-      >
-        <div className="mt-4">
+      <div id="projects-section" className="mt-4 min-h-screen projects">
+        <div id="foodeli-project" className="mt-4 basic-animation-values translate-x-[210px] !duration-[1.5s]">
           <ProjectItem
             title="Foodeli"
             descriptionHeader="Build your own restaurant order website and receive new orders online."
@@ -46,7 +43,7 @@ export default function Projects() {
           />
         </div>
 
-        <div className="mt-4">
+        <div id="pops-project" className="mt-4 basic-animation-values translate-x-[-210px] !duration-[1.5s]">
           <ProjectItem
             title="POPs"
             descriptionHeader="PeopleOverPapers is a website that helps job seekers find job opportunities, by displaying a wide range of job listings,"
@@ -59,7 +56,7 @@ export default function Projects() {
           />
         </div>
 
-        <div className="mt-4">
+        <div id="aow-project" className="mt-4 basic-animation-values translate-x-[210px] !duration-[1.5s]">
           <ProjectItem
             title="Attack On Words"
             descriptionHeader="Blast away invading ships in this thrilling typing adventure! Type specific phrases to shoot and defend against infinite levels of enemy ships. Perfect for those who love fast-paced action and sharpening their typing skills."

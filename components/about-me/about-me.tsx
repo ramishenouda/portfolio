@@ -12,7 +12,7 @@ export default function AboutMe() {
       className="min-h-[20vh] basic-animation-values !duration-1000 translate-x-[-200px] pt-10 text-white flex flex-col"
     >
       <h1 id="about-me-title" className="section-title">
-        ABOUT ME
+        <span className="section-number">01.</span>ABOUT ME
       </h1>
       <p
         id="about-me-paragraph"

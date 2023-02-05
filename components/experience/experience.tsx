@@ -35,7 +35,7 @@ export default function Experience() {
     <div id="experience" className="text-white pt-10 justify-center flex flex-col">
       <div className="mb-4">
         <h1 id="experience-title" className="section-title basic-animation-values translate-x-[-250px] !duration-[1s]">
-          Experience
+          <span className="section-number">03.</span>Experience
         </h1>
       </div>
       <div className="md:ml-10 mt-5 flex  p-1 justify-center items-center flex-col lg:flex-row md:gap-20">

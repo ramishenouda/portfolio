@@ -30,6 +30,7 @@ body {
 main {
   background: rgb(26, 25, 29);
   background: linear-gradient(180deg, rgba(26, 25, 29, 1) 0%, rgba(19, 26, 36, 1) 100%);
+  overflow-x: hidden;
 }
 
 h1 {

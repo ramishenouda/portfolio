@@ -42,7 +42,7 @@ export default function Testimonials() {
         id="testimonials-section-title"
         className="section-title basic-animation-values !duration-1000 translate-x-[-200px]"
       >
-        TESTIMONIALS
+        <span className="section-number">05.</span>TESTIMONIALS
       </h1>
       <p
         id="feedback-text"

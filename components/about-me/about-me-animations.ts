@@ -10,7 +10,7 @@ export const aboutMeAnimations = () => {
     scrollTrigger: {
       trigger: '#about-me',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
+      start: '-300px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#about-me' },
       onLeave: () => {
         document.getElementById('about-me')?.classList.toggle('start-basic-animation');
@@ -22,7 +22,7 @@ export const aboutMeAnimations = () => {
     scrollTrigger: {
       trigger: '#about-me',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
+      start: '-300px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#about-me-paragraph' },
       onLeave: () => {
         document.getElementById('about-me-paragraph')?.classList.toggle('start-basic-animation');

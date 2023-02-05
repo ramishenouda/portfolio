@@ -26,7 +26,7 @@ export const ProjectItem = ({
   reverseOrder,
 }: props) => {
   return (
-    <div className="min-h-[85vh] md:min-h-screen">
+    <div className="min-h-[85vh]">
       <div className={` ${reverseOrder ? '' : 'flex justify-end'}`}>
         <Link
           target={'_blank'}
