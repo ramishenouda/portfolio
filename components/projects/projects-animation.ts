@@ -46,7 +46,7 @@ export const projectAnimations = () => {
     scrollTrigger: {
       trigger: '#aow-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-350px 50%',
+      start: '-400px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#aow-project' },
       onLeave: () => {
         document.getElementById('aow-project')?.classList.toggle('start-basic-animation');

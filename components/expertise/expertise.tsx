@@ -53,12 +53,12 @@ export default function Expertise() {
 
   return (
     <section id="expertise" className="min-h-[100vh]  text-white gap-3 pt-10 flex flex-col justify-center">
-      <h1 id="expertise-title" className="section-title !duration-1000 basic-animation-values translate-x-[-200px]">
+      <h1 id="expertise-title" className="section-title !duration-1000 basic-animation-values translate-x-[200px]">
         <span className="section-number">02.</span>EXPERTISE
       </h1>
       <p
         id="expertise-paragraph"
-        className="mt-4 tracking-widest basic-animation-values translate-x-[-210px] !duration-[1.1s] text-xl md:text-2xl font-medium"
+        className="mt-4 tracking-widest basic-animation-values translate-x-[210px] !duration-[1.3s] text-xl md:text-2xl font-medium"
       >
         I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
         take on new challenges and use my expertise to contribute to successful projects.
@@ -80,7 +80,7 @@ export default function Expertise() {
         </h1>
         <div
           id="experienced-in-techs"
-          className="text-center w-full md:py-4 md:px-4 basic-animation-values translate-x-[-210px] !duration-[1.1s]"
+          className="text-center w-full md:py-4 md:px-4 basic-animation-values translate-x-[210px] !duration-[1.1s]"
         >
           <div className="w-full mt-2 md:border-0 border-2 p-1">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
