@@ -54,7 +54,7 @@ export default function Expertise() {
   return (
     <section id="expertise" className="min-h-[100vh]  text-white gap-3 pt-10 flex flex-col justify-center">
       <h1 id="expertise-title" className="section-title !duration-1000 basic-animation-values translate-x-[-200px]">
-        EXPERTISE
+        <span className="section-number">02.</span>EXPERTISE
       </h1>
       <p
         id="expertise-paragraph"

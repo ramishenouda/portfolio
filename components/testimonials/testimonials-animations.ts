@@ -10,7 +10,7 @@ export const testimonialsAnimations = () => {
     scrollTrigger: {
       trigger: '#testimonials-section-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
+      start: '-300px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#testimonials-section-title' },
       onLeave: () => {
         document.getElementById('testimonials-section-title')?.classList.toggle('start-basic-animation');
@@ -22,7 +22,7 @@ export const testimonialsAnimations = () => {
     scrollTrigger: {
       trigger: '#testimonials-section-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
+      start: '-300px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#feedback-text' },
       onLeave: () => {
         document.getElementById('feedback-text')?.classList.toggle('start-basic-animation');
@@ -34,7 +34,7 @@ export const testimonialsAnimations = () => {
     scrollTrigger: {
       trigger: '#testimonials-section-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
+      start: '-300px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#testimonials-gallery' },
       onLeave: () => {
         document.getElementById('testimonials-gallery')?.classList.toggle('start-basic-animation');

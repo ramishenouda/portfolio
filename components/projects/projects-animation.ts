@@ -10,7 +10,7 @@ export const projectAnimations = () => {
     scrollTrigger: {
       trigger: '#projects-section-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
+      start: '-300px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#projects-section-title' },
       onLeave: () => {
         document.getElementById('projects-section-title')?.classList.toggle('start-basic-animation');
@@ -18,14 +18,38 @@ export const projectAnimations = () => {
     },
   });
 
-  gsap.to('projects-section', {
+  gsap.to('foodeli-project', {
     scrollTrigger: {
-      trigger: '#projects-section-title',
+      trigger: '#foodeli-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-200px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#projects-section' },
+      start: '-300px 50%',
+      toggleClass: { className: 'start-basic-animation', targets: '#foodeli-project' },
       onLeave: () => {
-        document.getElementById('projects-section')?.classList.toggle('start-basic-animation');
+        document.getElementById('foodeli-project')?.classList.toggle('start-basic-animation');
+      },
+    },
+  });
+
+  gsap.to('pops-project', {
+    scrollTrigger: {
+      trigger: '#pops-project',
+      toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
+      start: '-300px 50%',
+      toggleClass: { className: 'start-basic-animation', targets: '#pops-project' },
+      onLeave: () => {
+        document.getElementById('pops-project')?.classList.toggle('start-basic-animation');
+      },
+    },
+  });
+
+  gsap.to('aow-project', {
+    scrollTrigger: {
+      trigger: '#aow-project',
+      toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
+      start: '-350px 50%',
+      toggleClass: { className: 'start-basic-animation', targets: '#aow-project' },
+      onLeave: () => {
+        document.getElementById('aow-project')?.classList.toggle('start-basic-animation');
       },
     },
   });
