@@ -6,7 +6,7 @@ export const projectAnimations = () => {
   const backToTheEndPoint = 'none';
   const whenScrollBackToStart = 'reverse';
 
-  gsap.to('projects-section-title', {
+  gsap.to('#projects-section-title', {
     scrollTrigger: {
       trigger: '#projects-section-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
@@ -18,7 +18,7 @@ export const projectAnimations = () => {
     },
   });
 
-  gsap.to('foodeli-project', {
+  gsap.to('#foodeli-project', {
     scrollTrigger: {
       trigger: '#foodeli-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
@@ -30,7 +30,7 @@ export const projectAnimations = () => {
     },
   });
 
-  gsap.to('pops-project', {
+  gsap.to('#pops-project', {
     scrollTrigger: {
       trigger: '#pops-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
@@ -42,7 +42,7 @@ export const projectAnimations = () => {
     },
   });
 
-  gsap.to('aow-project', {
+  gsap.to('#aow-project', {
     scrollTrigger: {
       trigger: '#aow-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
