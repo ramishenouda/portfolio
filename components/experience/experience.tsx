@@ -1,9 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ExperienceItem } from './experience-item';
 import { experienceAnimations } from './experience-animation';
 
 export default function Experience() {
   const [company, setCompany] = useState(0);
+  const experienceTitle = useRef(null);
+  const experiences = useRef(null);
 
   const doItBigPoints = [
     `Developed and maintained multiple web applications using technologies such as Angular, Nest.JS, TypeScript, Tailwind, and Bootstrap.`,
@@ -29,17 +31,23 @@ export default function Experience() {
   ];
 
   useEffect(() => {
-    experienceAnimations();
-  }, []);
+    if (experienceTitle.current && experiences.current) {
+      experienceAnimations();
+    }
+  }, [experienceTitle, experiences]);
   return (
     <div id="experience" className="text-white pt-10 justify-center flex flex-col">
       <div className="mb-4">
-        <h1 id="experience-title" className="section-title basic-animation-values translate-x-[-250px] !duration-[1s]">
+        <h1
+          ref={experienceTitle}
+          id="experience-title"
+          className="section-title basic-animation-values translate-x-[-250px] !duration-[1s]"
+        >
           <span className="section-number">03.</span>Experience
         </h1>
       </div>
-      <div className="md:ml-10 mt-5 flex  p-1 justify-center items-center flex-col lg:flex-row md:gap-20">
-        <div className="flex-1 max-w-[1000px]">
+      <div className="md:ml-10 mt-5 flex p-1 justify-center items-center flex-col lg:flex-row md:gap-20">
+        <div ref={experiences} className="flex-1 max-w-[1000px]">
           <ExperienceItem
             companyName="Do IT Big!"
             jobTitle="Full-stack developer (Contract)"

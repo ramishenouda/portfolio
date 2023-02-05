@@ -1,14 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { aboutMeAnimations } from './about-me-animations';
 
 export default function AboutMe() {
+  const aboutMe = useRef(null);
+  const aboutMeParagraph = useRef(null);
+
   useEffect(() => {
-    aboutMeAnimations();
-  }, []);
+    if (aboutMe.current && aboutMeParagraph.current) {
+      aboutMeAnimations();
+    }
+  }, [aboutMe, aboutMeParagraph]);
 
   return (
     <section
       id="about-me"
+      ref={aboutMe}
       className="min-h-[20vh] basic-animation-values !duration-1000 translate-x-[-200px] pt-10 text-white flex flex-col"
     >
       <h1 id="about-me-title" className="section-title">
@@ -16,6 +22,7 @@ export default function AboutMe() {
       </h1>
       <p
         id="about-me-paragraph"
+        ref={aboutMeParagraph}
         className="text-xl md:text-2xl basic-animation-values translate-x-[-210px] !duration-[1.5s] line-he mt-4 tracking-wide leading-[140%] lg:w-[80vw]"
       >
         I discovered my passion for programming as a self-taught game developer in secondary school, using my favorite
