@@ -4,7 +4,14 @@ import Link from 'next/link';
 import { BsArrowUpRight } from 'react-icons/bs';
 import { SiAngularjs, SiCypress, SiNestjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
-export const ProjectItem = () => {
+type props = {
+  title: string;
+  descriptionHeader: string;
+  descriptionInfo: string;
+  projectLink: string;
+};
+
+export const ProjectItem = ({ title, descriptionHeader, descriptionInfo, projectLink }: props) => {
   return (
     <div>
       <div className="flex flex-row relative">
@@ -14,18 +21,17 @@ export const ProjectItem = () => {
         <div className="md:w-1/4 md:z-1 z-50 w-full">
           <Link
             target={'_blank'}
-            href={'https://foodeli.nl/home'}
+            href={projectLink}
             className="hover:text-blue-300 w-full md:text-right transition-colors duration-500"
           >
-            <h1 className="md:bg-transparent mb-5 md:text-6xl text-4xl">Foodeli</h1>
+            <h1 className="md:bg-transparent mb-5 md:text-6xl text-4xl">{title}</h1>
           </Link>
           <div className=" absolute right-0 max-w-[400px] z-50 justify-center items-center">
             <div className=" bg-black/70 p-8 flex flex-col">
               <p className="text-2xl md:text-3xl">
-                Build your own restaurant order website and receive new orders online.
+                {descriptionHeader}
                 <br />
-                Manage your orders in a few simple steps. With a single press on the button you can accept or cancel an
-                order. Get an overview of all orders and related information
+                {descriptionInfo}
               </p>
             </div>
             <div className="bg-black/70 mt-3 p-3 text-xl font-bold rounded-sm">
@@ -38,7 +44,7 @@ export const ProjectItem = () => {
                 <SiTailwindcss className="hover:text-neutral-400 transition-colors duration-500" size={32} />
               </div>
               <div className="gap-4 hover:text-blue-300 transition-colors duration-500 z-50 mt-4 flex flex-row justify-center items-center w-full">
-                <Link href={'https://foodeli.nl/home'}>
+                <Link href={projectLink}>
                   <span className="text-xl uppercase">View Project</span>
                   <BsArrowUpRight className="inline ml-2" size={28} />
                 </Link>

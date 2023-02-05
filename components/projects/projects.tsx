@@ -22,7 +22,14 @@ export default function Projects() {
         id="projects-section"
         className="mt-4 min-h-screen projects basic-animation-values translate-x-[-210px] !duration-[1.5s]"
       >
-        <ProjectItem />
+        <ProjectItem
+          title="Foodeli"
+          descriptionHeader="Build your own restaurant order website and receive new orders online."
+          descriptionInfo="Manage your orders in a few simple steps. With a single press on the button you can accept or cancel an
+                order. Get an overview of all orders and related information"
+          projectLink="https://foodeli.nl/home"
+          key={'https://foodeli.nl/home'}
+        />
       </div>
     </section>
   );
