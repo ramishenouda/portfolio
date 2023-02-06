@@ -37,7 +37,7 @@ export default function Contact() {
     emailjs
       .sendForm('service_ffp8ufb', 'template_rkx9qid', formElement.current, 'oZ-BS6Cpd-pHJm45g')
       .then(() => {
-        Swal.fire('Thank you! :D', 'I have received your email.', 'success');
+        Swal.fire('Thank you for contacting! :D', 'We will contact you as soon as possible.', 'success');
       })
       .catch((error) => {
         Swal.fire('OPS!', 'I could not receive your email. Try sending it manually to my email, thank you!', 'error');
@@ -95,6 +95,7 @@ export default function Contact() {
             css={{
               color: 'White',
               borderColor: 'White',
+              zIndex: 1,
             }}
             type="submit"
           >
