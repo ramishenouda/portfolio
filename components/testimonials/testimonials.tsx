@@ -27,7 +27,7 @@ export default function Testimonials() {
   const [currentTestimonial, setCurrentTestimonial] = React.useState(0);
 
   useEffect(() => {
-    testimonialsAnimations();
+    // testimonialsAnimations();
   }, []);
   useEffect(() => {
     getTestimonial(currentTestimonial);
@@ -38,22 +38,13 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" className="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] justify-center flex flex-col">
-      <h1
-        id="testimonials-section-title"
-        className="section-title basic-animation-values !duration-1000 translate-x-[-200px]"
-      >
+      <h1 id="testimonials-section-title" className="section-title">
         <span className="section-number">05.</span>TESTIMONIALS
       </h1>
-      <p
-        id="feedback-text"
-        className="md:mt-16 tracking-widest text-center mt-8 text-2xl font-medium md:text-4xl basic-animation-values translate-x-[-210px] !duration-[1.3s]"
-      >
+      <p id="feedback-text" className="md:mt-16 tracking-widest text-center mt-8 text-2xl font-medium md:text-4xl">
         Feedback from clients on great experiences
       </p>
-      <div
-        id="testimonials-gallery"
-        className="flex flex-col items-center justify-center gap-8 basic-animation-values translate-x-[-220px] !duration-[1.5s]"
-      >
+      <div id="testimonials-gallery" className="flex flex-col items-center justify-center gap-8">
         <div className="w-[90vw] md:w-[90vw] overflow-x-hidden mt-4 md:mt-12">
           <div id="testimonials-container" className="flex flex-row transition duration-1000">
             {testimonial(testimoinals[0].description, testimoinals[0].linkTitle, testimoinals[0].link)}

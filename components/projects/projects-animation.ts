@@ -22,7 +22,7 @@ export const projectAnimations = () => {
     scrollTrigger: {
       trigger: '#foodeli-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-300px 50%',
+      start: '-500px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#foodeli-project' },
       onLeave: () => {
         document.getElementById('foodeli-project')?.classList.toggle('start-basic-animation');
@@ -34,7 +34,7 @@ export const projectAnimations = () => {
     scrollTrigger: {
       trigger: '#pops-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-300px 50%',
+      start: '-500px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#pops-project' },
       onLeave: () => {
         document.getElementById('pops-project')?.classList.toggle('start-basic-animation');
@@ -46,7 +46,7 @@ export const projectAnimations = () => {
     scrollTrigger: {
       trigger: '#aow-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-400px 50%',
+      start: '-500px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#aow-project' },
       onLeave: () => {
         document.getElementById('aow-project')?.classList.toggle('start-basic-animation');
