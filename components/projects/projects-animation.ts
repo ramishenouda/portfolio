@@ -10,7 +10,7 @@ export const projectAnimations = () => {
     scrollTrigger: {
       trigger: '#projects-section-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
-      start: '-300px 50%',
+      start: '-500px 50%',
       toggleClass: { className: 'start-basic-animation', targets: '#projects-section-title' },
       onLeave: () => {
         document.getElementById('projects-section-title')?.classList.toggle('start-basic-animation');

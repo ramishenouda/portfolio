@@ -6,44 +6,42 @@ export default function Experience() {
   const [company, setCompany] = useState(0);
 
   const doItBigPoints = [
-    `Developed and maintained multiple web applications using technologies such as Angular, Nest.JS, TypeScript, Tailwind, and Bootstrap.`,
-    `Participated in code reviews and provided constructive feedback to improve the quality of the codebase.`,
-    `Collaborated with a cross-functional team of designers, developers, and product managers to deliver high-quality software on time.`,
-    `Implemented responsive design and optimized the performance of web applications for different devices and browsers.`,
-    `Implemented REST APIs for data manipulation and integration with third-party services.`,
-    `Write modern, performant, maintainable code for a diverse array of client and internal projects.`,
-    `Work with a variety of different languages, 
-    platforms, and frameworks such as JavaScript, TypeScript, JQuery, Nest.js, Angular, and Stripe.`,
-    `Communicate with multi-disciplinary teams of
-    engineers, designers, producers, and clients on a daily basis.`,
+    `Developed and maintained multiple web applications using technologies such as Nest.js, Angular, Next.js, TypeScript, Tailwind, and Bootstrap.`,
+    `Worked with a team of three other developers and two designers to build a job seeker service website and all-in-one platform that allows restaurants to launch their dream business website.`,
+    `Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis.`,
+    `Converted apps built with Shopify and WordPress to Nest.js and Angular/Next.js.`,
+    `Converted JavaScript apps to TypeScript.`,
+    `Implemented REST APIs for data manipulation and integrated with third-party services such as Stripe, and Google APIs`,
   ];
 
   const RoczniewskiSchwedeGbRPoints = [
-    `Helped the company on expanding an API for creating games using phaser, and testing it to ensure it is functioning correctly.`,
+    `Helped the company on expanding an API for creating games using Phaser and testing it to ensure it is functioning correctly.`,
     `Responsible for creating simple games for new programmers to teach them how to code.`,
-    `Developed more than 30 games. which are being used to teach kids and new developers how to code.`,
+    `Created over 100 unit tests to ensure that the API is always working correctly.`,
   ];
 
   const drugCatcherPoints = [
-    `Responsible for developing custom React front-ends for client projects from scratch, and helping managing database schema and implementing models.`,
+    `Worked with a team of three developers and one designer to build a medical website, that aims to connect pharmaceutical sales representative with clinicians. both can register on the platform and communicate with each other through the video call appointments.`,
+    `Define code architecture decisions to support a high-performance and scalable product with a minimal footprint.`,
+    `Address and improve any technical issues.`,
   ];
 
   useEffect(() => {
     experienceAnimations();
   }, []);
   return (
-    <div id="experience" className="text-white pt-10 justify-center flex flex-col">
+    <div id="experience" className="flex flex-col justify-center pt-10 text-white">
       <div className="mb-4">
         <h1 id="experience-title" className="section-title basic-animation-values translate-x-[-250px] !duration-[1s]">
           <span className="section-number">03.</span>Experience
         </h1>
       </div>
-      <div className="md:ml-10 mt-5 flex  p-1 justify-center items-center flex-col lg:flex-row md:gap-20">
+      <div className="flex flex-col items-center justify-center p-1 mt-5 md:ml-10 lg:flex-row md:gap-20">
         <div className="flex-1 max-w-[1000px]">
           <ExperienceItem
             companyName="Do IT Big!"
             jobTitle="Full-stack developer (Contract)"
-            date="2021 - Present"
+            date="JUL 2021 - Present"
             location="Netherlands"
             bulletPoints={doItBigPoints}
             currentCompany={company === 0}
@@ -54,7 +52,7 @@ export default function Experience() {
           <ExperienceItem
             companyName="Roczniewski & Schwede GbR"
             jobTitle="Game Developer (Contract)"
-            date="2020 - 2021"
+            date="NOV 2020 - MAY 2021"
             location="Germany"
             bulletPoints={RoczniewskiSchwedeGbRPoints}
             currentCompany={company === 1}
