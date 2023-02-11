@@ -7,7 +7,7 @@ export default function Experience() {
 
   const doItBigPoints = [
     `Developed and maintained multiple web applications using technologies such as Nest.js, Angular, Next.js, TypeScript, Tailwind, and Bootstrap.`,
-    `Worked with a team of three other developers and two designers to build a job seeker service website and all-in-one platform that allows restaurants to launch their dream business website.`,
+    `Worked with a team of three other developers and two designers to build a job seeker service website and an all-in-one platform that allows restaurants to launch their dream business website.`,
     `Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis.`,
     `Converted apps built with Shopify and WordPress to Nest.js and Angular/Next.js.`,
     `Converted JavaScript apps to TypeScript.`,
