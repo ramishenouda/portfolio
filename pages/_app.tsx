@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
 
 import gsap from 'gsap';
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider theme={theme}>
       <Component {...pageProps} />
+      <Analytics />
     </NextUIProvider>
   );
 }
