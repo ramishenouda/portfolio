@@ -53,19 +53,19 @@ export default function Expertise() {
 
   return (
     <section id="expertise" className="min-h-[100vh]  text-white gap-3 pt-10 flex flex-col justify-center">
-      <h1 id="expertise-title" className="section-title !duration-1000 basic-animation-values translate-x-[200px]">
+      <h1 id="expertise-title" className="section-title !duration-1000 fade-animation translate-x-[200px]">
         <span className="section-number">02.</span>EXPERTISE
       </h1>
       <p
         id="expertise-paragraph"
-        className="mt-4 tracking-widest basic-animation-values translate-x-[210px] !duration-[1.3s] text-xl md:text-2xl font-medium"
+        className="mt-4 tracking-widest fade-animation translate-x-[210px] !duration-[1.3s] text-xl md:text-2xl font-medium"
       >
         I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
         take on new challenges and use my expertise to contribute to successful projects.
       </p>
       <div
         id="expert-cards"
-        className="flex flex-col basic-animation-values translate-x-[-250px] !duration-[1.5s] md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8"
+        className="flex flex-col fade-animation translate-x-[-250px] !duration-[1.5s] md:flex-row align-middle justify-center gap-4 flex-1 w-full mt-8"
       >
         <ExpertCard icon={softwareDevLogo} title={softwareDev.title} description={softwareDev.description} />
         <ExpertCard icon={frontendDevelopmentLogo} title={frontendDev.title} description={frontendDev.description} />
@@ -73,14 +73,14 @@ export default function Expertise() {
       </div>
       <div
         id="experienced-in-section"
-        className="border-2 p-2 border-neutral w-full flex align-middle justify-center relative mt-20 !duration-1000 basic-animation-values translate-x-[-200px]"
+        className="border-2 p-2 border-neutral w-full flex align-middle justify-center relative mt-20 !duration-1000 fade-animation translate-x-[-200px]"
       >
         <h1 className="md:text-5xl mt-12 experiences-title px-4 uppercase tracking-widest text-2xl top-[-58px] left-[20px] md:top-[-65px] md:left-[40px] absolute">
           Experienced in
         </h1>
         <div
           id="experienced-in-techs"
-          className="text-center w-full md:py-4 md:px-4 basic-animation-values translate-x-[210px] !duration-[1.1s]"
+          className="text-center w-full md:py-4 md:px-4 fade-animation translate-x-[210px] !duration-[1.1s]"
         >
           <div className="w-full mt-2 md:border-0 border-2 p-1">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

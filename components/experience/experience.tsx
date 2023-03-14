@@ -32,7 +32,7 @@ export default function Experience() {
   return (
     <div id="experience" className="flex flex-col justify-center pt-10 text-white">
       <div className="mb-4">
-        <h1 id="experience-title" className="section-title basic-animation-values translate-x-[-250px] !duration-[1s]">
+        <h1 id="experience-title" className="section-title fade-animation translate-x-[-250px] !duration-[1s]">
           <span className="section-number">03.</span>Experience
         </h1>
       </div>
@@ -47,7 +47,7 @@ export default function Experience() {
             currentCompany={company === 0}
             setCompany={() => setCompany(company === 0 ? -1 : 0)}
             companyLink="doitbig.nl"
-            classes="section-title basic-animation-values translate-x-[-250px] !duration-[1.2s]"
+            classes="section-title fade-animation translate-x-[-250px] !duration-[1.2s]"
           />
           <ExperienceItem
             companyName="Roczniewski & Schwede GbR"
@@ -58,7 +58,7 @@ export default function Experience() {
             currentCompany={company === 1}
             setCompany={() => setCompany(company === 1 ? -1 : 1)}
             companyLink="codekiste.com"
-            classes="section-title basic-animation-values translate-x-[-250px] !duration-[1.4s]"
+            classes="section-title fade-animation translate-x-[-250px] !duration-[1.4s]"
           />
           <ExperienceItem
             companyName="DrugCatcher"
@@ -67,7 +67,7 @@ export default function Experience() {
             location="Alexandria, Egypt"
             bulletPoints={drugCatcherPoints}
             currentCompany={company === 2}
-            classes="section-title basic-animation-values translate-x-[-250px] !duration-[1.6s]"
+            classes="section-title fade-animation translate-x-[-250px] !duration-[1.6s]"
             setCompany={() => setCompany(company === 2 ? -1 : 2)}
           />
         </div>

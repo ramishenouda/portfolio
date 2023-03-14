@@ -11,9 +11,9 @@ export const aboutMeAnimations = () => {
       trigger: '#about-me',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#about-me' },
+      toggleClass: { className: 'start-fade-animation', targets: '#about-me' },
       onLeave: () => {
-        document.getElementById('about-me')?.classList.toggle('start-basic-animation');
+        document.getElementById('about-me')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -23,9 +23,9 @@ export const aboutMeAnimations = () => {
       trigger: '#about-me',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#about-me-paragraph' },
+      toggleClass: { className: 'start-fade-animation', targets: '#about-me-paragraph' },
       onLeave: () => {
-        document.getElementById('about-me-paragraph')?.classList.toggle('start-basic-animation');
+        document.getElementById('about-me-paragraph')?.classList.toggle('start-fade-animation');
       },
     },
   });

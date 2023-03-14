@@ -11,9 +11,9 @@ export const expertiseAnimations = () => {
       trigger: '#expertise-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#expertise-title' },
+      toggleClass: { className: 'start-fade-animation', targets: '#expertise-title' },
       onLeave: () => {
-        document.getElementById('expertise-title')?.classList.toggle('start-basic-animation');
+        document.getElementById('expertise-title')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -23,9 +23,9 @@ export const expertiseAnimations = () => {
       trigger: '#expertise-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#expertise-paragraph' },
+      toggleClass: { className: 'start-fade-animation', targets: '#expertise-paragraph' },
       onLeave: () => {
-        document.getElementById('expertise-paragraph')?.classList.toggle('start-basic-animation');
+        document.getElementById('expertise-paragraph')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -35,9 +35,9 @@ export const expertiseAnimations = () => {
       trigger: '#expertise-paragraph',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#expert-cards' },
+      toggleClass: { className: 'start-fade-animation', targets: '#expert-cards' },
       onLeave: () => {
-        document.getElementById('expert-cards')?.classList.toggle('start-basic-animation');
+        document.getElementById('expert-cards')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -47,9 +47,9 @@ export const expertiseAnimations = () => {
       trigger: '#experienced-in-section',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#experienced-in-section' },
+      toggleClass: { className: 'start-fade-animation', targets: '#experienced-in-section' },
       onLeave: () => {
-        document.getElementById('experienced-in-section')?.classList.toggle('start-basic-animation');
+        document.getElementById('experienced-in-section')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -59,9 +59,9 @@ export const expertiseAnimations = () => {
       trigger: '#experienced-in-section',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#experienced-in-techs' },
+      toggleClass: { className: 'start-fade-animation', targets: '#experienced-in-techs' },
       onLeave: () => {
-        document.getElementById('experienced-in-techs')?.classList.toggle('start-basic-animation');
+        document.getElementById('experienced-in-techs')?.classList.toggle('start-fade-animation');
       },
     },
   });
