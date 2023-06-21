@@ -62,7 +62,7 @@ export default function Intro() {
       <section className="w-max gap-4 justify-center hidden pb-8 items-end h-[25vh] sm:flex flex-row">
         <div className="md:text-xl lg:child:text-2xl  flex flex-row gap-2 justify-center items-center">
           <MdLocationOn color="white" size={32} />
-          <div className="text-neutral-200 font-medium"> Cairo, Egypt</div>
+          <div className="text-neutral-200 font-medium"> Hamburg, Germany</div>
         </div>
         <p className="w-[1px] border-r-2 border-white h-8"></p>
         <div className="md:text-xl lg:child:text-2xl  flex flex-row gap-2 justify-center items-center">
