@@ -32,6 +32,7 @@ export default function Experience() {
   useEffect(() => {
     experienceAnimations();
   }, []);
+  
   return (
     <div id="experience" className="flex flex-col justify-center pt-10 text-white">
       <div className="mb-4">
@@ -50,6 +51,8 @@ export default function Experience() {
             currentCompany={company === 0}
             classes="section-title basic-animation-values translate-x-[-250px] !duration-[1.6s]"
             setCompany={() => setCompany(company === 0 ? -1 : 0)}
+            companyLink="limesurvey.org"
+
           />
           <ExperienceItem
             companyName="Do IT Big!"
@@ -59,7 +62,7 @@ export default function Experience() {
             bulletPoints={doItBigPoints}
             currentCompany={company === 1}
             setCompany={() => setCompany(company === 1 ? -1 : 1)}
-            companyLink="doitbig.nl"
+            companyLink="trydoitbig.com"
             classes="section-title basic-animation-values translate-x-[-250px] !duration-[1.2s]"
           />
           <ExperienceItem
