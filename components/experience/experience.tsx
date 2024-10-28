@@ -32,11 +32,11 @@ export default function Experience() {
   useEffect(() => {
     experienceAnimations();
   }, []);
-  
+
   return (
     <div id="experience" className="flex flex-col justify-center pt-10 text-white">
       <div className="mb-4">
-        <h1 id="experience-title" className="section-title basic-animation-values translate-x-[-250px] !duration-[1s]">
+        <h1 id="experience-title" className="section-title fade-animation translate-x-[-250px] !duration-[1s]">
           <span className="section-number">03.</span>Experience
         </h1>
       </div>
@@ -63,7 +63,7 @@ export default function Experience() {
             currentCompany={company === 1}
             setCompany={() => setCompany(company === 1 ? -1 : 1)}
             companyLink="trydoitbig.com"
-            classes="section-title basic-animation-values translate-x-[-250px] !duration-[1.2s]"
+            classes="section-title fade-animation translate-x-[-250px] !duration-[1.2s]"
           />
           <ExperienceItem
             companyName="Roczniewski & Schwede GbR"
@@ -74,7 +74,7 @@ export default function Experience() {
             currentCompany={company === 2}
             setCompany={() => setCompany(company === 2 ? -1 : 2)}
             companyLink="codekiste.com"
-            classes="section-title basic-animation-values translate-x-[-250px] !duration-[1.4s]"
+            classes="section-title fade-animation translate-x-[-250px] !duration-[1.4s]"
           />
         </div>
       </div>

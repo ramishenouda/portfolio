@@ -11,9 +11,9 @@ export const experienceAnimations = () => {
       trigger: '#experience-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#experience-title' },
+      toggleClass: { className: 'start-fade-animation', targets: '#experience-title' },
       onLeave: () => {
-        document.getElementById('experience-title')?.classList.toggle('start-basic-animation');
+        document.getElementById('experience-title')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -23,7 +23,7 @@ export const experienceAnimations = () => {
       trigger: '#experience-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-300px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '.company-experience' },
+      toggleClass: { className: 'start-fade-animation', targets: '.company-experience' },
       onLeave: () => {
         const companyExperiences = document.getElementsByClassName('company-experience');
         if (!companyExperiences) {
@@ -32,7 +32,7 @@ export const experienceAnimations = () => {
 
         for (let i = 0; i < companyExperiences.length; i++) {
           const experience = companyExperiences[i];
-          experience.classList.toggle('start-basic-animation');
+          experience.classList.toggle('start-fade-animation');
         }
       },
     },

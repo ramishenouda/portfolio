@@ -1,9 +1,9 @@
-.basic-animation-values {
+.fade-animation {
   transition: all;
   opacity: 0;
 }
 
-.start-basic-animation {
+.start-fade-animation {
   opacity: 1;
   transform: translateX(0);
 }

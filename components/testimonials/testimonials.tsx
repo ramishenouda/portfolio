@@ -26,22 +26,12 @@ const testimoinals = [
 export default function Testimonials() {
   const [currentTestimonial, setCurrentTestimonial] = React.useState(0);
 
-  useEffect(() => {
-    // testimonialsAnimations();
-  }, []);
-  useEffect(() => {
-    getTestimonial(currentTestimonial);
-    setTimeout(() => {
-      setCurrentTestimonial((currentTestimonial + 1) % 3);
-    }, 5000);
-  }, [currentTestimonial]);
-
   return (
     <section id="testimonials" className="min-h-[70vh] md:min-h-[40vh] lg:min-h-[70vh] justify-center flex flex-col">
       <h1 id="testimonials-section-title" className="section-title">
         <span className="section-number">05.</span>TESTIMONIALS
       </h1>
-      <p id="feedback-text" className="md:mt-16 tracking-widest text-center mt-8 text-2xl font-medium md:text-4xl">
+      <p id="feedback-text" className="mt-8 text-2xl font-medium tracking-widest text-center md:mt-16 md:text-4xl">
         Feedback from clients on great experiences
       </p>
       <div id="testimonials-gallery" className="flex flex-col items-center justify-center gap-8">
@@ -136,9 +126,9 @@ export default function Testimonials() {
 const testimonial = (description: string, linkTitle: string, link: string) => {
   return (
     <div className="min-w-[90vw] md:min-w-[90vw] text-center">
-      <p className="md:text-3xl text-xl w-full">{description}</p>
+      <p className="w-full text-xl md:text-3xl">{description}</p>
       <div className="mt-12 text-center">
-        <Link className="text-xl text-teal-400" href={link}>
+        <Link target={'_blank'} className="text-xl text-teal-400" href={link}>
           {linkTitle}
         </Link>
       </div>

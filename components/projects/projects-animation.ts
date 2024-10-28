@@ -11,9 +11,9 @@ export const projectAnimations = () => {
       trigger: '#projects-section-title',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-500px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#projects-section-title' },
+      toggleClass: { className: 'start-fade-animation', targets: '#projects-section-title' },
       onLeave: () => {
-        document.getElementById('projects-section-title')?.classList.toggle('start-basic-animation');
+        document.getElementById('projects-section-title')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -23,9 +23,9 @@ export const projectAnimations = () => {
       trigger: '#foodeli-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-500px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#foodeli-project' },
+      toggleClass: { className: 'start-fade-animation', targets: '#foodeli-project' },
       onLeave: () => {
-        document.getElementById('foodeli-project')?.classList.toggle('start-basic-animation');
+        document.getElementById('foodeli-project')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -35,9 +35,9 @@ export const projectAnimations = () => {
       trigger: '#pops-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-500px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#pops-project' },
+      toggleClass: { className: 'start-fade-animation', targets: '#pops-project' },
       onLeave: () => {
-        document.getElementById('pops-project')?.classList.toggle('start-basic-animation');
+        document.getElementById('pops-project')?.classList.toggle('start-fade-animation');
       },
     },
   });
@@ -47,9 +47,9 @@ export const projectAnimations = () => {
       trigger: '#aow-project',
       toggleActions: `${enterScreen} ${forwardPastTheEndPoint} ${backToTheEndPoint} ${whenScrollBackToStart}`,
       start: '-500px 50%',
-      toggleClass: { className: 'start-basic-animation', targets: '#aow-project' },
+      toggleClass: { className: 'start-fade-animation', targets: '#aow-project' },
       onLeave: () => {
-        document.getElementById('aow-project')?.classList.toggle('start-basic-animation');
+        document.getElementById('aow-project')?.classList.toggle('start-fade-animation');
       },
     },
   });
