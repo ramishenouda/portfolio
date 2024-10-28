@@ -112,7 +112,7 @@ export default function Contact() {
                 </Link>
               </div>
               <div className="child:text-center lg:justify-start justify-center items-center flex flex-row gap-2">
-                <BsTelephoneFill color="white" size={35} /> +201551874208
+                <BsTelephoneFill color="white" size={35} /> +49 1515 8863801
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <div id="navbar" className="top-[-50px] fixed z-40 w-full transition-all duration-1000">
-      <div className="md:block hidden">{DesktopNavbar()}</div>
+      <div className="hidden md:block">{DesktopNavbar()}</div>
       <div className="md:hidden">{MobileNavbar()}</div>
     </div>
   );
@@ -22,7 +22,7 @@ const DesktopNavbar = () => {
       className="bg-background/90 py-4 z-50 gap-5 flex flex-row h-[50px] 
       text-white items-center pr-0 md:justify-end md:pr-4 lg:pr-0 lg:justify-center duration-1000 transition-all"
     >
-      <div className="nav-logo z-50 fixed left-8 text-left">
+      <div className="fixed z-50 text-left nav-logo left-8">
         <a href="#intro" className="text-4xl">
           aRamy
         </a>
@@ -47,7 +47,7 @@ const DesktopNavbar = () => {
         <a href="#contact">contact</a>
       </div>
       <div className="nav-item">
-        <Link target="_blank" href={'files/aRami_2023___present.pdf'}>
+        <Link target="_blank" href={'files/aRami_2024___present.pdf'}>
           resume
         </Link>
       </div>
@@ -98,7 +98,7 @@ const MobileNavbar = () => {
           onClick={() => {
             scrollToSection('about-me');
           }}
-          className="nav-item text-xl"
+          className="text-xl nav-item"
         >
           aboutMe
         </div>
@@ -106,7 +106,7 @@ const MobileNavbar = () => {
           onClick={() => {
             scrollToSection('expertise');
           }}
-          className="nav-item text-xl"
+          className="text-xl nav-item"
         >
           expertise
         </div>
@@ -114,7 +114,7 @@ const MobileNavbar = () => {
           onClick={() => {
             scrollToSection('experience');
           }}
-          className="nav-item text-xl"
+          className="text-xl nav-item"
         >
           experience
         </div>
@@ -122,7 +122,7 @@ const MobileNavbar = () => {
           onClick={() => {
             scrollToSection('projects');
           }}
-          className="nav-item text-xl"
+          className="text-xl nav-item"
         >
           projects
         </div>
@@ -130,7 +130,7 @@ const MobileNavbar = () => {
           onClick={() => {
             scrollToSection('testimonials');
           }}
-          className="nav-item text-xl"
+          className="text-xl nav-item"
         >
           testimonials
         </div>
@@ -138,12 +138,12 @@ const MobileNavbar = () => {
           onClick={() => {
             scrollToSection('contact');
           }}
-          className="nav-item text-xl"
+          className="text-xl nav-item"
         >
           contact
         </div>
-        <div className="nav-item text-xl">
-          <Link target="_blank" href={'files/aRami_2023___present.pdf'}>
+        <div className="text-xl nav-item">
+          <Link target="_blank" href={'files/aRami_2024___present.pdf'}>
             resume
           </Link>
         </div>
