@@ -47,7 +47,7 @@ const DesktopNavbar = () => {
         <a href="#contact">contact</a>
       </div>
       <div className="nav-item">
-        <Link target="_blank" href={'files/aRami_2023___present.pdf'}>
+        <Link target="_blank" href={'files/aRami_2024___present.pdf'}>
           resume
         </Link>
       </div>
@@ -143,7 +143,7 @@ const MobileNavbar = () => {
           contact
         </div>
         <div className="text-xl nav-item">
-          <Link target="_blank" href={'files/aRami_2023___present.pdf'}>
+          <Link target="_blank" href={'files/aRami_2024___present.pdf'}>
             resume
           </Link>
         </div>
