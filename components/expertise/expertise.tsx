@@ -21,6 +21,8 @@ import {
   SiDocker,
   SiGithub,
   SiGitlab,
+  SiStorybook,
+  SiJest,
 } from 'react-icons/si';
 import { FaDatabase } from 'react-icons/fa';
 import { DiDotnet } from 'react-icons/di';
@@ -99,11 +101,17 @@ export default function Expertise() {
             </div>
           </div>
           <div className="w-full mt-5 md:border-0 border-2 p-1">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="h-20">{tech(SiAngular, 'Angular')}</div>
               <div className="h-20">{tech(SiReact, 'React')}</div>
               <div className="h-20">{tech(SiNextdotjs, 'Next.js')}</div>
+            </div>
+          </div>
+          <div className="w-full mt-5 md:border-0 border-2 p-1">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="h-20">{tech(SiCypress, 'Cypress')}</div>
+              <div className="h-20">{tech(SiStorybook, 'Storybook')}</div>
+              <div className="h-20">{tech(SiJest, 'Jest')}</div>
             </div>
           </div>
           <div className="w-full mt-5 md:border-0 border-2 p-1">
