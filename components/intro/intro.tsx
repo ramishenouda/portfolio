@@ -29,7 +29,7 @@ export default function Intro() {
             <a href="#contact">contact</a>
           </div>
           <div className="transition-all duration-500 nav-item child:text-2xl hover:scale-110">
-            <Link target="_blank" href={'files/aRami_2024___present.pdf'}>
+            <Link target="_blank" href={'files/aRami_2026___present.pdf'}>
               resume
             </Link>
           </div>

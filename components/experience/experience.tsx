@@ -6,27 +6,30 @@ export default function Experience() {
   const [company, setCompany] = useState(0);
 
   const doItBigPoints = [
-    `Developed and maintained multiple web applications using technologies such as Nest.js, Angular, Next.js, TypeScript, Tailwind, and Bootstrap.`,
-    `Worked with a team of three other developers and two designers to build a job seeker service website and an all-in-one platform that allows restaurants to launch their dream business website.`,
-    `Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis.`,
-    `Converted apps built with Shopify and WordPress to Nest.js and Angular/Next.js.`,
-    `Converted JavaScript apps to TypeScript.`,
-    `Implemented REST APIs for data manipulation and integrated with third-party services such as Stripe, and Google APIs`,
+    `Developed and maintained multiple production-grade platforms using NestJS, Angular, Next.js, TypeScript, Tailwind, and Bootstrap.`,
+    `Delivered real-world products including Overnights, Foodeli, Miami Motorcycle Rentals, and CodingLab.`,
+    `Built end-to-end features across frontend, backend, and database layers, from UI implementation to API design and integration.`,
+    `Led the migration of Shopify and WordPress solutions to custom NestJS + Angular/Next.js/React architectures, improving flexibility and scalability.`,
+    `Converted multiple applications from JavaScript to TypeScript, increasing type safety, maintainability, and long-term stability.`,
+    `Designed and implemented RESTful APIs and integrated third-party services such as Stripe and Google APIs.`,
+    `Worked closely with designers, developers, and stakeholders, translating business requirements into production-ready solutions.`,
   ];
 
   const RoczniewskiSchwedeGbRPoints = [
-    `Helped the company on expanding an API for creating games using Phaser and testing it to ensure it is functioning correctly.`,
-    `Responsible for creating simple games for new programmers to teach them how to code.`,
-    `Created over 100 unit tests to ensure that the API is always working correctly.`,
+    `Extended and stabilized an existing JavaScript-based educational game API built on Phaser.js for teaching programming fundamentals.`,
+    `Implemented high-level abstraction APIs (e.g. setBackground(), addJoystick(), onKeyClick()) focused on API design, usability, and readability.`,
+    `Designed features with a strong emphasis on accessibility, enabling kids and non-technical users to build interactive games with minimal code.`,
+    `Developed 30+ educational games demonstrating event handling, game loops, state management, and control flow.`,
+    `Wrote automated unit tests (JavaScript testing frameworks) to ensure API stability, regression safety, and predictable behavior.`,
   ];
 
   const limeSurveyPoints = [
-    "Rewrote the entire frontend of the application from PHP to React, improving performance and maintainability.",
-    "Wrote comprehensive Jest tests to ensure application reliability and created Storybook documentation for consistent UI components.",
-    "Configured GitHub Actions for automated testing and deployment processes.",
-    "Act as the lead on frontend development, responsible for mentoring other developers on React and modern frontend technologies.",
-    "Provided customer support by troubleshooting issues, resolving bugs, and implementing solutions based on customer needs and feedback.",
-    "Set up servers for customers and assisted in adding plugins to extend application functionality as per their requirements."
+    "Led the frontend modernization effort, migrating the application from jQuery/PHP to a React-based Single Page Application (SPA).",
+    "Implemented a modernized UI/UX from Figma designs, focusing on consistency, performance, and responsiveness.",
+    "Designed and enforced a scalable React architecture and frontend standards, improving performance, maintainability, and developer experience.",
+    "Established testing and quality foundations using Jest, Storybook, pre-commit hooks, and GitHub Actions CI pipelines.",
+    "Mentored developers, supported onboarding, and contributed to frontend technical interviews.",
+    "Worked closely with clients and support teams, handling production issues, deployments, server setups, and plugin installations."
   ];
 
   useEffect(() => {
