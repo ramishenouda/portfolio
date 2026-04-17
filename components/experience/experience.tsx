@@ -6,6 +6,15 @@ import { motion } from 'framer-motion';
 export default function Experience() {
   const [company, setCompany] = useState(0);
 
+  const limeSurveyPoints = [
+    "Led the frontend modernization effort, migrating the application from jQuery/PHP to a React-based Single Page Application (SPA).",
+    "Implemented a modernized UI/UX from Figma designs, focusing on consistency, performance, and responsiveness.",
+    "Designed and enforced a scalable React architecture and frontend standards, improving performance, maintainability, and developer experience.",
+    "Established testing and quality foundations using Jest, Storybook, pre-commit hooks, and GitHub Actions CI pipelines.",
+    "Mentored developers, supported onboarding, and contributed to frontend technical interviews.",
+    "Worked closely with clients and support teams, handling production issues, deployments, server setups, and plugin installations.",
+  ];
+
   const doItBigPoints = [
     `Developed and maintained multiple production-grade platforms using NestJS, Angular, Next.js, TypeScript, Tailwind, and Bootstrap.`,
     `Delivered real-world products including Overnights, Foodeli, Miami Motorcycle Rentals, and CodingLab.`,
@@ -16,21 +25,12 @@ export default function Experience() {
     `Worked closely with designers, developers, and stakeholders, translating business requirements into production-ready solutions.`,
   ];
 
-  const RoczniewskiSchwedeGbRPoints = [
+  const codeKistePoints = [
     `Extended and stabilized an existing JavaScript-based educational game API built on Phaser.js for teaching programming fundamentals.`,
     `Implemented high-level abstraction APIs (e.g. setBackground(), addJoystick(), onKeyClick()) focused on API design, usability, and readability.`,
     `Designed features with a strong emphasis on accessibility, enabling kids and non-technical users to build interactive games with minimal code.`,
     `Developed 30+ educational games demonstrating event handling, game loops, state management, and control flow.`,
     `Wrote automated unit tests (JavaScript testing frameworks) to ensure API stability, regression safety, and predictable behavior.`,
-  ];
-
-  const limeSurveyPoints = [
-    "Led the frontend modernization effort, migrating the application from jQuery/PHP to a React-based Single Page Application (SPA).",
-    "Implemented a modernized UI/UX from Figma designs, focusing on consistency, performance, and responsiveness.",
-    "Designed and enforced a scalable React architecture and frontend standards, improving performance, maintainability, and developer experience.",
-    "Established testing and quality foundations using Jest, Storybook, pre-commit hooks, and GitHub Actions CI pipelines.",
-    "Mentored developers, supported onboarding, and contributed to frontend technical interviews.",
-    "Worked closely with clients and support teams, handling production issues, deployments, server setups, and plugin installations."
   ];
 
   return (
@@ -47,7 +47,7 @@ export default function Experience() {
           <motion.div variants={staggerItem}>
             <ExperienceItem
               companyName="LimeSurvey GmbH"
-              jobTitle="Software engineer"
+              jobTitle="Software Developer"
               date="April 2023 - Present"
               location="Hamburg, Germany"
               bulletPoints={limeSurveyPoints}
@@ -58,10 +58,10 @@ export default function Experience() {
           </motion.div>
           <motion.div variants={staggerItem}>
             <ExperienceItem
-              companyName="Do IT Big!"
-              jobTitle="Full-stack developer (Contract)"
+              companyName="DoItBig"
+              jobTitle="Full-Stack Developer"
               date="JUL 2021 - April 2023"
-              location="Netherlands"
+              location="Utrecht, Netherlands"
               bulletPoints={doItBigPoints}
               currentCompany={company === 1}
               setCompany={() => setCompany(company === 1 ? -1 : 1)}
@@ -70,11 +70,11 @@ export default function Experience() {
           </motion.div>
           <motion.div variants={staggerItem}>
             <ExperienceItem
-              companyName="Roczniewski & Schwede GbR"
-              jobTitle="Game Developer (Contract)"
+              companyName="CodeKiste"
+              jobTitle="Game Developer"
               date="NOV 2020 - MAY 2021"
-              location="Germany"
-              bulletPoints={RoczniewskiSchwedeGbRPoints}
+              location="North Rhine-Westphalia, Germany"
+              bulletPoints={codeKistePoints}
               currentCompany={company === 2}
               setCompany={() => setCompany(company === 2 ? -1 : 2)}
               companyLink="codekiste.com"

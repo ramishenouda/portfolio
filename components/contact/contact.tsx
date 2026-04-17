@@ -116,11 +116,11 @@ export default function Contact() {
               <div className="mt-6 flex flex-col gap-4">
                 <Link className="flex flex-row gap-3 items-center text-neutral-400 hover:text-cyan-400 transition-colors duration-300" href="mailto:ramishenouda@outlook.com">
                   <GrMail className="text-cyan-400" size={22} />
-                  <span className="text-base">ramishenouda@outlook.com</span>
+                  <span className="text-lg">ramishenouda@outlook.com</span>
                 </Link>
                 <div className="flex flex-row gap-3 items-center text-neutral-400 lg:justify-start justify-center">
                   <BsTelephoneFill className="text-cyan-400" size={20} />
-                  <span className="text-base">+49 1515 8863801</span>
+                  <span className="text-lg">+49 1515 8863801</span>
                 </div>
               </div>
             </div>

@@ -63,7 +63,7 @@ export default function Intro() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-base font-light tracking-widest uppercase md:text-xl text-neutral-400 max-w-2xl"
+          className="text-lg tracking-widest uppercase md:text-2xl text-neutral-400 max-w-2xl"
         >
           A programmer who is constantly seeking new learning opportunities.
         </motion.p>
@@ -76,12 +76,12 @@ export default function Intro() {
       >
         <div className="flex flex-row items-center justify-center gap-2 text-neutral-400">
           <MdLocationOn className="text-cyan-400" size={20} />
-          <span className="text-sm md:text-base font-light">Hamburg, Germany</span>
+          <span className="text-base md:text-lg">Hamburg, Germany</span>
         </div>
         <span className="w-px h-5 bg-white/10"></span>
         <div className="flex flex-row items-center justify-center gap-2 text-neutral-400">
           <BsTelephoneFill className="text-cyan-400" size={16} />
-          <span className="text-sm md:text-base font-light">+49 1515 8863801</span>
+          <span className="text-base md:text-lg">+49 1515 8863801</span>
         </div>
         <span className="w-px h-5 bg-white/10"></span>
         <Link
@@ -89,7 +89,7 @@ export default function Intro() {
           href="mailto:ramishenouda@outlook.com"
         >
           <GrMail className="text-cyan-400" size={18} />
-          <span className="text-sm md:text-base font-light">ramishenouda@outlook.com</span>
+          <span className="text-base md:text-lg">ramishenouda@outlook.com</span>
         </Link>
       </motion.section>
       <motion.a

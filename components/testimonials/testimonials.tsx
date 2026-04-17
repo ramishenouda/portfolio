@@ -72,9 +72,9 @@ const testimonial = (description: string, linkTitle: string, link: string, index
     <div key={index} className="min-w-[90vw] text-center px-4 md:px-16">
       <div className="max-w-3xl mx-auto">
         <span className="text-5xl text-cyan-400/20 font-serif leading-none block mb-4">&ldquo;</span>
-        <p className="text-lg md:text-2xl text-neutral-300 font-light leading-relaxed italic">{description}</p>
+        <p className="text-xl md:text-2xl text-neutral-300 leading-relaxed italic">{description}</p>
         <div className="mt-8">
-          <Link target={'_blank'} className="text-base text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium" href={link}>
+          <Link target={'_blank'} className="text-lg text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium" href={link}>
             {linkTitle}
           </Link>
         </div>

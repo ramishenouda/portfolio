@@ -15,7 +15,7 @@ export const ExpertCard = ({ icon, title, description }: Props) => {
       <div>
         <h3 className="w-full text-2xl lg:text-3xl mt-4 text-center font-semibold text-white">{title}</h3>
         <div className="flex flex-row items-center mt-3 px-4 pb-4">
-          <p className="text-base lg:text-lg text-center text-neutral-400 font-light leading-relaxed">{description}</p>
+          <p className="text-lg lg:text-xl text-center text-neutral-400 leading-relaxed">{description}</p>
         </div>
       </div>
     </div>

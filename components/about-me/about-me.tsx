@@ -13,7 +13,7 @@ export default function AboutMe() {
       </FadeIn>
       <FadeIn delay={0.15}>
         <p
-          className="text-lg md:text-xl mt-6 tracking-wide leading-relaxed lg:w-[80vw] text-neutral-300 font-light"
+          className="text-xl md:text-2xl mt-6 tracking-wide leading-relaxed lg:w-[80vw] text-neutral-300"
         >
           I discovered my passion for programming as a self-taught game developer in secondary school, using my favorite
           game engine, Unity. After honing my skills for three years, I decided to expand my expertise by transitioning to
