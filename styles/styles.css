@@ -1,8 +1,16 @@
 .section-title {
-  @apply text-5xl md:text-6xl text-slate-300;
+  @apply text-4xl md:text-6xl font-bold tracking-tight;
+  background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .section-number {
-  @apply text-2xl md:text-xl mr-4;
+  @apply text-lg md:text-xl mr-3 font-mono font-normal;
   letter-spacing: 2px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

@@ -9,7 +9,6 @@ type props = {
   bulletPoints: Array<string>;
   currentCompany: boolean;
   setCompany: () => void;
-  classes?: string;
   companyLink?: string;
 };
 
@@ -21,52 +20,49 @@ export const ExperienceItem = ({
   bulletPoints,
   currentCompany,
   setCompany,
-  classes,
   companyLink,
 }: props) => {
   return (
-    <div className={`w-full company-experience mb-4 ${classes}`}>
+    <div className="w-full mb-4">
       <div
         onClick={() => setCompany()}
-        className={`bg-info transition-all duration-500 cursor-pointer  p-4 rounded-md font-semibold flex flex-col md:flex-row ${
-          currentCompany && `!bg-info-50`
+        className={`bg-white/[0.04] border border-white/[0.08] transition-all duration-300 cursor-pointer p-4 rounded-xl font-medium flex flex-col md:flex-row hover:bg-white/[0.06] ${
+          currentCompany && 'bg-white/[0.08] border-cyan-500/20 shadow-glow'
         }`}
       >
-        <div className="flex-1 md:block flex flex-row justify-between child:text-md md:child:text-2xl">
+        <div className="flex-1 md:block flex flex-row justify-between">
           <div>
-            <span>{companyName}</span>
-            <span className="md:inline hidden"> - {jobTitle}</span>
-            <div className="md:hidden block">{jobTitle}</div>
+            <span className="text-base md:text-lg text-white">{companyName}</span>
+            <span className="md:inline hidden text-neutral-400"> — {jobTitle}</span>
+            <div className="md:hidden block text-sm text-neutral-400">{jobTitle}</div>
           </div>
-          <div className="md:hidden block">{currentCompany ? '-' : '+'}</div>
+          <div className="md:hidden block text-neutral-500">{currentCompany ? '−' : '+'}</div>
         </div>
-        <div className="mr-2 child:text-md md:child:text-2xl">
-          <span className="mr-10">{date}</span>
-          <span className="md:inline hidden">{currentCompany ? '-' : '+'}</span>
+        <div className="mr-2 text-sm md:text-base text-neutral-400">
+          <span className="mr-8">{date}</span>
+          <span className="md:inline hidden text-neutral-500">{currentCompany ? '−' : '+'}</span>
         </div>
       </div>
       <div
-        className={`rounded-md max-h-0 bg-blue-900/20  overflow-y-hidden transition-all duration-500 ${
-          currentCompany && `p-2  px-8 mt-4 max-h-[1000px]`
+        className={`rounded-xl max-h-0 bg-white/[0.02] border border-transparent overflow-y-hidden transition-all duration-500 ${
+          currentCompany && 'p-4 px-8 mt-3 max-h-[1000px] border-white/[0.05]'
         }`}
       >
-        <div className="mt-2 child:text-lg md:child:text-xl flex flex-row gap-8">
-          <div className="flex flex-row gap-2 items-center justify-center">
-            <MdLocationOn color="2e5cda" size={20} /> {location}
+        <div className="mt-1 flex flex-row gap-8 text-sm md:text-base">
+          <div className="flex flex-row gap-2 items-center text-neutral-400">
+            <MdLocationOn className="text-cyan-400" size={18} /> {location}
           </div>
           {companyLink && (
-            <div className="hover:text-purple-400">
-              <Link className="text-blue-400 hover:text-blue-200" target="_blank" href={`https://` + companyLink}>
-                <span className="text-xl mr-2">↗</span> {companyLink}
-              </Link>
-            </div>
+            <Link className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300" target="_blank" href={`https://` + companyLink}>
+              <span className="mr-1">↗</span> {companyLink}
+            </Link>
           )}
         </div>
-        <ul className=" mt-4">
+        <ul className="mt-4 space-y-2">
           {bulletPoints.map((point, index) => {
             return (
-              <p key={point + index} className="text-lg md:text-xl mb-2">
-                - {point}
+              <p key={point + index} className="text-sm md:text-base text-neutral-300 font-light leading-relaxed">
+                <span className="text-cyan-400/60 mr-2">—</span>{point}
               </p>
             );
           })}

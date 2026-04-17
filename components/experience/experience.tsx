@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ExperienceItem } from './experience-item';
-import { experienceAnimations } from './experience-animation';
+import { FadeIn, StaggerContainer, staggerItem } from '../shared/motion';
+import { motion } from 'framer-motion';
 
 export default function Experience() {
   const [company, setCompany] = useState(0);
@@ -32,55 +33,55 @@ export default function Experience() {
     "Worked closely with clients and support teams, handling production issues, deployments, server setups, and plugin installations."
   ];
 
-  useEffect(() => {
-    experienceAnimations();
-  }, []);
-
   return (
     <div id="experience" className="flex flex-col justify-center pt-10 text-white">
       <div className="mb-4">
-        <h1 id="experience-title" className="section-title fade-animation translate-x-[-250px] !duration-[1s]">
-          <span className="section-number">03.</span>Experience
-        </h1>
+        <FadeIn>
+          <h1 className="section-title">
+            <span className="section-number">03.</span>Experience
+          </h1>
+        </FadeIn>
       </div>
-      <div className="flex flex-col items-center justify-center p-1 mt-5 md:ml-10 lg:flex-row md:gap-20">
+      <StaggerContainer stagger={0.15} className="flex flex-col items-center justify-center p-1 mt-5 md:ml-10 lg:flex-row md:gap-20">
         <div className="flex-1 max-w-[1000px]">
-          <ExperienceItem
-            companyName="LimeSurvey GmbH"
-            jobTitle="Software engineer"
-            date="April 2023 - Present"
-            location="Hamburg, Germany"
-            bulletPoints={limeSurveyPoints}
-            currentCompany={company === 0}
-            classes="section-title basic-animation-values translate-x-[-250px] !duration-[1.6s]"
-            setCompany={() => setCompany(company === 0 ? -1 : 0)}
-            companyLink="limesurvey.org"
-
-          />
-          <ExperienceItem
-            companyName="Do IT Big!"
-            jobTitle="Full-stack developer (Contract)"
-            date="JUL 2021 - April 2023"
-            location="Netherlands"
-            bulletPoints={doItBigPoints}
-            currentCompany={company === 1}
-            setCompany={() => setCompany(company === 1 ? -1 : 1)}
-            companyLink="trydoitbig.com"
-            classes="section-title fade-animation translate-x-[-250px] !duration-[1.2s]"
-          />
-          <ExperienceItem
-            companyName="Roczniewski & Schwede GbR"
-            jobTitle="Game Developer (Contract)"
-            date="NOV 2020 - MAY 2021"
-            location="Germany"
-            bulletPoints={RoczniewskiSchwedeGbRPoints}
-            currentCompany={company === 2}
-            setCompany={() => setCompany(company === 2 ? -1 : 2)}
-            companyLink="codekiste.com"
-            classes="section-title fade-animation translate-x-[-250px] !duration-[1.4s]"
-          />
+          <motion.div variants={staggerItem}>
+            <ExperienceItem
+              companyName="LimeSurvey GmbH"
+              jobTitle="Software engineer"
+              date="April 2023 - Present"
+              location="Hamburg, Germany"
+              bulletPoints={limeSurveyPoints}
+              currentCompany={company === 0}
+              setCompany={() => setCompany(company === 0 ? -1 : 0)}
+              companyLink="limesurvey.org"
+            />
+          </motion.div>
+          <motion.div variants={staggerItem}>
+            <ExperienceItem
+              companyName="Do IT Big!"
+              jobTitle="Full-stack developer (Contract)"
+              date="JUL 2021 - April 2023"
+              location="Netherlands"
+              bulletPoints={doItBigPoints}
+              currentCompany={company === 1}
+              setCompany={() => setCompany(company === 1 ? -1 : 1)}
+              companyLink="trydoitbig.com"
+            />
+          </motion.div>
+          <motion.div variants={staggerItem}>
+            <ExperienceItem
+              companyName="Roczniewski & Schwede GbR"
+              jobTitle="Game Developer (Contract)"
+              date="NOV 2020 - MAY 2021"
+              location="Germany"
+              bulletPoints={RoczniewskiSchwedeGbRPoints}
+              currentCompany={company === 2}
+              setCompany={() => setCompany(company === 2 ? -1 : 2)}
+              companyLink="codekiste.com"
+            />
+          </motion.div>
         </div>
-      </div>
+      </StaggerContainer>
     </div>
   );
 }
