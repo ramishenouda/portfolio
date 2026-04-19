@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import { MdLocationOn } from 'react-icons/md';
 
+type SubPoint = string | { text: string; link: string };
+type BulletPoint = string | { text: string; subPoints: SubPoint[] };
+
 type props = {
   companyName: string;
   jobTitle: string;
   date: string;
   location: string;
-  bulletPoints: Array<string>;
+  bulletPoints: Array<BulletPoint>;
   currentCompany: boolean;
   setCompany: () => void;
   companyLink?: string;
@@ -60,10 +63,33 @@ export const ExperienceItem = ({
         </div>
         <ul className="mt-4 space-y-2">
           {bulletPoints.map((point, index) => {
+            const text = typeof point === 'string' ? point : point.text;
+            const subPoints = typeof point === 'string' ? undefined : point.subPoints;
             return (
-              <p key={point + index} className="text-base md:text-lg text-neutral-300 leading-relaxed">
-                <span className="text-cyan-400/60 mr-2">—</span>{point}
-              </p>
+              <div key={text + index}>
+                <p className="text-base md:text-lg text-neutral-300 leading-relaxed">
+                  <span className="text-cyan-400/60 mr-2">—</span>{text}
+                </p>
+                {subPoints && (
+                  <ul className="ml-6 mt-1 space-y-1">
+                    {subPoints.map((sub, subIndex) => {
+                      const subText = typeof sub === 'string' ? sub : sub.text;
+                      const subLink = typeof sub === 'string' ? undefined : sub.link;
+                      return (
+                        <p key={subText + subIndex} className="text-sm md:text-base text-neutral-400 leading-relaxed">
+                          <span className="text-cyan-400/40 mr-2">·</span>
+                          {subLink ? (
+                            <Link href={subLink} target="_blank" className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">
+                              {subText.split(' — ')[0]}
+                            </Link>
+                          ) : subText.split(' — ')[0]}
+                          {subText.includes(' — ') && ` — ${subText.split(' — ').slice(1).join(' — ')}`}
+                        </p>
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
             );
           })}
         </ul>

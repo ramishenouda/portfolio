@@ -15,12 +15,13 @@ export default function AboutMe() {
         <p
           className="text-xl md:text-2xl mt-6 tracking-wide leading-relaxed lg:w-[80vw] text-neutral-300"
         >
+          Hey, I'm Rami :), originally from Egypt, currently based in Hamburg, Germany.
           I discovered my passion for programming as a self-taught game developer in secondary school, using my favorite
           game engine, Unity. After honing my skills for three years, I decided to expand my expertise by transitioning to
-          web development. I am now a full-stack developer for a Netherlands-based company, working remotely. I hold a
+          web development. I now work as a full-stack developer at LimeSurvey GmbH. I hold a
           computer science degree from Ain Shams University, and constantly strive to improve my skills. My experience
-          includes creating websites using a variety of technologies, such as ASP.NET, Nest.Js, and front-end frameworks
-          like Angular, React, and Next.js.
+          includes creating websites using a variety of technologies, such as ASP.NET, Nest.Js, Yii, Laravel and front-end frameworks
+          like Angular, React, Vue.js, and Next.js.
         </p>
       </FadeIn>
     </section>

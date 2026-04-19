@@ -36,7 +36,7 @@ const DesktopNavbar = () => {
     >
       <div className="absolute left-8">
         <a href="#intro" className="text-lg font-semibold tracking-wide hover:text-cyan-400 transition-colors duration-300">
-          aRamy<span className="text-sm font-normal text-neutral-400">.me</span>
+          aRamy<span className="text-sm font-normal text-neutral-400">.net</span>
         </a>
       </div>
       <NavLink href="#about-me" label="aboutMe" />
@@ -96,7 +96,7 @@ const MobileNavbar = () => {
             className="cursor-pointer"
           >
             <span className="text-xl font-semibold">aRamy</span>
-            <span className="text-sm text-neutral-400">.me</span>
+            <span className="text-sm text-neutral-400">.net</span>
           </div>
           <div onClick={() => setIsOpen(false)} className="text-2xl cursor-pointer text-neutral-400 hover:text-white transition-colors">
             ✕

@@ -17,7 +17,14 @@ export default function Experience() {
 
   const doItBigPoints = [
     `Developed and maintained multiple production-grade platforms using NestJS, Angular, Next.js, TypeScript, Tailwind, and Bootstrap.`,
-    `Delivered real-world products including Overnights, Foodeli, Miami Motorcycle Rentals, and CodingLab.`,
+    {
+      text: `Delivered real-world products including Overnights, Foodeli, Miami Motorcycle Rentals, and CodingLab.`,
+      subPoints: [
+        { text: `Overnights — The UK's leading BARB TV & entertainment ratings platform, trusted by 10,000+ media executives. Covers Amazon, Netflix, Disney+, YouTube & TikTok with AI-powered reports and SMS alerts.`, link: 'https://www.overnights.tv/' },
+        { text: `Foodeli — A restaurant ordering platform where businesses can build their own order website, manage incoming orders, and handle payments via Stripe.`, link: 'http://foodeli.nl/home' },
+        { text: `Miami Motorcycle Rentals — A motorcycle booking platform with Stripe integration and intelligent timezone handling for accurate worldwide bookings.`, link: 'https://www.miamimotorcyclerentals.com/' },
+      ],
+    },
     `Built end-to-end features across frontend, backend, and database layers, from UI implementation to API design and integration.`,
     `Led the migration of Shopify and WordPress solutions to custom NestJS + Angular/Next.js/React architectures, improving flexibility and scalability.`,
     `Converted multiple applications from JavaScript to TypeScript, increasing type safety, maintainability, and long-term stability.`,
@@ -60,7 +67,7 @@ export default function Experience() {
             <ExperienceItem
               companyName="DoItBig"
               jobTitle="Full-Stack Developer"
-              date="JUL 2021 - April 2023"
+              date="Jan 2021 - Aug 2023"
               location="Utrecht, Netherlands"
               bulletPoints={doItBigPoints}
               currentCompany={company === 1}
@@ -72,7 +79,7 @@ export default function Experience() {
             <ExperienceItem
               companyName="CodeKiste"
               jobTitle="Game Developer"
-              date="NOV 2020 - MAY 2021"
+              date="Feb 2020 - March 2021"
               location="North Rhine-Westphalia, Germany"
               bulletPoints={codeKistePoints}
               currentCompany={company === 2}
