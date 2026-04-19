@@ -14,14 +14,32 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
       boxShadow: {
         sm: '0px 1px 3px rgba(0, 0, 0, 0.1)',
         md: '0px 4px 3px rgba(0, 0, 0, 0.1)',
         '2xl': '0px 25px 50px rgba(0, 0, 0, 0.1)',
+        glow: '0 0 20px rgba(6, 182, 212, 0.15)',
+        'glow-lg': '0 0 40px rgba(6, 182, 212, 0.2)',
       },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
+        accent: {
+          DEFAULT: '#06b6d4',
+          50: '#ecfeff',
+          100: '#cffafe',
+          200: '#a5f3fc',
+          300: '#67e8f9',
+          400: '#22d3ee',
+          500: '#06b6d4',
+          600: '#0891b2',
+          700: '#0e7490',
+          800: '#155e75',
+          900: '#164e63',
+        },
         primary: {
           DEFAULT: '#EE7852',
           50: '#FCE4DC',

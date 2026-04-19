@@ -1,70 +1,57 @@
-import { useEffect } from 'react';
-
-import { projectAnimations } from './projects-animation';
-import { ProjectItem } from './project-item';
+import { ProjectCard } from './project-item';
 import {
   SiAngularjs,
   SiCypress,
   SiNestjs,
-  SiPhp,
-  SiPhpmyadmin,
+  SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
-  SiUnity,
 } from 'react-icons/si';
 import { FaStripe } from 'react-icons/fa';
+import { FadeIn, StaggerContainer, staggerItem } from '../shared/motion';
+import { motion } from 'framer-motion';
 
 export default function Projects() {
-  useEffect(() => {
-    projectAnimations();
-  }, []);
-
   return (
-    <section id="projects" className="min-h-[70vh] pt-10 text-white flex flex-col">
-      <div>
-        <h1 id="projects-section-title" className="section-title fade-animation !duration-1000 translate-x-[-200px]">
+    <section id="projects" className="pt-10 text-white flex flex-col">
+      <FadeIn>
+        <h1 className="section-title">
           <span className="section-number">04.</span>PROJECTS
         </h1>
-      </div>
-      <div id="projects-section" className="mt-4 min-h-screen projects">
-        <div id="foodeli-project" className="mt-4 fade-animation translate-x-[210px] !duration-[1.5s]">
-          <ProjectItem
+      </FadeIn>
+
+      <StaggerContainer stagger={0.2} className="mt-10 flex flex-col gap-8">
+        <motion.div variants={staggerItem}>
+          <ProjectCard
+            title="Overnights"
+            description="The UK's leading provider of BARB TV & entertainment Ratings. Trusted by 10,000+ media executives. Covering Amazon, Netflix, Disney+, YouTube & TikTok with AI-powered reports, SMS alerts, and Video on Demand data. The fastest overnight reports available — delivered every morning at 9:30am."
+            projectLink="https://overnights.tv/"
+            imagePath="/images/overnights.gif"
+            techIcons={[SiNestjs, SiNextdotjs, SiTypescript, SiTailwindcss]}
+          />
+        </motion.div>
+
+        <motion.div variants={staggerItem}>
+          <ProjectCard
+            title="Miami Motorcycle Rentals"
+            description="Book a motorcycle rental in Miami under 5 minutes. Built with Stripe integration and intelligent timezone handling so customers worldwide can book accurately. Full payment flow for a smooth, secure checkout experience."
+            projectLink="https://miamimotorcyclerentals.com/"
+            imagePath="/images/miamimotorcyclerentals.png"
+            imageContain={true}
+            techIcons={[SiNestjs, SiAngularjs, SiTypescript, SiTailwindcss, FaStripe]}
+          />
+        </motion.div>
+
+        <motion.div variants={staggerItem}>
+          <ProjectCard
             title="Foodeli"
-            descriptionHeader="Build your own restaurant order website and receive new orders online."
-            descriptionInfo="Manage your orders in a few simple steps. With a single press on the button you can accept or cancel an
-                order. Get an overview of all orders and related information."
+            description="Build your own restaurant order website and receive new orders online. Manage orders in a few simple steps — accept or cancel with a single press. Full overview of all orders and related information."
             projectLink="https://foodeli.nl/home"
             imagePath="/backgrounds/foodeli.svg"
-            key={'https://foodeli.nl/home'}
             techIcons={[SiNestjs, SiAngularjs, SiTypescript, SiCypress, SiTailwindcss, FaStripe]}
           />
-        </div>
-
-        <div id="pops-project" className="mt-4 fade-animation translate-x-[-210px] !duration-[1.5s]">
-          <ProjectItem
-            title="POPs"
-            descriptionHeader="PeopleOverPapers is a website that helps job seekers find job opportunities, by displaying a wide range of job listings,"
-            descriptionInfo="including company reviews and salaries. Employers can also post new job listings, for free or as sponsored posts, making it a one-stop solution for both job seekers and employers."
-            projectLink="https://demo.overpaper.com/"
-            key={'https://demo.overpaper.com/'}
-            reverseOrder={true}
-            imagePath="/backgrounds/pops.svg"
-            techIcons={[SiNestjs, SiAngularjs, SiTypescript, SiCypress, SiTailwindcss]}
-          />
-        </div>
-
-        <div id="aow-project" className="mt-4 fade-animation translate-x-[210px] !duration-[1.5s]">
-          <ProjectItem
-            title="Attack On Words"
-            descriptionHeader="Blast away invading ships in this thrilling typing adventure! Type specific phrases to shoot and defend against infinite levels of enemy ships. Perfect for those who love fast-paced action and sharpening their typing skills."
-            descriptionInfo="Get ready to be fully immersed in the exciting world of space battles!"
-            projectLink="https://github.com/ramishenouda/attackonwords"
-            key={'https://github.com/ramishenouda/attackonwords'}
-            imagePath="/backgrounds/attackonwords.svg"
-            techIcons={[SiUnity, SiPhp, SiPhpmyadmin]}
-          />
-        </div>
-      </div>
+        </motion.div>
+      </StaggerContainer>
     </section>
   );
 }

@@ -1,91 +1,71 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
-
 import { BsArrowUpRight } from 'react-icons/bs';
-import { FaStripe } from 'react-icons/fa';
-import { SiAngularjs, SiCypress, SiNestjs, SiStripe, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
-type props = {
+type ProjectCardProps = {
   title: string;
-  descriptionHeader: string;
-  descriptionInfo: string;
+  description: string;
   projectLink: string;
   imagePath: string;
   techIcons: Array<IconType>;
-  reverseOrder?: boolean;
+  imageContain?: boolean;
 };
 
-export const ProjectItem = ({
+export const ProjectCard = ({
   title,
-  descriptionHeader,
-  descriptionInfo,
+  description,
   projectLink,
   imagePath,
   techIcons,
-  reverseOrder,
-}: props) => {
+  imageContain,
+}: ProjectCardProps) => {
   return (
-    <div className="min-h-[85vh]">
-      <div className={` ${reverseOrder ? '' : 'flex justify-end'}`}>
+    <div className="group rounded-2xl overflow-hidden bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.12] transition-all duration-500 flex flex-col md:flex-row">
+      {/* Image - left side, full height, no cropping */}
+      <div className={`relative md:w-1/2 overflow-hidden ${imageContain ? 'bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center p-8' : 'flex items-center'}`}>
+        <Image
+          src={imagePath}
+          width={1200}
+          height={675}
+          className={`w-full h-auto transition-transform duration-700 group-hover:scale-[1.03] ${
+            imageContain ? 'max-w-[350px] mx-auto object-contain' : ''
+          }`}
+          alt={title}
+        />
+      </div>
+
+      {/* Content - right side */}
+      <div className="flex flex-col justify-center p-6 md:p-10 md:w-1/2">
+        <Link target="_blank" href={projectLink} className="group/link inline-flex items-center gap-3 w-fit">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-white group-hover/link:text-cyan-400 transition-colors duration-300">
+            {title}
+          </h2>
+          <BsArrowUpRight className="text-neutral-500 group-hover/link:text-cyan-400 transition-all duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" size={18} />
+        </Link>
+
+        <p className="mt-4 text-neutral-400 leading-relaxed text-base md:text-lg">
+          {description}
+        </p>
+
+        <div className="flex flex-row flex-wrap gap-3 mt-6 pt-5 border-t border-white/[0.06]">
+          {techIcons.map((Icon, index) => (
+            <Icon
+              key={index}
+              className="text-neutral-500 group-hover:text-neutral-400 transition-colors duration-300"
+              size={20}
+            />
+          ))}
+        </div>
+
         <Link
-          target={'_blank'}
+          target="_blank"
           href={projectLink}
-          className={`hover:text-blue-300 ${
-            reverseOrder ? '' : 'md:text-right'
-          } text-right ml-auto transition-colors duration-500`}
+          className="mt-5 inline-flex items-center gap-2 text-base font-medium text-cyan-400/70 hover:text-cyan-400 transition-colors duration-300 w-fit"
         >
-          <h1 className="md:bg-transparent w-max mb-5 inline-block md:text-5xl text-4xl">{title}</h1>
+          View Project <BsArrowUpRight size={14} />
         </Link>
       </div>
-      <div className={`flex ${reverseOrder ? 'flex-row-reverse' : 'flex-row'} relative`}>
-        <div className="hover:scale-[1.02] transition-all duration-500 md:w-3/4 absolute md:sticky top-3/4">
-          <Image src={imagePath} height={500} width={500} className="h-full w-full" alt="foodeli" />
-        </div>
-        <div className="md:w-1/4 md:z-1 z-50 w-full">
-          <div
-            className={`absolute left-0 md:left-[unset] top-0 right-0 max-w-[500px] z-50 justify-center items-center  ${
-              reverseOrder ? '!left-0' : ''
-            }`}
-          >
-            <div className="hover:scale-105 transition-all duration-500 bg-black/70 p-8 flex flex-col">
-              <p className="text-2xl md:text-3xl">
-                {descriptionHeader}
-                <br />
-                {descriptionInfo}
-              </p>
-            </div>
-            <div
-              className={`hover:scale-105 transition-all duration-500 bg-black/70 mt-3 p-3 text-xl font-bold rounded-sm`}
-            >
-              Technologies used:
-              {TechIcons(techIcons)}
-              <div className="gap-4 hover:text-blue-300 transition-colors duration-500 z-50 mt-4 flex flex-row justify-center items-center w-full">
-                <Link target={'_blank'} href={projectLink}>
-                  <span className="text-xl uppercase">View Project</span>
-                  <BsArrowUpRight className="inline ml-2" size={28} />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const TechIcons = (techIcons: Array<IconType>) => {
-  return (
-    <div className="gap-8 z-50 flex mt-4 flex-row justify-center items-center w-full">
-      {techIcons.map((Icon, index) => {
-        return (
-          <Icon
-            key={`${new Date()} + ${index}`}
-            className="hover:text-neutral-400 transition-colors duration-500"
-            size={32}
-          />
-        );
-      })}
     </div>
   );
 };

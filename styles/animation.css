@@ -1,9 +1,1 @@
-.fade-animation {
-  transition: all;
-  opacity: 0;
-}
-
-.start-fade-animation {
-  opacity: 1;
-  transform: translateX(0);
-}
+/* Animations handled by framer-motion */

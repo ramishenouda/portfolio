@@ -23,7 +23,7 @@ export default function Home() {
       <main>
         <Navbar />
         <Intro />
-        <div className="flex mt-16 flex-col w-full gap-16 px-[5vw]">
+        <div className="flex mt-16 flex-col w-full gap-24 md:gap-32 px-[5vw] lg:px-[8vw] pb-16">
           <AboutMe />
           <Expertise />
           <Experience />
