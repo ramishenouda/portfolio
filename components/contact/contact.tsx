@@ -36,12 +36,12 @@ export default function Contact() {
 
     setSendingMail(true);
     emailjs
-      .sendForm('service_ffp8ufb', 'template_rkx9qid', formElement.current, 'oZ-BS6Cpd-pHJm45g')
+      .sendForm('service_2gjcyde', 'template_rkx9qid', formElement.current, 'oZ-BS6Cpd-pHJm45g')
       .then(() => {
-        Swal.fire('Thank you for contacting! :D', 'We will contact you as soon as possible.', 'success');
+        Swal.fire('Thank you for contacting!', 'I will contact you as soon as possible.', 'success');
       })
       .catch((error) => {
-        Swal.fire('OPS!', 'I could not receive your email. Try sending it manually to my email, thank you!', 'error');
+        Swal.fire('OPS!', `I haven't received your email yet. Could you please try sending it directly to my address? Thank you!`, 'error');
       })
       .finally(() => {
         setSendingMail(false);
