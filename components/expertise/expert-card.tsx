@@ -8,7 +8,7 @@ type Props = {
 
 export const ExpertCard = ({ icon, title, description }: Props) => {
   return (
-    <div className="group select-none bg-white/[0.03] backdrop-blur-sm border border-white/[0.08] rounded-xl p-6 flex-1 transition-all duration-500 hover:bg-white/[0.06] hover:border-white/[0.15] hover:shadow-glow">
+    <div className="group select-none h-full bg-white/[0.03] backdrop-blur-sm border border-white/[0.08] rounded-xl p-6 flex-1 flex flex-col transition-all duration-500 hover:bg-white/[0.06] hover:border-white/[0.15] hover:shadow-glow">
       <div className="flex h-[180px] flex-grow justify-center w-full flex-col items-center opacity-80 group-hover:opacity-100 transition-opacity duration-500">
         <Image height="180" src={icon} alt={title} />
       </div>
