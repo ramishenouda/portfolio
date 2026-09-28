@@ -1,8 +1,6 @@
 import React from 'react';
-import { BsTelephoneFill, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaAngleDoubleDown } from 'react-icons/fa';
-import { MdLocationOn } from 'react-icons/md';
-import { GrMail } from 'react-icons/gr';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -69,36 +67,33 @@ export default function Intro() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="max-w-2xl text-lg tracking-widest uppercase md:text-2xl text-neutral-400"
+          transition={{ duration: 0.8, delay: 0.55 }}
+          className="text-lg tracking-[0.3em] uppercase md:text-2xl text-cyan-400"
         >
-          A programmer who is constantly seeking new learning opportunities.
+          Full-stack engineer
         </motion.p>
-      </section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        className="w-max gap-6 justify-center hidden pb-8 items-end h-[25vh] sm:flex flex-row"
-      >
-        <div className="flex flex-row items-center justify-center gap-2 text-neutral-400">
-          <MdLocationOn className="text-cyan-400" size={20} />
-          <span className="text-base md:text-lg">Hamburg, Germany</span>
-        </div>
-        <span className="w-px h-5 bg-white/10"></span>
-        <div className="flex flex-row items-center justify-center gap-2 text-neutral-400">
-          <BsTelephoneFill className="text-cyan-400" size={16} />
-          <span className="text-base md:text-lg">+49 1515 8863801</span>
-        </div>
-        <span className="w-px h-5 bg-white/10"></span>
-        <Link
-          className="flex flex-row items-center justify-center gap-2 transition-colors duration-300 text-neutral-400 hover:text-cyan-400"
-          href="mailto:ramishenouda@outlook.com"
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="max-w-3xl mt-4 text-base tracking-wide md:text-xl text-neutral-400 leading-relaxed"
         >
-          <GrMail className="text-cyan-400" size={18} />
-          <span className="text-base md:text-lg">ramishenouda@outlook.com</span>
-        </Link>
-      </motion.section>
+          Builds and ships production web systems, from API and data through to the UI. Currently at LimeSurvey.
+          Previously end-to-end product work across NestJS, Angular, React, and Next.js.
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.85 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 mt-8 text-sm md:text-base uppercase tracking-widest text-neutral-400"
+        >
+          <span>2020–present</span>
+          <span className="hidden sm:inline w-px h-4 bg-white/10"></span>
+          <span>Hamburg, Germany</span>
+          <span className="hidden sm:inline w-px h-4 bg-white/10"></span>
+          <span>LimeSurvey GmbH</span>
+        </motion.div>
+      </section>
       <motion.a
         href="#about-me"
         initial={{ opacity: 0 }}

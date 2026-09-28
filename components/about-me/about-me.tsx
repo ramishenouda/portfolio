@@ -12,17 +12,19 @@ export default function AboutMe() {
         </h1>
       </FadeIn>
       <FadeIn delay={0.15}>
-        <p
-          className="text-xl md:text-2xl mt-6 tracking-wide leading-relaxed lg:w-[80vw] text-neutral-300"
-        >
-          Hey, I'm Rami :), originally from Egypt, currently based in Hamburg, Germany.
-          I discovered my passion for programming as a self-taught game developer in secondary school, using my favorite
-          game engine, Unity. After honing my skills for three years, I decided to expand my expertise by transitioning to
-          web development. I now work as a full-stack developer at LimeSurvey GmbH. I hold a
-          computer science degree from Ain Shams University, and constantly strive to improve my skills. My experience
-          includes creating websites using a variety of technologies, such as ASP.NET, Nest.Js, Yii, Laravel and front-end frameworks
-          like Angular, React, Vue.js, and Next.js.
-        </p>
+        <div className="text-xl md:text-2xl mt-6 tracking-wide leading-relaxed lg:w-[80vw] text-neutral-300 flex flex-col gap-5">
+          <p>
+            I work as a full-stack engineer at LimeSurvey GmbH in Hamburg. I own frontend architecture and the
+            modernization of a production survey product: a React SPA, UI standards, testing, CI, and production support.
+          </p>
+          <p>
+            Before that, at DoItBig I delivered platforms end to end — REST APIs, Stripe payments, migrations off Shopify
+            and WordPress onto custom NestJS and Angular/Next.js systems, and JavaScript-to-TypeScript conversions.
+          </p>
+          <p>
+            I started as a self-taught programmer and hold a computer science degree from Ain Shams University.
+          </p>
+        </div>
       </FadeIn>
     </section>
   );

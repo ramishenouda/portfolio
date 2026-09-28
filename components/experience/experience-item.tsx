@@ -9,6 +9,7 @@ type props = {
   jobTitle: string;
   date: string;
   location: string;
+  scope?: string;
   bulletPoints: Array<BulletPoint>;
   currentCompany: boolean;
   setCompany: () => void;
@@ -20,6 +21,7 @@ export const ExperienceItem = ({
   jobTitle,
   date,
   location,
+  scope,
   bulletPoints,
   currentCompany,
   setCompany,
@@ -29,22 +31,27 @@ export const ExperienceItem = ({
     <div className="w-full mb-4">
       <div
         onClick={() => setCompany()}
-        className={`bg-white/[0.04] border border-white/[0.08] transition-all duration-300 cursor-pointer p-4 rounded-xl font-medium flex flex-col md:flex-row hover:bg-white/[0.06] ${
+        className={`bg-white/[0.04] border border-white/[0.08] transition-all duration-300 cursor-pointer p-4 rounded-xl font-medium flex flex-col hover:bg-white/[0.06] ${
           currentCompany && 'bg-white/[0.08] border-cyan-500/20 shadow-glow'
         }`}
       >
-        <div className="flex-1 md:block flex flex-row justify-between">
-          <div>
-            <span className="text-lg md:text-xl text-white">{companyName}</span>
-            <span className="md:inline hidden text-neutral-400"> — {jobTitle}</span>
-            <div className="md:hidden block text-base text-neutral-400">{jobTitle}</div>
+        <div className="flex flex-col md:flex-row">
+          <div className="flex-1 md:block flex flex-row justify-between">
+            <div>
+              <span className="text-lg md:text-xl text-white">{companyName}</span>
+              <span className="md:inline hidden text-neutral-400"> — {jobTitle}</span>
+              <div className="md:hidden block text-base text-neutral-400">{jobTitle}</div>
+            </div>
+            <div className="md:hidden block text-neutral-500">{currentCompany ? '−' : '+'}</div>
           </div>
-          <div className="md:hidden block text-neutral-500">{currentCompany ? '−' : '+'}</div>
+          <div className="mr-2 text-base md:text-lg text-neutral-400">
+            <span className="mr-8">{date}</span>
+            <span className="md:inline hidden text-neutral-500">{currentCompany ? '−' : '+'}</span>
+          </div>
         </div>
-        <div className="mr-2 text-base md:text-lg text-neutral-400">
-          <span className="mr-8">{date}</span>
-          <span className="md:inline hidden text-neutral-500">{currentCompany ? '−' : '+'}</span>
-        </div>
+        {scope && (
+          <p className="mt-2 text-sm md:text-base font-normal text-neutral-400 leading-relaxed">{scope}</p>
+        )}
       </div>
       <div
         className={`rounded-xl max-h-0 bg-white/[0.02] border border-transparent overflow-y-hidden transition-all duration-500 ${

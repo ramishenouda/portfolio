@@ -8,36 +8,36 @@ export default function Experience() {
 
   const limeSurveyPoints = [
     "Led the frontend modernization effort, migrating the application from jQuery/PHP to a React-based Single Page Application (SPA).",
-    "Implemented a modernized UI/UX from Figma designs, focusing on consistency, performance, and responsiveness.",
     "Designed and enforced a scalable React architecture and frontend standards, improving performance, maintainability, and developer experience.",
     "Established testing and quality foundations using Jest, Storybook, pre-commit hooks, and GitHub Actions CI pipelines.",
     "Mentored developers, supported onboarding, and contributed to frontend technical interviews.",
     "Worked closely with clients and support teams, handling production issues, deployments, server setups, and plugin installations.",
+    "Implemented a modernized UI/UX from Figma designs, focusing on consistency, performance, and responsiveness.",
   ];
 
   const doItBigPoints = [
+    `Led the migration of Shopify and WordPress solutions to custom NestJS + Angular/Next.js/React architectures, improving flexibility and scalability.`,
+    `Converted multiple applications from JavaScript to TypeScript, increasing type safety, maintainability, and long-term stability.`,
+    `Designed and implemented RESTful APIs and integrated third-party services such as Stripe and Google APIs.`,
+    `Built end-to-end features across frontend, backend, and database layers, from UI implementation to API design and integration.`,
     `Developed and maintained multiple production-grade platforms using NestJS, Angular, Next.js, TypeScript, Tailwind, and Bootstrap.`,
     {
-      text: `Delivered real-world products including Overnights, Foodeli, Miami Motorcycle Rentals, and CodingLab.`,
+      text: `Shipped live products as evidence of that work, including Overnights, Foodeli, Miami Motorcycle Rentals, and CodingLab.`,
       subPoints: [
         { text: `Overnights — The UK's leading BARB TV & entertainment ratings platform, trusted by 10,000+ media executives. Covers Amazon, Netflix, Disney+, YouTube & TikTok with AI-powered reports and SMS alerts.`, link: 'https://www.overnights.tv/' },
         { text: `Foodeli — A restaurant ordering platform where businesses can build their own order website, manage incoming orders, and handle payments via Stripe.`, link: 'http://foodeli.nl/home' },
         { text: `Miami Motorcycle Rentals — A motorcycle booking platform with Stripe integration and intelligent timezone handling for accurate worldwide bookings.`, link: 'https://www.miamimotorcyclerentals.com/' },
       ],
     },
-    `Built end-to-end features across frontend, backend, and database layers, from UI implementation to API design and integration.`,
-    `Led the migration of Shopify and WordPress solutions to custom NestJS + Angular/Next.js/React architectures, improving flexibility and scalability.`,
-    `Converted multiple applications from JavaScript to TypeScript, increasing type safety, maintainability, and long-term stability.`,
-    `Designed and implemented RESTful APIs and integrated third-party services such as Stripe and Google APIs.`,
     `Worked closely with designers, developers, and stakeholders, translating business requirements into production-ready solutions.`,
   ];
 
   const codeKistePoints = [
-    `Extended and stabilized an existing JavaScript-based educational game API built on Phaser.js for teaching programming fundamentals.`,
     `Implemented high-level abstraction APIs (e.g. setBackground(), addJoystick(), onKeyClick()) focused on API design, usability, and readability.`,
+    `Wrote automated unit tests (JavaScript testing frameworks) to ensure API stability, regression safety, and predictable behavior.`,
+    `Extended and stabilized an existing JavaScript-based educational game API built on Phaser.js for teaching programming fundamentals.`,
     `Designed features with a strong emphasis on accessibility, enabling kids and non-technical users to build interactive games with minimal code.`,
     `Developed 30+ educational games demonstrating event handling, game loops, state management, and control flow.`,
-    `Wrote automated unit tests (JavaScript testing frameworks) to ensure API stability, regression safety, and predictable behavior.`,
   ];
 
   return (
@@ -57,6 +57,7 @@ export default function Experience() {
               jobTitle="Software Developer"
               date="April 2023 - Present"
               location="Hamburg, Germany"
+              scope="Accountable for frontend architecture, modernization, quality foundations, and production support on a live survey product."
               bulletPoints={limeSurveyPoints}
               currentCompany={company === 0}
               setCompany={() => setCompany(company === 0 ? -1 : 0)}
@@ -69,6 +70,7 @@ export default function Experience() {
               jobTitle="Full-Stack Developer"
               date="Jan 2021 - Aug 2023"
               location="Utrecht, Netherlands"
+              scope="End-to-end ownership of production platforms across API, data, and UI — including payments and migrations off Shopify and WordPress."
               bulletPoints={doItBigPoints}
               currentCompany={company === 1}
               setCompany={() => setCompany(company === 1 ? -1 : 1)}
@@ -81,6 +83,7 @@ export default function Experience() {
               jobTitle="Game Developer"
               date="Feb 2020 - March 2021"
               location="North Rhine-Westphalia, Germany"
+              scope="Product engineering on an educational game API: abstraction design, usability, and automated tests."
               bulletPoints={codeKistePoints}
               currentCompany={company === 2}
               setCompany={() => setCompany(company === 2 ? -1 : 2)}
