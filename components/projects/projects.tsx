@@ -49,6 +49,7 @@ export default function Projects() {
             owned="End-to-end delivery across API, data, and UI on a NestJS and Next.js system."
             stack="NestJS, Next.js, TypeScript, Tailwind"
             outcome="A live ratings platform with overnight reports, AI-powered reporting, and SMS alerts — the product is trusted by 10,000+ media executives."
+            reverse
           />
         </motion.div>
 
@@ -76,6 +77,7 @@ export default function Projects() {
             owned="End-to-end platform work: merchant ordering, order actions, Stripe payments, and Cypress coverage."
             stack="NestJS, Angular, TypeScript, Cypress, Tailwind, Stripe"
             outcome="A live merchant ordering product where restaurants manage orders in a few steps and take payment through Stripe."
+            reverse
           />
         </motion.div>
       </StaggerContainer>
