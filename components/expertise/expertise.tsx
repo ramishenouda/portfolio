@@ -62,12 +62,12 @@ export default function Expertise() {
         </h1>
       </FadeIn>
       <FadeIn direction="right" delay={0.1}>
-        <p className="mt-4 tracking-wide text-xl md:text-2xl text-neutral-300">
+        <p className="mt-4 text-xl tracking-wide md:text-2xl text-neutral-300">
           I am constantly seeking to improve my skills and stay up-to-date with the latest technologies. I am eager to
           take on new challenges and use my expertise to contribute to successful projects.
         </p>
       </FadeIn>
-      <StaggerContainer stagger={0.15} delay={0.2} className="flex flex-col md:flex-row gap-5 w-full mt-8">
+      <StaggerContainer stagger={0.15} delay={0.2} className="flex flex-col w-full gap-5 mt-8 md:flex-row">
         <motion.div variants={staggerItem} className="flex-1">
           <ExpertCard icon={softwareDevLogo} title={softwareDev.title} description={softwareDev.description} />
         </motion.div>
@@ -83,61 +83,61 @@ export default function Expertise() {
           <h1 className="md:text-4xl mt-10 experiences-title px-4 uppercase tracking-widest text-xl top-[-48px] left-[20px] md:top-[-55px] md:left-[40px] absolute font-semibold text-neutral-200">
             Experienced in
           </h1>
-          <div className="text-center w-full md:py-4 md:px-4">
-            <div className="w-full mt-2 p-1">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="w-full text-center md:py-4 md:px-4">
+            <div className="w-full p-1 mt-2">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
                 <div className="h-16">{tech(SiTypescript, 'TypeScript')}</div>
                 <div className="h-16">{tech(SiJavascript, 'JavaScript')}</div>
                 <div className="h-16">{tech(SiCsharp, 'C#')}</div>
                 <div className="h-16">{tech(SiPython, 'Python')}</div>
               </div>
             </div>
-            <div className="w-full mt-4 p-1">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="w-full p-1 mt-4">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
                 <div className="h-16">{tech(SiNestjs, 'Nest.js')}</div>
                 <div className="h-16">{tech(SiAngular, 'Angular')}</div>
                 <div className="h-16">{tech(SiReact, 'React')}</div>
                 <div className="h-16">{tech(SiNextdotjs, 'Next.js')}</div>
               </div>
             </div>
-            <div className="w-full mt-4 p-1">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="w-full p-1 mt-4">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
                 <div className="h-16">{tech(SiVuedotjs, 'Vue.js')}</div>
                 <div className="h-16">{tech(null, 'ASP.NET')}</div>
                 <div className="h-16">{tech(SiHtml5, 'HTML')}</div>
                 <div className="h-16">{tech(SiCss3, 'CSS')}</div>
               </div>
             </div>
-            <div className="w-full mt-4 p-1">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="w-full p-1 mt-4">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
                 <div className="h-16">{tech(SiTailwindcss, 'Tailwind')}</div>
                 <div className="h-16">{tech(SiBootstrap, 'Bootstrap')}</div>
                 <div className="h-16">{tech(FaDatabase, 'TypeORM')}</div>
                 <div className="h-16">{tech(DiDotnet, 'Entity Framework')}</div>
               </div>
             </div>
-            <div className="w-full mt-4 p-1">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="w-full p-1 mt-4">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
                 <div className="h-16">{tech(SiCypress, 'Cypress')}</div>
                 <div className="h-16">{tech(SiStorybook, 'Storybook')}</div>
                 <div className="h-16">{tech(SiJest, 'Jest')}</div>
                 <div className="h-16">{tech(SiSwagger, 'Swagger')}</div>
               </div>
             </div>
-            <div className="w-full mt-4 p-1">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="w-full p-1 mt-4">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
                 <div className="h-16">{tech(SiGit, 'Git')}</div>
                 <div className="h-16">{tech(SiDocker, 'Docker')}</div>
                 <div className="h-16">{tech(SiMysql, 'MySQL')}</div>
                 <div className="h-16">{tech(SiJira, 'Jira')}</div>
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 h-16 w-full gap-3 mt-4">
+            <div className="grid w-full h-16 grid-cols-3 gap-3 mt-4 md:grid-cols-3">
               <div className="h-16">{tech(SiGithub, 'GitHub Actions')}</div>
               <div className="h-16">{tech(SiGitlab, 'GitLab CI/CD')}</div>
               <div className="h-16">{tech(null, 'Docker Compose')}</div>
             </div>
-            <div className="grid grid-cols-1 w-full gap-3 mt-4">
+            <div className="grid w-full grid-cols-1 gap-3 mt-4">
               <div className="h-16">{tech(MdDesignServices, 'Transform PSD / Wireframes into web applications')}</div>
             </div>
           </div>
@@ -150,9 +150,13 @@ export default function Expertise() {
 const tech = (Icon: StaticImageData | IconType | null, title: string) => {
   return (
     <div className="group hover:bg-white/[0.06] hover:border-cyan-500/30 select-none transition-all duration-300 flex min-h-full flex-row border border-white/[0.08] rounded-lg w-full p-2 justify-center items-center bg-white/[0.02]">
-      <p className="text-base md:text-lg font-medium text-neutral-300 group-hover:text-white transition-colors">{title}</p>
+      <p className="text-base font-medium transition-colors md:text-lg text-neutral-300 group-hover:text-white">
+        {title}
+      </p>
       {Icon && isStaticImageData(Icon) && <Image className="ml-3" src={Icon} alt="tech icon" />}
-      {Icon && !isStaticImageData(Icon) && <Icon className="ml-3 text-neutral-400 group-hover:text-cyan-400 transition-colors duration-300" size="24px" />}
+      {Icon && !isStaticImageData(Icon) && (
+        <Icon className="ml-3 transition-colors duration-300 text-neutral-400 group-hover:text-cyan-400" size="24px" />
+      )}
     </div>
   );
 };

@@ -17,13 +17,20 @@ export default function Intro() {
         >
           {['about-me', 'expertise', 'experience', 'projects', 'testimonials', 'contact'].map((item) => (
             <div key={item} className="transition-all duration-300 hover:text-cyan-400 hover:translate-x-1">
-              <a href={`#${item}`} className="text-lg md:text-xl font-light text-neutral-400 hover:text-cyan-400 transition-colors">
+              <a
+                href={`#${item}`}
+                className="text-lg font-light transition-colors md:text-xl text-neutral-400 hover:text-cyan-400"
+              >
                 {item === 'about-me' ? 'aboutme' : item}
               </a>
             </div>
           ))}
           <div className="transition-all duration-300 hover:text-cyan-400 hover:translate-x-1">
-            <Link target="_blank" href={'files/aRami_2026___present.pdf'} className="text-lg md:text-xl font-light text-neutral-400 hover:text-cyan-400 transition-colors">
+            <Link
+              target="_blank"
+              href={'files/aRami_2026___present.pdf'}
+              className="text-lg font-light transition-colors md:text-xl text-neutral-400 hover:text-cyan-400"
+            >
               resume
             </Link>
           </div>
@@ -55,15 +62,15 @@ export default function Intro() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mb-2 text-5xl font-bold tracking-tight uppercase md:text-8xl md:text-center md:mb-2 bg-gradient-to-r from-white via-neutral-200 to-cyan-400 bg-clip-text text-transparent"
+          className="mb-2 text-5xl font-bold tracking-tight text-transparent uppercase md:text-8xl md:text-center md:mb-2 bg-gradient-to-r from-white via-neutral-200 to-cyan-400 bg-clip-text"
         >
-          Rami Shenouda
+          Rami S. Zaki
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg tracking-widest uppercase md:text-2xl text-neutral-400 max-w-2xl"
+          className="max-w-2xl text-lg tracking-widest uppercase md:text-2xl text-neutral-400"
         >
           A programmer who is constantly seeking new learning opportunities.
         </motion.p>
@@ -85,7 +92,7 @@ export default function Intro() {
         </div>
         <span className="w-px h-5 bg-white/10"></span>
         <Link
-          className="flex flex-row items-center justify-center gap-2 text-neutral-400 hover:text-cyan-400 transition-colors duration-300"
+          className="flex flex-row items-center justify-center gap-2 transition-colors duration-300 text-neutral-400 hover:text-cyan-400"
           href="mailto:ramishenouda@outlook.com"
         >
           <GrMail className="text-cyan-400" size={18} />
@@ -97,7 +104,7 @@ export default function Intro() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
-        className="pb-3 text-cyan-400/60 hover:text-cyan-400 transition-colors duration-300"
+        className="pb-3 transition-colors duration-300 text-cyan-400/60 hover:text-cyan-400"
       >
         <FaAngleDoubleDown className="h-8 animate-bounce" />
       </motion.a>
