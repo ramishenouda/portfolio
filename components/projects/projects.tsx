@@ -6,6 +6,7 @@ import {
   SiJest,
   SiNestjs,
   SiNextdotjs,
+  SiPhp,
   SiReact,
   SiStorybook,
   SiTailwindcss,
@@ -28,13 +29,14 @@ export default function Projects() {
         <motion.div variants={staggerItem}>
           <ProjectCard
             title="LimeSurvey"
+            description="Open-source survey platform for creating, running, and analyzing online surveys."
             badge="Current role"
             imagePath="/images/limesurvey.jpg"
             projectLink="https://www.limesurvey.org/"
-            techIcons={[SiReact, SiTypescript, SiJest, SiStorybook, SiGithub]}
-            problem="A production survey product still running on jQuery and PHP needed a maintainable React SPA, consistent UI, and a quality bar the team could keep."
-            owned="Frontend modernization, React architecture and standards, Jest/Storybook/CI, mentoring and interviews, and production support with clients and operations."
-            stack="React, TypeScript, Jest, Storybook, GitHub Actions"
+            techIcons={[SiReact, SiTypescript, SiPhp, SiJest, SiStorybook, SiGithub]}
+            problem="A mature, large-scale survey product still running on jQuery and PHP needed a maintainable React frontend, consistent UI, and a quality bar the team could keep."
+            owned="APIs around the established PHP backend, frontend modernization, React architecture and standards, Jest/Storybook/CI, mentoring and interviews, and production support."
+            stack="React, TypeScript, PHP, Jest, Storybook, GitHub Actions"
             outcome="A modernized, standards-led frontend with testing and CI in place, plus onboarding and interview support for the team."
           />
         </motion.div>
@@ -42,6 +44,7 @@ export default function Projects() {
         <motion.div variants={staggerItem}>
           <ProjectCard
             title="Overnights"
+            description="The UK's leading provider of BARB TV and entertainment ratings, covering Amazon, Netflix, Disney+, YouTube, and TikTok."
             projectLink="https://overnights.tv/"
             imagePath="/images/overnights.gif"
             techIcons={[SiNestjs, SiNextdotjs, SiTypescript, SiTailwindcss]}
@@ -56,6 +59,7 @@ export default function Projects() {
         <motion.div variants={staggerItem}>
           <ProjectCard
             title="Miami Motorcycle Rentals"
+            description="Online motorcycle rentals in Miami, booked in under 5 minutes."
             projectLink="https://miamimotorcyclerentals.com/"
             imagePath="/images/miamimotorcyclerentals.png"
             imageContain={true}
@@ -70,6 +74,7 @@ export default function Projects() {
         <motion.div variants={staggerItem}>
           <ProjectCard
             title="Foodeli"
+            description="Restaurants build their own ordering website and receive orders online."
             projectLink="https://foodeli.nl/home"
             imagePath="/images/foodeli.jpg"
             techIcons={[SiNestjs, SiAngularjs, SiTypescript, SiCypress, SiTailwindcss, FaStripe]}

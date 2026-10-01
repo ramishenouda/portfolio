@@ -5,6 +5,7 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 type ProjectCardProps = {
   title: string;
+  description: string;
   projectLink: string;
   imagePath: string;
   techIcons: Array<IconType>;
@@ -19,6 +20,7 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({
   title,
+  description,
   projectLink,
   imagePath,
   techIcons,
@@ -89,6 +91,8 @@ export const ProjectCard = ({
             />
           </Link>
         </div>
+
+        <p className="mt-3 text-base md:text-lg leading-relaxed text-neutral-200">{description}</p>
 
         <dl className="mt-6 space-y-4">
           {facts.map((fact) => (

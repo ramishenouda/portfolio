@@ -19,6 +19,7 @@ import {
   SiJest,
   SiVuedotjs,
   SiMysql,
+  SiPhp,
 } from 'react-icons/si';
 import { FaDatabase } from 'react-icons/fa';
 import { DiDotnet } from 'react-icons/di';
@@ -42,7 +43,7 @@ export default function Expertise() {
   const backendDev = {
     title: 'Backend Development',
     description:
-      'I have built and maintained APIs and data layers in NestJS and ASP.NET — REST, MySQL, Docker, TypeORM, Entity Framework, and integrations such as Stripe.',
+      'I have built and maintained APIs and data layers in NestJS, ASP.NET, and PHP — REST, authentication and authorization, MySQL, TypeORM, Entity Framework, and integrations such as Stripe.',
   };
 
   const groups: { title: string; items: { icon: IconType | null; title: string }[] }[] = [
@@ -60,6 +61,7 @@ export default function Expertise() {
       title: 'Backend and data',
       items: [
         { icon: SiNestjs, title: 'Nest.js' },
+        { icon: SiPhp, title: 'PHP' },
         { icon: null, title: 'ASP.NET' },
         { icon: SiCsharp, title: 'C#' },
         { icon: SiMysql, title: 'MySQL' },

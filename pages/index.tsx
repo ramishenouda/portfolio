@@ -10,7 +10,7 @@ import AboutMe from '../components/about-me/about-me';
 
 const title = 'Rami S. Zaki — Full-stack engineer';
 const description =
-  'Full-stack engineer in Hamburg. At LimeSurvey I own frontend architecture, modernization, and production quality. Previously I shipped production platforms at DoItBig — APIs, payments, and migrations across NestJS, Angular, React, and Next.js.';
+  'Full-stack engineer in Hamburg with 6+ years of experience. At LimeSurvey I help modernize a large-scale product — APIs around the PHP backend and a jQuery-to-React frontend. Previously I owned core platform areas at DoItBig — architecture, APIs, auth, and payments across NestJS, Angular, React, and Next.js.';
 
 export default function Home() {
   return (

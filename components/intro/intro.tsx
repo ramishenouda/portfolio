@@ -87,7 +87,6 @@ export default function Intro() {
           transition={{ duration: 0.8, delay: 0.85 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 mt-8 text-sm md:text-base uppercase tracking-widest text-neutral-400"
         >
-          <span>2020–present</span>
           <span className="hidden sm:inline w-px h-4 bg-white/10"></span>
           <span>Hamburg, Germany</span>
           <span className="hidden sm:inline w-px h-4 bg-white/10"></span>

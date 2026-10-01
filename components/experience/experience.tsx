@@ -8,6 +8,7 @@ export default function Experience() {
 
   const limeSurveyPoints = [
     "Led the frontend modernization effort, migrating the application from jQuery/PHP to a React-based Single Page Application (SPA).",
+    "Designed APIs around the established PHP backend to support the new React frontend.",
     "Designed and enforced a scalable React architecture and frontend standards, improving performance, maintainability, and developer experience.",
     "Established testing and quality foundations using Jest, Storybook, pre-commit hooks, and GitHub Actions CI pipelines.",
     "Mentored developers, supported onboarding, and contributed to frontend technical interviews.",
@@ -16,13 +17,14 @@ export default function Experience() {
   ];
 
   const doItBigPoints = [
+    `Owned core platform areas, not just features: application architecture, APIs, authentication and authorization, and analytics.`,
     `Led the migration of Shopify and WordPress solutions to custom NestJS + Angular/Next.js/React architectures, improving flexibility and scalability.`,
     `Converted multiple applications from JavaScript to TypeScript, increasing type safety, maintainability, and long-term stability.`,
     `Designed and implemented RESTful APIs and integrated third-party services such as Stripe and Google APIs.`,
     `Built end-to-end features across frontend, backend, and database layers, from UI implementation to API design and integration.`,
     `Developed and maintained multiple production-grade platforms using NestJS, Angular, Next.js, TypeScript, Tailwind, and Bootstrap.`,
     {
-      text: `Shipped live products as evidence of that work, including Overnights, Foodeli, Miami Motorcycle Rentals, and CodingLab.`,
+      text: `Shipped live products as evidence of that work, including Overnights, Foodeli, PeopleOverPaper, Miami Motorcycle Rentals, and CodingLab.`,
       subPoints: [
         { text: `Overnights — The UK's leading BARB TV & entertainment ratings platform, trusted by 10,000+ media executives. Covers Amazon, Netflix, Disney+, YouTube & TikTok with AI-powered reports and SMS alerts.`, link: 'https://www.overnights.tv/' },
         { text: `Foodeli — A restaurant ordering platform where businesses can build their own order website, manage incoming orders, and handle payments via Stripe.`, link: 'http://foodeli.nl/home' },
@@ -57,7 +59,7 @@ export default function Experience() {
               jobTitle="Software Developer"
               date="April 2023 - Present"
               location="Hamburg, Germany"
-              scope="Accountable for frontend architecture, modernization, quality foundations, and production support on a live survey product."
+              scope="Helping modernize a mature, large-scale survey product: APIs around the PHP backend, frontend architecture, quality foundations, and production support."
               bulletPoints={limeSurveyPoints}
               currentCompany={company === 0}
               setCompany={() => setCompany(company === 0 ? -1 : 0)}
@@ -70,7 +72,7 @@ export default function Experience() {
               jobTitle="Full-Stack Developer"
               date="Jan 2021 - Aug 2023"
               location="Utrecht, Netherlands"
-              scope="End-to-end ownership of production platforms across API, data, and UI — including payments and migrations off Shopify and WordPress."
+              scope="Core platform ownership on SaaS products, marketplaces, and complex web apps: architecture, APIs, auth, payments, and migrations off Shopify and WordPress."
               bulletPoints={doItBigPoints}
               currentCompany={company === 1}
               setCompany={() => setCompany(company === 1 ? -1 : 1)}
