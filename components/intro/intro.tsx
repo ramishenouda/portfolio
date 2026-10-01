@@ -76,7 +76,7 @@ export default function Intro() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="max-w-3xl mt-4 text-base tracking-wide md:text-xl text-neutral-400 leading-relaxed"
+          className="max-w-3xl mt-4 text-base leading-relaxed tracking-wide md:text-xl text-neutral-400"
         >
           Builds and ships production web systems, from API and data through to the UI. Currently at LimeSurvey.
           Previously end-to-end product work across NestJS, Angular, React, and Next.js.
@@ -85,11 +85,10 @@ export default function Intro() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 mt-8 text-sm md:text-base uppercase tracking-widest text-neutral-400"
+          className="flex flex-col items-center justify-center gap-3 mt-8 text-sm tracking-widest uppercase sm:flex-row sm:gap-5 md:text-base text-neutral-400"
         >
-          <span className="hidden sm:inline w-px h-4 bg-white/10"></span>
           <span>Hamburg, Germany</span>
-          <span className="hidden sm:inline w-px h-4 bg-white/10"></span>
+          <span className="hidden w-px h-4 sm:inline bg-white/10"></span>
           <span>LimeSurvey GmbH</span>
         </motion.div>
       </section>

@@ -10,16 +10,16 @@ export default function Testimonials() {
         </h1>
       </FadeIn>
       <FadeIn delay={0.15}>
-        <div className="max-w-3xl mx-auto mt-12 md:mt-16 text-center">
-          <span className="text-5xl text-cyan-400/20 font-serif leading-none block mb-4">&ldquo;</span>
-          <p className="text-xl md:text-2xl text-neutral-300 leading-relaxed italic">
-            Rami have shown commitment, well-organized work, and support to his colleagues. Rami is a great asset to
-            our team, he is encouraged to speak up to share his thoughts, to involve in the planned tasks.
+        <div className="max-w-3xl mx-auto mt-12 text-center md:mt-16">
+          <span className="block mb-4 font-serif text-5xl leading-none text-cyan-400/20">&ldquo;</span>
+          <p className="text-xl italic leading-relaxed md:text-2xl text-neutral-300">
+            Rami have shown commitment, well-organized work, and support to his colleagues. Rami is a great asset to our
+            team, he is encouraged to speak up to share his thoughts, to involve in the planned tasks.
           </p>
           <div className="mt-8">
             <Link
               target="_blank"
-              className="text-lg text-cyan-400 hover:text-cyan-300 transition-colors duration-300 font-medium"
+              className="text-lg font-medium transition-colors duration-300 text-cyan-400 hover:text-cyan-300"
               href="https://www.linkedin.com/in/ihamdeen/"
             >
               ~Mohamed Hamdeen - founder of DrugCatcher
